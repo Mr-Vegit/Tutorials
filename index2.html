@@ -23,6 +23,10 @@
             height: 3rem;
         }
         
+        #navbar:not(#logo) {
+            justify-content: center;
+        }
+        
         #navbar::before {
             content: "";
             background-color: black;
@@ -48,6 +52,7 @@
         
         #navbar ul {
             display: flex;
+            justify-content: center;
             font-family: 'Baloo Bhai', cursive;
         }
         
@@ -68,18 +73,57 @@
             color: black;
             background-color: white;
         }
+        /* ACTUAL WORK STARTS */
         
         #section {
             background-image: url(./index-img.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: 20rem;
+            height: 30rem;
         }
+        
+        .heading {
+            display: flex;
+            font-size: 5rem;
+            justify-content: center;
+            margin-top: 4rem;
+        }
+        
+        #section>p {
+            text-align: center;
+            width: 67rem;
+            display: block;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        /* SECOND PART STARTS */
         
         #con_2 {
             /* background-color: aqua; */
             height: 20rem;
+            display: flex;
+            margin-top: 2rem;
+        }
+        
+        #con_2>div {
+            border: 10px solid rgb(2, 41, 2);
+            width: 50%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            margin: 2rem 6rem;
+            flex-direction: column;
+            border-radius: 2rem;
+        }
+        
+        #con_2>div:first-child {
+            background-color: green;
+        }
+        
+        #con_2>div>h1 {
+            margin-bottom: 2rem;
         }
     </style>
 </head>
@@ -97,10 +141,28 @@
                 <li class="item"><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odio id earum, soluta architecto quos quibusdam officiis. Assumenda veniam ipsam ullam dolores, corrupti voluptate sit ipsa ex, vero aliquid dolore!</p>
+        <h1 class="heading">
+            What are Flora & Fauna
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, earum. Veniam fugit exercitationem qui obcaecati cum, praesentium fugiat adipisci, tempore, inventore enim voluptas suscipit quas quos blanditiis labore esse cumque? Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Ad eius, maiores eos unde sint impedit, ea, hic quaerat est dolores odio magnam eum velit praesentium in placeat eligendi obcaecati consequatur.</p>
     </div>
     <div id="con_2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam odit dignissimos harum molestias aliquid, repellendus eius. Natus esse laudantium officia architecto earum! Nulla quam voluptate sapiente necessitatibus voluptas! Magni.
+        <div>
+            <!-- <video width="300px" height="200px" controls>
+                <source src="https://youtu.be/Ptpb51UquOo" type="video/mp4">
+            </video> -->
+            <!-- <iframe src="https://youtu.be/Ptpb51UquOo" frameborder="0" allowfullscreen>error</iframe> -->
+            <embed src="https://www.youtube.com/embed/Ptpb51UquOo" type="video/mp4" height="90%" width="90%">
+        </div>
+        <div>
+            <h1>
+                FLORA
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam odit dignissimos harum molestias aliquid, repellendus eius. Natus esse laudantium officia architecto earum! Nulla quam voluptate sapiente necessitatibus voluptas! Magni.
+            </p>
+        </div>
     </div>
 </body>
 
