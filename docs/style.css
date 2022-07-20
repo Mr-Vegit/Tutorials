@@ -11,13 +11,9 @@
      align-items: center;
      position: sticky;
      top: 0px;
-     height: 3rem;
+     height: 5rem;
  }
- 
- #navbar:not(#logo) {
-     justify-content: center;
- }
- 
+
  #navbar::before {
      content: "";
      background-color: black;
@@ -49,7 +45,7 @@
  
  #navbar ul li {
      list-style: none;
-     font-size: 1.3rem;
+     font-size: 1.6rem;
  }
  
  #navbar ul li a {
