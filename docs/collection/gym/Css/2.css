@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(2, 25, 128);
+}
+.navbar ul li {
+    color:  white;
+    display: inline-block;
+}
+.navbar ul{
+    display: inline-block;
+}
