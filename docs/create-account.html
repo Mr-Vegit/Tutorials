@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create your account</title>
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/nav-about.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <script src="./css/nav.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav id="navbar">
+            <ul>
+                <li id="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.jpg" alt="logo">
+                    </a>
+                </li>
+                <li><a href="index.html">Vegit</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li class="three-lines">
+                    <a><img src="./img/three-lines.jpg" alt="three-lines"></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="topnav">
+            <div class="active">
+                <a href="index.html">
+                    <img src="./img/logo.jpg" alt="logo">
+
+                </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="./img/three-lines.jpg" alt="three-lines">
+                </a>
+            </div>
+            <div id="myLinks">
+                <a href="collection.html">Collection</a>
+                <a href="#">Contact us</a>
+                <a href="sign-in.html">Sign In</a>
+            </div>
+        </div>
+        <div class="sign_head">
+            <p> Create your own account </p>
+        </div>
+        <div class="signin-2">
+            <form action="backend.php" id="forms">
+                <ul class="login">
+                    <LI><label for="name" id="name_">Name</label>
+                        <input type="text" name="myname" id="name">
+                    </LI>
+                    <LI> <label for="DOB" id="dob_">Birthday</label>
+                        <input type="date" name="myDOB" id="DOB">
+                    </LI>
+                    <LI>
+                        <label for="email" id="myemail_">Email</label>
+                        <input type="email" name="myemail" id="email">
+                    </LI>
+                    <LI>
+                        <span id="gender">Gender:</span> Male: <input type="radio" name="MyGender"> Female: <input type="radio" name="MyGender"> Others: <input type="radio" name="MyGender">
+                    </LI>
+                    <li>
+                        <label for="Password" id="pass">Password</label>
+                        <input type="password" name="mypassword" id="Password">
+                    </li>
+                    <LI><label for="humanity" class="create">Are you sure?</label>
+                        <input type="checkbox" name="confirmation" id="confirmation">
+                    </LI>
+                    <LI><input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </LI>
+                </ul>
+            </form>
+        </div>
+        <p class="aboutme">
+            COPYRIGHT RESERVED BY @mrvegit.live
+        </p>
+    </div>
+</body>
+
+</html>
