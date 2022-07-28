@@ -25,9 +25,9 @@
     #topnav #myLinks {
         display: block;
     }
-    /*.aboutme {
+    .aboutme {
         position: relative;
-    }*/
+    }
     .container-sign {
         height: 55rem;
     }
