@@ -71,9 +71,16 @@
     margin-top: 30px;
     display: flex;
     list-style: none;
-    text-align: center;
     font-size: 30px;
+    justify-content: center;
     font-family: 'Edu TAS Beginner', cursive;
+}
+
+#recentul li {
+    background-color: aquamarine;
+    border: 2px solid aqua;
+    text-align: center;
+    margin: auto;
 }
 
 #recentul li img {
@@ -126,14 +133,28 @@
 
 /* first section - signin */
 
+.sign_head::before {
+    content: "";
+    background-image: url(../img/bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(9.2px);
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 340px;
+    width: 100%;
+    z-index: -1;
+}
+
 .sign_head {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 150px;
+    height: 250px;
     padding: 20px;
     color: rgb(255, 255, 255);
-    background-color: rgb(32, 32, 32);
     font-family: 'Lobster', 'cursive';
 }
 
@@ -148,12 +169,29 @@
 .signin-2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    /* height: 30rem; */
+}
+
+.letter-image {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
 }
 
 
 /* .length_of_signin {
     height: 32.26rem;
 } */
+
+.login {
+    justify-content: center;
+    text-align: center;
+}
 
 .login li {
     list-style: none;

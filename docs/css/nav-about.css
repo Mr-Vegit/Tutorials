@@ -40,11 +40,9 @@
     position: absolute;
     right: 0;
     top: 0;
-}
-
-#topnav a:hover {
-    /* background-color: #ddd; */
-    color: black;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
 }
 
 .active {
@@ -93,6 +91,10 @@
     width: 55px;
 }
 
+.vegit-logo a {
+    color: #f64c72;
+}
+
 #navbar li a {
     color: white;
     font-size: 25px;
@@ -107,12 +109,17 @@
 /* for phones */
 
 .three-lines {
-    width: 55px;
-    border-radius: 100%;
     position: absolute;
     right: 0px;
     margin-right: 40px;
-    filter: opacity(0.4) drop-shadow(0 0 0 blue);
+    font-size: 55px;
+    font-weight: 900;
+    color: white;
+    padding: 0px;
+}
+
+.three-lines>p {
+    padding: 0px 10px;
 }
 
 
