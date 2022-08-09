@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>More About US</li>
+        </ul>
+    </div>
+    <div class="container">
+        new container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        // name.innerHTML (to see what code is written in html)
+        name.innerHTML = "<li>new code</li>"
+        let con = document.getElementsByClassName('container');
+        console.log(con);
+        // variable_name[array number in digits]
+
+        // let sel = document.querySelector('.container')
+        // console.log("selector returns", sel);
+
+        let sel = document.querySelectorAll('#nav>li')
+        console.log("selector returns", sel);
+        //sel[1].innerHTML = "funwithmaths" for change in codes
+    </script>
+</body>
+
+</html>

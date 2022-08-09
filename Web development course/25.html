@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* suggestion :- search for top web designs for inspirations and create your own design using them as reference*/
+        /* types of CSS positions:-  */
+        /* i) absolute - Position of the elements is Relative to the position of the first tag of its container */
+        /* ii) static - (default) */
+        /* iii) relative - Position of the elements is relative to its normal position*/
+        /* iv) fixed - Position of the elements gets stuck to its assigned position*/
+        /* v) sticky -  It is similar to fixed position  */
+        /* body {
+            background-color: seashell;
+        } */
+        
+        .container {
+            background-color: rgb(252, 230, 214);
+            border: 3px solid black;
+            height: 3000px;
+        }
+        
+        .box {
+            display: inline-block;
+            border: 3px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+        }
+        
+        #box3 {
+            /* position: relative; */
+            /* position: absolute;
+            top: 30px;
+            left: 40px; */
+            /* font-size: 20px;
+            text-align: center; */
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1 </div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

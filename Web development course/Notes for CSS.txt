@@ -1,0 +1,32 @@
+
+What is CSS?
+Ans; CSS gives style to raw HTML. CSS stands for Cascading Style Sheets. IT is used to make our webpages more responsive.
+HTML is used to give a structure to the webpage whereas CSS takes responsibility of design.
+
+What is the role of CSS
+Ans; Cascading Style Sheets which is also known as CSS is a style sheet language that is used to handle the 
+presentation of the webpage containing HTML. It makes our webpages beautiful and modern looking
+
+SYNTAX - p { color : blue ; }
+         ^     ^        ^
+    selector | property | value
+
+What are the three ways to add CSS to the HTML?
+Ans; 1) Inline CSS   : CSS is added to the elements directly using style attribute   
+     2) Internal CSS : CSS is kept inside the head tags in <style> tags
+     3) External CSS : CSS is kept separately inside name.css style sheet.
+
+What is a CSS selector?
+Ans; CSS selectors are used to find the element whose property will be set. Selectors are used to target the HTML elements
+Selectors makes it easy for us to target single/multiple HTML elements in the HTML language.
+
+What are the four types of CSS Selectors?
+Ans; 1) CSS element Selector
+     2) CSS ID Selector
+     3) CSS Class Selector
+     4) CSS grouping Selector
+ 
+overflow tag - it allows the content in a element to remain visible/ hidden 
+
+Box sizing border box- it allows the width or hight of an object to remain fixed even if we change the padding. without 
+using it the width will change according to the increase or decrease in padding

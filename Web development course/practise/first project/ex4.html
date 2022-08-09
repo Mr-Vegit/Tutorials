@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="ex1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body id="sign_page">
+    <nav class="navbar">
+        <ul>
+            <li><a href="ex1.html">Home</a></li>
+            <li><a href="ex2.html">top pages</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="ex3.html">Sign In</a></li>
+        </ul>
+    </nav>
+    <h1 id="sign_head"> Create your own account </h1>
+    <form action="backend.php" id="forms">
+        <ul>
+            <LI><label for="name" id="name_">Name</label>
+                <input type="text" name="myname" id="name">
+            </LI>
+            <LI> <label for="DOB" id="dob_">Birthday</label>
+                <input type="date" name="myDOB" id="DOB">
+            </LI>
+            <LI>
+                <label for="email" id="myemail_">Email</label>
+                <input type="email" name="myemail" id="email">
+            </LI>
+            <LI>
+                <span id="gender">Gender:</span> Male: <input type="radio" name="MyGender"> Female: <input type="radio" name="MyGender">
+                Others: <input type="radio" name="MyGender">
+            </LI>
+            <li>
+                <label for="Password" id="pass">Password</label>
+                <input type="password" name="mypassword" id="Password">
+            </li>
+            <LI><label for="humanity" id="sure_">Are you sure?</label>
+                <input type="checkbox" name="confirmation" id="confirmation">
+            </LI>
+            <LI><input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </LI>
+        </ul>
+    </form>
+</body>
+
+</html>

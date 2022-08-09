@@ -1,0 +1,128 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+}
+
+.navbar {
+    background-color: rgb(9, 9, 110);
+    padding: 0px 10px 5px 7px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    overflow: auto;
+    margin: 0px 0px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 1% 2% 1% 1%;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar li a:hover {
+    background-color: rgb(83, 120, 243);
+}
+
+.pages li a:visited {
+    color: black;
+}
+
+.pages li {
+    float: left;
+    list-style: none;
+    margin: 100px 3px 3px 3px;
+    padding: 3px 5px;
+    background-color: rgb(194, 194, 194);
+}
+
+#first {
+    margin: 100px 3px 3px 500px;
+}
+
+#sign_head {
+    padding: 80px 519px 60px 526px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
+    width: 304px;
+    font-family: 'Lobster', 'cursive';
+}
+
+#forms li {
+    list-style: none;
+    font-size: 30px;
+    margin: 25px 30px;
+    clear: left;
+}
+
+#login li {
+    list-style: none;
+    font-size: 30px;
+    margin: 25px 30px;
+}
+
+input {
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aboutme {
+    background-color: rgb(27, 27, 27);
+    padding: 30px 10px 50px 7px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    margin: 0px;
+}
+
+#about {
+    padding: 0px 1264px 0px 0px;
+    
+    margin: 0px 0px 25px 0px;
+    font-size: 22px;
+    float: left;
+}
+
+#create {
+    font-size: 15px;
+}
+
+#myemail_ {
+    margin: 0px 50px 0px 0px;
+}
+
+#mypass_ {
+    margin: 0px 5px 0px 0px;
+}
+#pass{
+    margin: 0px 5px 0px 0px;
+}
+#gender {
+    margin: 0px 19px 0px 0px;
+}
+
+#name_ {
+    margin: 0px 54px 0px 0px;
+}
+
+#dob_ {
+    margin: 0px 19px 0px 0px;
+}
+
+#sure_ {
+    font-size: 20px;
+}

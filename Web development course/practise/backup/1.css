@@ -1,0 +1,35 @@
+
+body {
+    /* height: 1265px; */
+    background: url('/img/bg-1.jpg');
+    color: white;
+    margin: 0px;
+    padding: 0px;
+
+}
+p{
+    margin: 0px;
+}
+.left {
+    border: 2px solid red;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.mid {
+    border: 2px solid rgb(43, 28, 255);
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    /* position: absolute; */
+}
+
+.right {
+    border: 2px solid rgb(36, 160, 5);
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Clear formatting*/
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* Remove formatting from links*/
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        /* Set a max width to the content*/
+        
+        .wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            /*height: 100vh;  */
+        }
+        
+        .parent {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: auto;
+            width: 100%;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: yellow;
+            /*   */
+        }
+        
+        .logo {
+            padding: 20px;
+        }
+        
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+            background-color: grey;
+        }
+        
+        .menu li {
+            padding: 20px;
+            margin-left: 20px;
+            background-color: orange;
+            color: rgba(255, 0, 0, 0.9);
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="navbar">
+            <div class="logo">
+                <picture>
+                    <img src="http://fillmurray.com/50/50" alt="logo">
+                </picture>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div style="height: 2000px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti sit facilis deserunt, magni qui porro recusandae quidem quo enim dolorum, animi esse iste deleniti iusto voluptate illum ex cum.</div>
+    </div>
+</body>
+
+</html>

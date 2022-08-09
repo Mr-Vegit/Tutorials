@@ -1,0 +1,172 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* first section - home  */
+
+#con_1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/bg-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30rem;
+    color: white;
+}
+
+#con_1_para {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+
+#con_1::before {
+    content: "";
+    background: url(../img/bg-1.jpg);
+    filter: blur(9.2px);
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home {
+    width: 28rem;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#home>p:first-child {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+
+/* second section - home */
+
+#recent {
+    height: 25rem;
+}
+
+#recent>p {
+    margin-top: 20px;
+    color: rgb(27, 27, 108);
+    font-size: 30px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+#recentul {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+#recentul li img {
+    margin: 10px 50px;
+    height: 170px;
+    width: 200px;
+}
+
+
+/* first section - collection */
+
+.pages {
+    height: 30rem;
+}
+
+.pages li a:visited {
+    color: black;
+}
+
+#pages-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#pages-1 li {
+    list-style: none;
+    padding: 3px 5px;
+    background-color: rgb(194, 194, 194);
+}
+
+
+/* second section - collection */
+
+#pages-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#pages-2 li {
+    list-style: none;
+    margin: 50px;
+}
+
+#pages-2 li img {
+    margin-left: 50px;
+    height: 100px;
+}
+
+
+/* first section - signin */
+
+.sign_head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
+    font-family: 'Lobster', 'cursive';
+}
+
+.sign_head>p {
+    align-self: center;
+    margin: 0;
+    font-size: 60px;
+    /* height: 10px; */
+    padding: 5px;
+}
+
+.signin-2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .length_of_signin {
+    height: 32.26rem;
+} */
+
+.login li {
+    list-style: none;
+    font-size: 30px;
+    margin: 25px 30px;
+}
+
+input {
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.create {
+    font-size: 25px;
+}

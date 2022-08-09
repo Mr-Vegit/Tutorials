@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z scale </title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box-1{
+            position: relative;
+            top: 40px;
+            z-index: 14;
+            /* z-index will onlywork for position : relative, absolute , fixed or sticky  */
+            background-color: green;
+        }
+        #box-2{
+            position: relative;
+            z-index: 10;
+            /* z-index determines the stacking order of elements */
+            top: 10px;
+            background-color: red;
+        }
+        #box-3{
+            /* display: none; */   
+            /* display: none will hide the element along with its space*/
+            background-color: blue;
+        }
+        #box-4{
+            /* visibility: hidden; */  
+            /* visibility : hidden will hide the element but show its space*/
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>

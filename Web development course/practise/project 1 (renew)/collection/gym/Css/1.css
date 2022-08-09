@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.container-1 {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+}
+
+.header {
+    display: flex;
+}
+
+.left {
+    /* border: 2px solid red; */
+    margin: 20px;
+    left: 30px;
+    top: 30px;
+}
+
+.left img {
+    width: 80px;
+    filter: invert(100%);
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid rgb(232, 255, 28); */
+    margin: 20px auto;
+    width: 40%;
+}
+
+.right {
+    margin: 20px;
+    /* border: 2px solid rgb(36, 160, 5); */
+    right: 35px;
+    top: 34px;
+    height: 50px;
+}
+
+.navbar {
+    display: inline-block;
+    padding: 0px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 18px;
+    font-size: 1.5rem;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Ephesis', cursive;
+    /* padding: 34px 23px;  */
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: rgb(194, 194, 194);
+}
+
+.btn {
+    background-color: #161617;
+    color: white;
+    margin: 0px 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 3px 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid grey;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+.right a img {
+    filter: invert(100%);
+    width: 55px;
+}
+
+.container {
+    display: block;
+    border: 2px solid white;
+    margin: 140px auto;
+    padding: 8px 7px;
+    width: 30%;
+    border-radius: 19px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    margin: 15px auto;
+    padding: 8px 6px;
+    width: 355px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#submit {
+    display: block;
+    width: 370px;
+    padding: 12px 0px;
+    margin: 33px auto;
+    font-size: 29px;
+}
+
+.right {
+    display: flex;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}

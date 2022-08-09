@@ -1,0 +1,79 @@
+What is The role of Html?
+Ans; Html stands for Hyper Text markup Language and is basically a standard mark up language 
+for giving a static skeleton to web application and websites. It is a well standardized system 
+and most commomly used. In reference to a car we can say that Html is the metal body that 
+contains the engine (javascript) and designs and beauty and various accessories(Css).
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                           BASIC SYNTAX OF HTML
+
+Reference to 3
+
+What is the basic structure of HTML?
+Ans; Basic syntax of HTML :-  
+     1) <DOCTYPE HTML> - It is used to tell the Browser which language we are using. WE can other languages also instead of using html.
+     2) <HTML lang ->  - It is the opening part of the HTML tag that tells us the language of the document is in English.
+     3) <head>         - It contain various meta tags which are used to describe the website for example - description , title etc.
+     4) <body>         - It is used to store all the various contents of the website
+     5) <!--content--> - We write our comments in the place of content in this tag. This tag helps us to describe an take notes for future reference 
+
+What is the difference between tag and a attribute?
+Ans; A tag is a function whereas an attribute is like a specail power given only to a particular tag 
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                         CONTENTS IN <head> TAG
+
+Reference to 4
+
+What is meta tags?
+Ans The tags which describe the texts in the webpages is called meta tags.
+
+What are the various tags for header tag?
+Ans; 1) Meta tags
+     2) Title tag
+     3) Link tags
+_______________________________________________________________________________________________________________________________________________________________________
+
+									     PARAGRAPH TAG
+ 
+Reference to 5
+
+What is Emmet?
+ANs; A set of plug-ins for text editors that allow for high speed coding and editting in html.
+
+What is use of lorem keyword?
+Ans; It is used to produce dummy(ramdom text) text. SYNTAX = loremx (x= number of words requred) 
+_______________________________________________________________________________________________________________________________________________________________________
+
+									INLINE AND BLOCK ELEMENTS
+
+What is Inline element?
+Ans; A Inline element refers to the elements which only takes the required amount of space and does not keep un-used space. 
+
+What is block element ?
+Ans; A block element refers to the elements which takes up the space of a entire line even if the space remains unused. 
+_______________________________________________________________________________________________________________________________________________________________________
+
+									 ID AND CLASSES IN HTML
+
+What is ID ?
+Ans; It is the name given to a particular element which can be used for designing that element using CSS.
+
+What is Class?
+Ans; It is like a common name which is given to various elements and is used to give designs to them. We can also say that it is 
+just like a user made function of C language but for CSS
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                             HTML ENTITIES
+What is HTML entities?
+Ans;An HTML entity is a piece of text ("string") that begins with an ampersand ( & ) and ends with a semicolon ( ; ). 
+Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), 
+and invisible characters (like non-breaking spaces)
+
+NOTE: search in google for various Html entities.
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                             SEMANTIC TAGS
+
+What is semantic tags?
+Ans; 

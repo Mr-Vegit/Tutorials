@@ -1,0 +1,49 @@
+@media only screen and (max-width:450px) {
+    * {
+        overflow-x: hidden;
+    }
+    /* .container {
+        max-width: 2-rem;
+    } */
+    #navbar {
+        display: none;
+        visibility: hidden;
+    }
+    #topnav {
+        display: block;
+    }
+    #home>p:first-child {
+        font-size: 40px;
+        margin: 0px;
+    }
+    #con_1_para {
+        font-size: 20px;
+    }
+    #recentul li img {
+        margin: 2px;
+    }
+    #topnav #myLinks {
+        display: block;
+    }
+    .aboutme {
+        position: relative;
+    }
+    .container-sign {
+        height: 55rem;
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+        height: 33rem;
+        justify-content: center;
+        /* align-self: center; */
+        margin: 0px;
+    }
+    .login li {
+        margin: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 200px;
+        /* margin-top: 5px; */
+    }
+}

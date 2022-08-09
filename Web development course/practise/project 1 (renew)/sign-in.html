@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/nav-about.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <script src="./css/nav.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        .aboutme {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body class="container-sign">
+    <div>
+
+        <nav id="navbar">
+            <ul>
+                <li id="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.jpg" alt="logo">
+                    </a>
+                </li>
+                <li><a href="index.html">Vegit</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li class="three-lines">
+                    <a><img src="./img/three-lines.jpg" alt="three-lines"></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="topnav">
+            <div class="active">
+                <a href="index.html">
+                    <img src="./img/logo.jpg" alt="logo">
+
+                </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="./img/three-lines.jpg" alt="three-lines">
+                </a>
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Vegit</a>
+                <a href="collection.html">Collection</a>
+                <a href="#">Contact us</a>
+                <a href="sign-in.html">Sign In</a>
+            </div>
+        </div>
+        <div class="length_of_signin">
+
+            <div class="sign_head">
+                <p> Sign In </p>
+            </div>
+            <div class="signin-2">
+
+                <ul class="login">
+                    <li>
+                        <label for="email" id="myemail_">Email</label>
+                        <input type="email" name="myemail" id="email">
+                    </li>
+                    <li>
+                        <label for="Password" id="mypass_">Password</label>
+                        <input type="password" name="Mypassword" id="Password">
+                    </li>
+                    <li class="create">Dont have an account?<a href="create-account.html">Click here</a></li>
+                    <li><input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="aboutme">
+            COPYRIGHT RESERVED BY @mrvegit.live
+        </p>
+    </div>
+</body>
+
+</html>

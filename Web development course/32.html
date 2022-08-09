@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 240px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+        input[type="email"] {
+            color: yellow;
+            border: 4px solid black;
+        }
+
+        /* a[target]{ practise not retaled to anything
+            font-size: 56px;
+            background-color: black;
+            color: transparent;
+        } */
+        a[target] {
+            font-size: 34px;
+            color: violet;
+        }
+
+        a[target="_self"] {
+            font-size: 15 px;
+            color: rgb(202, 0, 152);
+        }   
+
+        /* this will use css for the 3rd child */
+        /* li:nth-child(3){
+            color: cyan;
+        } */
+        
+        /* li:nth-child(2n+0){
+            color: red;
+        } */
+        
+        /* li:nth-child(3n+3){
+            color: red;
+        } */
+        
+        /* odd child */
+        /* li:nth-child(odd){
+            color: yellow;
+        } */
+
+        /* even child */
+        /* li:nth-child(even){
+            color: yellow;
+        } */
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://youtube.com" target="_blank">Go to youtube</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <Form class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+
+        </Form>
+        <ul>
+            <li class="item" id="item-1">Item-1</li>
+            <li class="item" id="item-2">Item-2</li>
+            <li class="item" id="item-3">Item-3</li>
+            <li class="item" id="item-4">Item-4</li>
+            <li class="item" id="item-5">item-5</li>
+            <li class="item" id="item-6">item-6</li>
+            <li class="item" id="item-7">item-7</li>
+            <li class="item" id="item-8">item-8</li>
+            <li class="item" id="item-9">item-9</li>
+            <li class="item" id="item-10">Item-10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

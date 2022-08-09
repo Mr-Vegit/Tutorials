@@ -1,0 +1,43 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+}
+
+
+/* navigation */
+
+.navbar {
+    background-color: rgb(9, 9, 110);
+    padding: 0px 10px 5px 7px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    overflow: auto;
+    margin: 0px 0px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 1% 2% 1% 1%;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar li a:hover {
+    background-color: rgb(83, 120, 243);
+}
+
+
+/* navigation complete */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <h3>forms in HTML</h3>
+    <form action="backend.php">
+        <!-- div tag is just like br take but is more recommended -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myeamil" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" name="mybirthday" id="dob">
+        </div>
+        <br>
+        <div>
+            <label for="Job">Job</label>
+            <select name="myjob" id="Job">
+                <option value="Software">Softare Engineer</option>
+                <option value="none"selected>None</option>
+                <option value="Game">Game Developer</option>
+                <option value="Graphics">Graphics Designer</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="salary">Expected Salary</label>
+            <input type="number" name="MySalary" id="salary">
+        </div>
+        <br>
+        <div>
+            Gender: Male: <input type="radio" name="MyGender"> Female: <input type="radio" name="MyGender"> Others: <input type="radio" name="MyGender">
+        </div>
+        <br>
+        <div>
+            Description:
+        </div>
+        <div>
+            <textarea name="Mydescption" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="el">Are you Eligible?</label>
+            <input type="checkbox" name="Myeligibility" id="el">
+            <!-- to keep it checked by default write checked in attribute section -->
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <a href="/Computer Language courses/code with harry/Web development course/6.html">here</a> Nihil odio rem perspiciatis tempora! Nulla ipsum sed consectetur mollitia debitis possimus quod quae, recusandae vel excepturi sint. Dolore enim iure nulla!</p>
+</body>
+
+</html>

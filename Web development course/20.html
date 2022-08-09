@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* (*) is a universal selecter it is used to give style to all the elements in the body or we can say it is the default selecter the elements style will remain according to teh style given in it untill we overreide it below*/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            background-color: rgb(217, 214, 255);
+            border: 7px solid rgb(134, 126, 240);
+            /*padding-top: 20px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+                        or
+             padding: 20px 50px 10px 30px; */
+            /* margin / padding : top right bottom left*/
+            padding: 30px 40px;
+            /* padding / : X(top & bottom) Y(right & left))*/
+            margin: 30px 20px;
+            border-radius: 30px;
+            width: 700px;
+            box-sizing: border-box;
+        }
+        
+        p {
+            text-align: left;
+            align-content: center;   
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga quas debitis voluptate cumque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            consequatur!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga quas debitis voluptate cumque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            consequatur!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga quas debitis voluptate cumque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            consequatur!</p>
+    </div>
+</body>
+
+</html>
