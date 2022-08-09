@@ -67,13 +67,14 @@
  /* ACTUAL WORK STARTS */
  
  #section {
-     background-image: url(./img/bg.jpg);
+     background-image: url(./img/elephant.jpg);
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
      height: 30rem;
      border-bottom-left-radius: 20px;
      border-bottom-right-radius: 20px;
+     color: rgb(255, 255, 255);
  }
  
  .heading {
@@ -154,4 +155,19 @@
  
  #con_2>div>h1 {
      margin-bottom: 2rem;
+ }
+ /* last line  */
+ 
+ .aboutme {
+     display: block;
+     text-align: center;
+     /* position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; */
+     background-color: black;
+     color: white;
+     padding: 20px;
+     font-size: 20px;
+     font-weight: bolder;
  }
