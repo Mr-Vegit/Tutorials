@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+    <style>
+        .container {
+            font-size: 30px;
+            padding: 40px;
+            background-color: bisque;
+            border: 2px solid green;
+            margin: 4px;
+            text-align: center;
+        }
+
+        #lemon {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        The current Time is <span id="lemon"></span>
+    </div>
+    <script>
+        console.log("this is a Date & Time Tutorial");
+        let now = new Date();
+        console.log(now);
+
+        let date = new Date(2000);// it will show you a date of 1970 which was taken as reference for this function and what you write inside () will be taken as milli-second and time will increase by that amount in this function
+        console.log(date);
+
+        // let newdt = new Date("2029-09-22");
+        // console.log(newdt);
+
+        // let newdt = new Date( year, months , date , hours , minutes , seconds , milliseconds);
+        let newdt = new Date(2300, 05, 25, 19, 44, 23, 48);
+        console.log(newdt);
+        // let yr = new Date().getFullYear();// feasable option
+        let yr = newdt.getFullYear();//use name.getFullYear() not newDate.getFullYear();
+        let mth = newdt.getMonth();
+        let dt = newdt.getDate();
+        let dy = newdt.getDay();
+        let hr = newdt.getHours();
+        let mnt = newdt.getMinutes();
+        let snd = newdt.getSeconds();
+        console.log("The year is ", yr);
+        console.log("The Month is ", mth);
+        console.log("The Date is ", dt);
+        console.log("The Day is ", dy);
+        console.log("The Hour is ", hr);
+        console.log("The Minutes is ", mnt);
+        console.log("The Second is ", snd);
+        newdt.setDate(39)// it has in-built autocorrect
+        newdt.setMinutes(189) // it has in-built autocorrect
+        console.log(newdt);
+        let tm = Date.now() // it gives the time passed after the referenced date in milliseconds
+        function UpdateTime() {
+            // first trick
+            //    time = new Date();
+            // console.log(time);
+            // document.getElementById('time').innerHTML=time;
+
+            // second trick
+            lemon.innerHTML = new Date();
+        }
+        setInterval(UpdateTime, 1000);
+
+    </script>
+</body>
+
+</html>
