@@ -12,14 +12,16 @@
 
     </div>
     <script>
-        let greet = ()=> {
-            console.log('Good Morning');
-        };
+        // let greet = ()=> {
+        //     console.log('Good Morning');
+        // };
+        let greet = ()=> console.log('Good Morning');
         
         // let sum = (a, b)=>{
         //     return a+b;
         // };
-        let sum3 = (a, b)=> a+b;
+        let sum3 = (a, b)=> a+b;      
+        let half = a => a/2;
         
         // function greet() {
         //     console.log('Good Morning');
@@ -28,6 +30,17 @@
         setTimeout(() => {
             console.log("We are inside SetTimeOut");
         }, 3000);
+
+        let obj={
+            greeting:"Good Morning",
+            names: ["Harry" ,"Rohan", "SkillF","DjKhalidi"],
+            speak(){
+                this.names.forEach( (student)=>{
+                    console.log(this.greeting + " Kabab me " + student );
+                })
+            }
+        }
+        obj.speak();
     </script>
 </body>
 </html>
