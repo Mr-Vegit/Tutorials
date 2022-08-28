@@ -24,9 +24,8 @@
     </style>
 </head>
 
-<body class="container-sign">
-    <div>
-
+<body>
+    <div class="container">
         <nav id="navbar">
             <ul>
                 <li id="logo">
@@ -60,45 +59,47 @@
                 <a href="sign-in.html">Sign In</a>
             </div>
         </div>
-        <div class="length_of_signin">
-
-            <div class="sign_head">
-                <p> Sign In </p>
-            </div>
-            <div class="signin-2">
-
-                <!-- <div class="letter-image">
-                    <div class="animated-mail">
-                        <div class="back-fold"></div>
-                        <div class="letter">
-                            <div class="letter-border"></div>
-                            <div class="letter-title"></div>
-                            <div class="letter-context"></div>
-                            
-                            <div class="letter-stamp">
-                                <div class="letter-stamp-inner"></div>
-                            </div>
+        <div class="sign_head">
+            <p> Sign In </p>
+        </div>
+        <!--   
+            <div class="letter-image">
+                <div class="animated-mail">
+                    <div class="back-fold"></div>
+                    <div class="letter">
+                        <div class="letter-border"></div>
+                        <div class="letter-title"></div>
+                        <div class="letter-context"></div>
+                        
+                        <div class="letter-stamp">
+                            <div class="letter-stamp-inner"></div>
                         </div>
-                        <div class="top-fold"></div>
-                        <div class="body"></div>
-                        <div class="left-fold"></div>
                     </div>
-                    <div class="shadow"></div> -->
-            </div>
-            <ul class="login">
-                <li>
-                    <label for="email" id="myemail_">Email</label>
-                    <input type="email" name="myemail" id="email" class="spaced">
-                </li>
-                <li>
-                    <label for="Password" id="mypass_">Password</label>
-                    <input type="password" name="Mypassword" id="Password" class="spaced">
-                </li>
-                <li class="create">Dont have an account?<a href="create-account.html">Click here</a></li>
-                <li><input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </li>
-            </ul>
+                    <div class="top-fold"></div>
+                    <div class="body"></div>
+                    <div class="left-fold"></div>
+                </div>
+                <div class="shadow"></div>
+            -->
+        <div class="signin-2">
+            <form action="backend.php" id="forms">
+                <ul class="login">
+                    <li>
+                        <label for="email" id="myemail_">Email</label>
+                        <input type="email" name="myemail" id="email" class="spaced">
+                    </li>
+                    <li>
+                        <label for="Password" id="mypass_">Password</label>
+                        <input type="password" name="Mypassword" id="Password" class="spaced">
+                    </li>
+                    <li class="create">
+                        Dont have an account?<a href="create-account.html">Click here</a>
+                    </li>
+                    <li><input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </li>
+                </ul>
+            </form>
         </div>
     </div>
     <p class="aboutme">

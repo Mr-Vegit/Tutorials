@@ -33,8 +33,12 @@
     .aboutme {
         position: relative;
     }
-    .container-sign {
-        height: 55rem;
+    .sign_head{
+        text-align: center;
+        padding: 0px;
+    }
+    .sign_head p{
+        font-size: 50px;
     }
     .login {
         display: flex;
