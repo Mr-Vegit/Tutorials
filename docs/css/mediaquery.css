@@ -19,7 +19,12 @@
     #con_1_para {
         font-size: 20px;
     }
-    #recentul li img {
+    /* #recent{
+        height: 30rem;
+    } */
+    .recentul li img {
+        height: 150px;
+        width: 170px;
         margin: 2px;
     }
     #topnav {

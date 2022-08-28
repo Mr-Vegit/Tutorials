@@ -57,7 +57,7 @@
 /* second section - home */
 
 #recent {
-    height: 25rem;
+    height: 30rem;
 }
 
 #recent>p {
@@ -67,7 +67,7 @@
     font-family: 'Mochiy Pop One', sans-serif;
 }
 
-#recentul {
+.recentul {
     margin-top: 30px;
     display: flex;
     list-style: none;
@@ -76,15 +76,17 @@
     font-family: 'Edu TAS Beginner', cursive;
 }
 
-#recentul li {
+.recentul li {
     text-align: center;
     margin: auto;
 }
 
-#recentul li img {
+.recentul li img {
     margin: 10px 50px;
-    height: 170px;
-    width: 200px;
+    height: 270px;
+    width: 300px;
+    /* height: 170px;
+    width: 200px; */
 }
 
 
