@@ -2,14 +2,26 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
+body {    
     color: white;
+    background-color: black;
 }
 
+.container {
+    display: block;
+    border: 2px solid white;
+    margin: 50px auto;
+    padding: 8px 7px;
+    width: 50%;
+    border-radius: 19px;
+}
+
+.container h1 {
+    text-align: center;
+}
 .container-1 {
     margin: 0px;
     padding: 0px;
@@ -17,11 +29,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50rem;
 }
 
 .header {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left {
@@ -45,11 +58,19 @@ body {
 }
 
 .right {
-    margin: 20px;
-    /* border: 2px solid rgb(36, 160, 5); */
-    right: 35px;
-    top: 34px;
-    height: 50px;
+    display: flex;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.right a img {
+    filter: invert(100%);
+    width: 55px;
 }
 
 .navbar {
@@ -93,21 +114,10 @@ body {
     background-color: grey;
 }
 
-.right a img {
-    filter: invert(100%);
-    width: 55px;
-}
-
-.container {
-    display: block;
-    border: 2px solid white;
-    margin: 140px auto;
-    padding: 8px 7px;
-    width: 30%;
-    border-radius: 19px;
-}
-
-.container h1 {
+.container h1{
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -129,15 +139,4 @@ body {
     padding: 12px 0px;
     margin: 33px auto;
     font-size: 29px;
-}
-
-.right {
-    display: flex;
-    background-color: black;
-    font-size: 15px;
-    color: white;
-    padding: 10px;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
 }
