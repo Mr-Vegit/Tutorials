@@ -53,8 +53,7 @@ body {
     display: flex;
     justify-content: center;
     /* border: 2px solid rgb(232, 255, 28); */
-    margin: 20px auto;
-    width: 40%;
+    margin: 0px auto;
 }
 
 .right {
@@ -80,12 +79,12 @@ body {
 
 .navbar li {
     display: inline-block;
-    padding: 0px 18px;
-    font-size: 1.5rem;
+    padding: 0px 40px;
 }
 
 .navbar li a {
     color: white;
+    font-size: 35px;
     text-decoration: none;
     font-family: 'Ephesis', cursive;
     /* padding: 34px 23px;  */
