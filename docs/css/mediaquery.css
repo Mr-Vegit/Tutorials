@@ -1,67 +1,70 @@
-@media only screen and (max-width:450px) {
-    * {
-        overflow-x: hidden;
-    }
-    /* .container {
+@media only screen and (max-width: 450px) {
+  * {
+    overflow-x: hidden;
+  }
+  /* .container {
         max-width: 2-rem;
     } */
-    #navbar {
-        display: none;
-        visibility: hidden;
-    }
-    #topnav {
-        display: block;
-    }
-    #home>p:first-child {
-        font-size: 40px;
-        margin: 0px;
-    }
-    #con_1_para {
-        font-size: 20px;
-    }
-    /* #recent{
+  #navbar {
+    display: none;
+    visibility: hidden;
+  }
+  #topnav {
+    display: block;
+  }
+  #home > p:first-child {
+    font-size: 40px;
+    margin: 0px;
+  }
+  #con_1_para {
+    font-size: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  /* #recent{
         height: 30rem;
     } */
-    .recentul li img {
-        height: 150px;
-        width: 170px;
-        margin: 2px;
-    }
-    #topnav {
-        display: block;
-    }
-    .aboutme {
-        position: relative;
-    }
-    .sign_head{
-        text-align: center;
-        padding: 0px;
-    }
-    .sign_head p{
-        font-size: 50px;
-    }
-    .login {
-        display: flex;
-        flex-direction: column;
-        height: 33rem;
-        justify-content: center;
-        align-self: center;
-        margin: 0px;
-    }
-    .login li {
-        margin-top: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-        height: 200px;
-        font-size: 15;
-        align-self: center;
-        align-items: center;
-        /* margin-top: 5px; */
-        display: flex;
-    }
-    .spaced {
-        height: 30px;
-        width: 230px;
-        border-radius: 10px;
-    }
+  .recentul li img {
+    height: 150px;
+    width: 170px;
+    margin: 2px;
+  }
+  #topnav {
+    display: block;
+  }
+  .aboutme {
+    position: relative;
+  }
+  .sign_head {
+    text-align: center;
+    padding: 0px;
+  }
+  .sign_head p {
+    font-size: 50px;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    height: 33rem;
+    justify-content: center;
+    align-self: center;
+    margin: 0px;
+  }
+  .login li {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 200px;
+    font-size: 15;
+    align-self: center;
+    align-items: center;
+    /* margin-top: 5px; */
+    display: flex;
+  }
+  .spaced {
+    height: 30px;
+    width: 230px;
+    border-radius: 10px;
+  }
 }
