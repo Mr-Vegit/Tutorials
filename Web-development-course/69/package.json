@@ -1,0 +1,20 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "This is the first package created by Mr-Vegit",
+  "main": "69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "Vegit",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "~1.3.2"
+  },
+  "devDependencies": {
+    "nodemon": ">2.0.10"
+  }
+}
