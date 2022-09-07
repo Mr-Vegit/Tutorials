@@ -1,28 +1,23 @@
 const express = require("express");
-
+const path = require('path');
 const app =express();
 const port = 80;//localhost 
 
-//For serving static files
-app.use('/static', express.static('static'))
+// EXPRESS SPECIFIC STUFF
+app.use('/static', express.static('static')); //For serving static files
 
-app.get("/",(req,res)=>{
-  res.status(200).send("This is homepage of my first express app with Vegit");  
-});
+// PUG SPECIFIC STUFF
+app.set('view engine', 'pug'); // set the template engine as pug
+app.set('views',path.join(__dirname,'templates')); //set the views directory
 
-app.get("/about",(req,res)=>{
-  res.send("This is about page of my first express app with Vegit");  
-});
-app.get("/this",(req,res)=>{
-  res.status(404).send("this page is not found");  
-});
+//END_POINTS
+app.get('/',( req, res)=>{
+    const con = "This is the best content available in the internet so use it wisely"
+    const params = {'title':'Pubg is a great game',"content": con}
+    res.status(200).render('index.pug',params)
+})
 
-app.post("/about",(req,res)=>{
-  res.send("This is a post request about page of my first express app with Vegit");  
-});
-
-
-
+// START THE SERVER
 app.listen(port,()=>{
     console.log(`The application has started successfully on port ${port}`);
 });

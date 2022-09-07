@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using plain Html in Pug</title> -->
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+
+<body>
+    <nav id='navbar'>
+        <ul>
+            <li class='item' id='navitems-1'><a href="#">HOME</a></li>
+            <li class='item' id='navitems-2'><a href="#">TOP</a></li>
+            <li class='item' id='navitems-3'><a href="#">GAMES</a></li>
+            <li class='item' id='navitems-4'><a href="#">ANIME</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Get this Gym Membership for $60</h1>
+        <!-- <p>
+            | #{content}
+            |This is a plain html using pug 
+        </p> -->
+        <form action="/" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you"></textarea>
+        </form>
+    </div>
+</body>
+
+</html>
