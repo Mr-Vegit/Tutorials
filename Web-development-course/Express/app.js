@@ -3,6 +3,8 @@ const express = require("express");
 const app =express();
 const port = 80;//localhost 
 
+//For serving static files
+app.use('/static', express.static('static'))
 
 app.get("/",(req,res)=>{
   res.status(200).send("This is homepage of my first express app with Vegit");  
