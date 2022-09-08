@@ -58,7 +58,7 @@ input, textarea{
     font-weight: 900;
     font-size: 25px;
     color: white;
-    background-color: grey;
+    background-color: rgb(37, 33, 33);
     border-radius: 15px;
     cursor: pointer;
     outline: none;

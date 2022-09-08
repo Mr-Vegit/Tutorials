@@ -1,0 +1,14 @@
+
+client          = 
+His age         =  
+His gender is   = 
+His address is  = 
+More info       =  
+
+
+client          = 
+His age         =  
+His gender is   = 
+His address is  = 
+More info       =  
+
