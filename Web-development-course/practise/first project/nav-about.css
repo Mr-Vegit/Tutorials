@@ -20,7 +20,7 @@ body {
 }
 
 .navbar ul {
-    overflow: auto;
+    overflow-x:hidden ;
     margin: 0px 0px;
 }
 

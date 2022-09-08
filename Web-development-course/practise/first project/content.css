@@ -15,10 +15,10 @@
 }
 
 #sign_head {
-    padding: 80px 519px 60px 526px;
+    padding: 80px;
     color: rgb(255, 255, 255);
     background-color: rgb(32, 32, 32);
-    width: 304px;
+    text-align: center;
     font-family: 'Lobster', 'cursive';
 }
 
