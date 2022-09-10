@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  style
+    include ../static/home.css
+
+block content
+  section#introsection
+      div.big  Welcome to Vegit's Dance Academy
+      div.small Eat Dance Sleep Repeat
+  section#missionsection
+    h2 Our Mission
+    div.mission-container
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/img/1.png", alt="")
+          div.card-content
+            p This is the best dance academy of the universe
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img#second_image
+            img(src="/static/img/2.png", alt="" id="second_img")
+          div.card-content
+            p This is the best dance academy of the universe
+      div.card
+        h3 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="/static/img/3.png", alt="")
+          div.card-content
+            p This is the best dance academy of the universe
+  section#sponsersection
+    h2 Our Sponsers
+    div#sponsers
+      img(src="/static/img/logo1.png", alt="sponser-img" Class="spImage")
+      img(src="/static/img/logo2.png", alt="sponser-img" Class="spImage")
+      img(src="/static/img/logo3.png", alt="sponser-img" Class="spImage")
+      img(src="/static/img/logo4.png", alt="sponser-img" Class="spImage")

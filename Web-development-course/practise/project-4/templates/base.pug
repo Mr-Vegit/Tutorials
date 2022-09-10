@@ -1,0 +1,21 @@
+html
+  head
+    title Vegit Dance Academy
+    block scripts
+    block style 
+    style
+      include ../static/nav-footer.css
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/img/logo.png", alt="logo")
+          | VDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/contact") Contact Us]
+    block content
+    footer#footer
+      | Copyright © 2020 VegitDanceAcademy.org  |  All Rights Reserv
