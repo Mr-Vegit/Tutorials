@@ -4,7 +4,17 @@ block scripts
     script(src='/static/index.js')
 
 block style 
-    include ../static/contact.css
+    style
+        include ../static/contact.css
 
 block content
-    | This is contact 
+    div.container
+        h1 This is contact 
+        form(action="/contact", method="post", id="my_Form") 
+            input(type="text", class="my_input", name="client", placeholder="Enter your name")
+            input(type="phone", class="my_input", name="phone", placeholder="Enter your phone number")
+            input(type="email", class="my_input", name="email", placeholder="Enter your email")
+            input(type="text", class="my_input", name="address", placeholder="Enter your address")
+            input(type="text", class="my_input", name="concern", placeholder="Enter your concern")
+            button.btn
+                | Submit

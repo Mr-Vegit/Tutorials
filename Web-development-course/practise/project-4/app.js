@@ -20,6 +20,31 @@ app.get('/contact',( req, res)=>{
     const params = {}
     res.status(200).render('contact.pug',params)
 })
+app.post('/contact',(req,res)=>{
+    client = req.body.client
+    phone = req.body.phone
+    email = req.body.email
+    address= req.body.address
+    concern= req.body.concern
+    let User_Data = `
+client          = ${client}
+His phone number= ${phone} 
+His email is    = ${email}
+His address is  = ${address}
+More info       = ${concern} 
+
+`
+
+    // fs.writeFileSync('output.txt', User_Data) //way showed in the tutorial
+    fs.appendFile('output.txt', User_Data,(req,res)=>{
+        console.log("Your data is saved");
+    })
+
+    const params = {'message':'Your form has been submitted successfully'}
+    res.status(200).render('index.pug',params)
+
+})
+
 
 // START THE SERVER
 app.listen(port,()=>{
