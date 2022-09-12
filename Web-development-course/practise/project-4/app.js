@@ -1,4 +1,5 @@
 const express = require("express");
+const fs = require("fs");
 const path = require('path');
 const app = express();
 const port = 80;
@@ -41,7 +42,7 @@ More info       = ${concern}
     })
 
     const params = {'message':'Your form has been submitted successfully'}
-    res.status(200).render('index.pug',params)
+    res.status(200).render('home.pug',params)
 
 })
 
