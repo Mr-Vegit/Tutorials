@@ -4,6 +4,16 @@ const path = require('path');
 const app = express();
 const port = 80;
 
+const mongoose = require('mongoose');
+main().catch(err => console.log(err));
+async function main() {
+  await mongoose.connect('mongodb://localhost:27017/contactDance');
+  // use `await mongoose.connect('mongodb://user:password@localhost:27017/test');` if your database has auth enabled
+}
+// define mongoose schema
+const kittySchema = new mongoose.Schema({
+    name: String
+  });
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')); //For serving static files
 app.use(express.urlencoded())
