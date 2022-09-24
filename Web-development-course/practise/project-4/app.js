@@ -2,9 +2,10 @@ const express = require("express");
 const fs = require("fs");
 const path = require('path');
 const app = express();
-const bodyparser = require('body-parser');
 const port = 80;
 
+//required for mongoose database
+const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 async function main() {
