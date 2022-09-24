@@ -2,18 +2,25 @@ const express = require("express");
 const fs = require("fs");
 const path = require('path');
 const app = express();
+const bodyparser = require('body-parser');
 const port = 80;
 
 const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/contactDance');
+  await mongoose.connect('mongodb://localhost:27017/ContactDance');
   // use `await mongoose.connect('mongodb://user:password@localhost:27017/test');` if your database has auth enabled
 }
 // define mongoose schema
-const kittySchema = new mongoose.Schema({
-    name: String
+const ContactSchema = new mongoose.Schema({
+    client: String,
+    phone: String,
+    email: String,
+    address: String,
+    concern: String,
   });
+const Contact = mongoose.model('Contact', ContactSchema);
+
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')); //For serving static files
 app.use(express.urlencoded())
@@ -31,29 +38,15 @@ app.get('/contact',( req, res)=>{
     const params = {}
     res.status(200).render('contact.pug',params)
 })
+
+//save data in mongoose database
 app.post('/contact',(req,res)=>{
-    client = req.body.client
-    phone = req.body.phone
-    email = req.body.email
-    address= req.body.address
-    concern= req.body.concern
-    let User_Data = `
-client          = ${client}
-His phone number= ${phone} 
-His email is    = ${email}
-His address is  = ${address}
-More info       = ${concern} 
-
-`
-
-    // fs.writeFileSync('output.txt', User_Data) //way showed in the tutorial
-    fs.appendFile('output.txt', User_Data,(req,res)=>{
-        console.log("Your data is saved");
-    })
-
-    const params = {'message':'Your form has been submitted successfully'}
-    res.status(200).render('home.pug',params)
-
+    var myData = new Contact(req.body);
+    myData.save().then(()=>{
+        res.send("This item has been saved in the database")
+    }).catch(()=>{
+        res.status(404).send("item was not saved to the database")
+    });
 })
 
 
