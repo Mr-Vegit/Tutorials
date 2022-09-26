@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+/* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+/* font-family: 'Yeon Sung', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+/*  FRONT PAGE SECTION */
+#first-section{
+    display: flex;
+    /* height: 80%; */
+    height: 600px;
+    position:sticky;
+    background-image: url('../static/img/front-page-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding:0px 80px ;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#first-section::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#first-section h1{
+    font-size: 350%;
+    font-family: 'Yeon Sung', cursive;
+    padding-bottom:30px ;
+}
+
+#btn{
+    padding: 6px 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+	border: 2px solid white;
+	background-color: brown;
+	color: white;
+	margin: 17px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	cursor: pointer;
+    font-family: 'Yeon Sung', cursive;
+}
+
+/* Our Services section */
+#second-section{
+    height: 300px;
+    margin: 30px;
+}
+.heading{
+    margin: 20px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+#second-section-ul-items{
+    display: flex;
+    justify-content: center;
+}
+.second-section-items{
+    width: 30%;
+    height: 200px;
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid blue;
+    background-color:rgb(242, 242, 252);
+    border-radius: 20px ;
+}
+.second-section-items h2{
+    margin-top: 10px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.second-section-items>div{
+    display: flex;
+    height: 150px;
+}
+.second-section-items>div>img{
+    height: 70%;
+    margin: 10px;
+    border-radius: 30px;
+}
+.second-section-items>div>p{
+    margin: 5%;
+    width: 50%;
+    font-size: 20px;
+}
+
+/* DOAARS SECTION */
+#third-section{
+    margin: auto;
+    /* text-align: center; */
+    width: 90%;
+}
+#third-section>h2{
+    margin: 40px;
+}
+#third-section div{
+    display: flex;
+    justify-content: center;
+}
+.third-section-ul-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.third-section-items{
+    height: 300px;
+    width: 320px;
+    list-style: none; 
+    border-radius: 20px;
+    
+}
+.third-section-items img{
+    height: 300px;
+    width: 320px;
+    border-radius: 20px;
+}       
+.third-section-text{
+    text-align: center;
+    background-color: rgb(234, 233, 233);
+}
+.third-section-text>h2{
+    font-family: 'Yeon Sung', cursive;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+.third-section-text p{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+/* FOURTH SECTION */
+#fourth-section{
+    margin: 70px;
+}
+.fourth-section-rooms{
+    display: flex;
+    width: 1100px;
+    height: 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.fourth-section-items{
+    list-style: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Yeon Sung', cursive;
+    margin: 10px;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(41, 119, 255);
+    border-radius: 20px;
+    font-size: 40px;
+}
+.fourth-section-items h1{
+    font-size: 30px;
+
+}
+

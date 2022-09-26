@@ -1,0 +1,90 @@
+extends base.pug
+
+//- block scripts
+//-   script(src='/static/index.js')
+
+block style 
+  style
+    include ../static/home.css
+
+block content
+  section#first-section 
+    h1 Welcome to Panchadeep Hotel
+    p A far but close to nature is what we call our place to be. Situated at the mystical and most beautiful part of Dooars, Panchadeep Bhawan 
+    p is one of the visited hotels in North Bengal. After serving for Several years we would like to call 
+    p ourselfselves the expert in this field .
+    a#btn(href="https://api.whatsapp.com/send/?phone=918388836489&text&type=phone_number&app_absent=0") book a room now!!!
+  section#second-section 
+    h2.heading Our Services 
+    ul#second-section-ul-items 
+      li.second-section-items
+        h2 Great Restaurant
+        div 
+          img(src="../static/img/restaurant.jpg") 
+          p We provide a wide range of delicious food and drinks
+      li.second-section-items 
+        h2 Deluxe Rooms
+        div 
+          img(src="../static/img/room.jpg") 
+          p Our rooms are sleek and showcase understated comfort and design.
+      li.second-section-items 
+        h2 Amazing Marraige hall
+        div 
+          img(src="../static/img/marraige.jpg") 
+          p We provide top notch quality halls for your special day
+  section#third-section 
+    h2.heading Visit Dooars
+    div 
+      ul.third-section-ul-items 
+        li.third-section-items
+          img(src="../static/img/Chilapata.jpg")
+        li.third-section-items.third-section-text
+          h2 Chilapata Forest
+          p Chilapata Forest is a dense forest close to Jaldapara Wildlife Sanctuary in Dooars, West Bengal. It is nearly 22 km from Alipurduar and just a few minutes away from Hasimara town. This forest is used by the Elephants as a corridor to migrate between Jaldapara and the Buxa Tiger Reserve and ultimately to Bhutan. Nature here is rich with wildlife and various types of nora and fauna. Angling, Birding, Safari are the few options.       
+      ul.third-section-ul-items 
+        li.third-section-items.third-section-text    
+          h2 Cooch Behar Palace
+          p Cooch Behar Palace, also called the Victor Jubilee Palace, is a landmark in Cooch Behar city, West Bengal. It was modeled after Buckingham Palace in London and was built in 1887, during the reign of Maharaja Nripendra Narayan of Koch dynasty.             
+        li.third-section-items       
+          img(src="../static/img/Cooch-Behar-Palace.jpg")
+      ul.third-section-ul-items 
+        li.third-section-items       
+          img(src="../static/img/Jaldapara.jpg")
+        li.third-section-items.third-section-text       
+          h2 Jaldapara Wildlife Sanctuary
+          p Jaldapara Wildlife Sanctuary is habitats of the rare one-horned rhinoceros, the mighty bison, leopard, spotted deer, sambar, hog deer, reptiles, huge wild tuskers, wild boars, and the rarest variety of birds, including peacocks. Elephant riding through the Jaldapara forest in search of wild animals, particularly the one-horned rhinos, is specially popular.             
+      ul.third-section-ul-items 
+        li.third-section-items.third-section-text                  
+          h2 Jayanti Village
+          p Jayanti is a small forest village within Buxa Tiger Reserve in Alipurduar district of West Bengal, India. It is located along the Jayanti River, forming a natural border with the Bhutan hills. It is popular with hikers for its beautiful views of the surrounding landscape and wild fountains.              
+        li.third-section-items       
+          img(src="../static/img/Jayanti.jpg")
+  section#fourth-section
+    h2.heading Why Choose Us?
+    ul.fourth-section-rooms
+      li.fourth-section-items 
+        i.fas &#xf2e7;
+        h1 Restaurant
+      li.fourth-section-items 
+        i.fas &#xf26c;
+        h1 Tv in Rooms
+      li.fourth-section-items 
+        i.fas &#xf593;
+        h1 Gyeser in room
+      li.fourth-section-items 
+        i.fas &#xf1eb;
+        h1 Free Wifi
+      li.fourth-section-items 
+        i.fas &#xf0f0;
+        //- <i style="font-size:24px" class="fa">&#xf0fd;</i>
+        h1 Doctors on Call
+      li.fourth-section-items 
+        i.fa-solid.fa-phone-square
+        h1 Intercom Facility
+      li.fourth-section-items 
+        i.fas &#xf0c0;
+        h1.col Conference Hall
+      li.fourth-section-items 
+        i.fas &#127893;
+        h1 Wedding Hall 
+ 

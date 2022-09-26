@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+/* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+/* font-family: 'Yeon Sung', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    height: 4rem;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* Navigation Bar: Logo and Image */
+
+.logo {
+    margin: 10px 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 59px;
+    width: 59px;
+    margin: 3px 6px;
+    border-radius: 100%;
+}
+.logo p{
+    margin-left: 5px;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+
+}
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    justify-content: center;
+    margin-right: 160px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.three-lines{
+    filter: invert(1);
+    font-size: 50px;
+	padding: 6px;
+	height: 35px;
+	margin: 0px 50px;
+    border-radius: 10px;
+}
+.three-lines:hover {
+    filter: invert(0);
+    /* color: black; */
+
+    background-color: white;
+}
+
+/* Footer */
+
+#footer{
+    background-color: black;
+    height: 440px;
+    font-family: 'Yeon Sung', cursive;
+    color: white;
+}
+.footer-1{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px ;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid rgb(74, 73, 73);
+}
+.footer-1 p{
+    font-size: 40px;
+    
+}
+.footer-1 ul{
+    display: flex;
+}
+.footer-1 ul li{
+    list-style: none;
+    font-size: 30px;
+    margin: 5px 13px;
+}
+.footer-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    /* text-align: start; */
+}
+.footer-2 div{
+    margin: 20px;
+}
+.footer-2 h1{
+    margin: 20px 0px;
+}
+.footer-2 li{
+    color: grey;
+    list-style: none;
+    font-size: 18px;
+}
+.footer-2 li:hover{
+    color: white;
+}
+.footer-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(74, 73, 73);
+    color: grey;
+    height: 60px;
+    font-size: 18px;
+}
