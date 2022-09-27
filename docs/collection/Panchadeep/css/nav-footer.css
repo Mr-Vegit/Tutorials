@@ -18,7 +18,7 @@ html{
     top: 0px;
     width: 100%;
     z-index: 1;
-    height: 4rem;
+    height: 5.5rem;
 }
 
 #navbar::before {
@@ -84,8 +84,8 @@ html{
 .three-lines{
     filter: invert(1);
     font-size: 50px;
-	padding: 6px;
-	height: 35px;
+	padding: 0px 10px;
+	height: 60px;
 	margin: 0px 50px;
     border-radius: 10px;
     cursor: pointer;
