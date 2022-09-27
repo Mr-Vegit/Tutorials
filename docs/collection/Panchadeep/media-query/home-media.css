@@ -57,12 +57,12 @@
   }
   .fourth-section-rooms {
     display: flex;
-    width: 450px;
-    height: 900px;
+    width: 350px;
+    height: 650px;
   }
 
   .fourth-section-items {
-    width: 1500px;
-    height: 1500px;
+    width: 150px;
+    height: 150px;
   }
 }
