@@ -1,0 +1,48 @@
+@media only screen and (max-width: 470px) {
+  * {
+    overflow-x: hidden;
+  }
+  /* NAV-BAR */
+  .logo {
+    margin: 10px 8px;
+  }
+  #navbar {
+    height: 5.5rem;
+  }
+  #navbar ul {
+    display: none;
+  }
+  .three-lines {
+    height: 4rem;
+    margin: 0px 15px;
+  }
+
+  /* SIDE NAV-BAR */
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  /* FOOTER */
+  .footer-2 h1 {
+    font-size: 25px;
+  }
+
+  .footer-1 p {
+    font-size: 20px;
+  }
+  .footer-2 {
+    width: 106%;
+  }
+  .footer-2 li {
+    font-size: 14px;
+  }
+  .footer-1 ul li {
+    font-size: 19px;
+    margin: 5px 2px;
+  }
+  .footer-3 {
+    font-size: 12px;
+  }
+}

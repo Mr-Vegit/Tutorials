@@ -51,7 +51,7 @@ html{
     font-size: 1.3rem;
     font-family: 'Baloo Bhai', cursive;
     color: white;
-
+    
 }
 /* Navigation Bar: List Styling */
 
@@ -87,13 +87,60 @@ html{
 	height: 35px;
 	margin: 0px 50px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .three-lines:hover {
     filter: invert(0);
     /* color: black; */
-
+    
     background-color: white;
 }
+
+/* SIDE NAV BAR */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+.sidenav ul{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+    justify-content: space-between;
+}
+  
+  .sidenav a {
+    padding: 8px 6px 8px 8px ;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 80px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
 /* Footer */
 
@@ -155,3 +202,4 @@ html{
     height: 60px;
     font-size: 18px;
 }
+

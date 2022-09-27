@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/nav-footer.css">
-    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/nav-footer.css">
+    <link rel="stylesheet" href="./media-query/home-media.css">
+    <link rel="stylesheet" href="./media-query/nav-footer-media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav id="navbar">
-        <div class="logo"><img src="../static/img/logo.jpg" alt="MyOnlineMeal.com" />
+        <div class="logo"><img src="./img/logo.jpg" alt="PanchaDeep Bhavan.com" />
             <p>Panchadeep Bhavan</p>
         </div>
         <ul>
@@ -20,35 +24,47 @@
             <li class="item"><a href="#client-section">Clients</a></li>
             <li class="item"><a href="#contact">Contact Us</a></li>
         </ul>
-        <div class="logo three-lines">&equiv;</div>
+        <div class="logo three-lines" onclick="openNav()">&equiv;</div>
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <ul>
+            <li> <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times; </a></li>
+            <li> <a href="#">About </a></li>
+            <li> <a href="#">Services </a></li>
+            <li> <a href="#">Clients</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+
+    </div>
     <section id="first-section">
         <h1>Welcome to Panchadeep Hotel</h1>
         <p>A far but close to nature is what we call our place to be. Situated at the mystical and most beautiful part
-            of Dooars, Panchadeep Bhawan </p>
+            of
+            Dooars, Panchadeep Bhawan </p>
         <p>is one of the visited hotels in North Bengal. After serving for Several years we would like to call </p>
         <p>ourselfselves the expert in this field .</p><a id="btn"
             href="https://api.whatsapp.com/send/?phone=918388836489&amp;text&amp;type=phone_number&amp;app_absent=0">book
-            a room now!!!</a>
+            a
+            room now!!!</a>
     </section>
     <section id="second-section">
         <h2 class="heading">Our Services </h2>
         <ul id="second-section-ul-items">
             <li class="second-section-items">
                 <h2>Great Restaurant</h2>
-                <div> <img src="../static/img/restaurant.jpg" />
+                <div> <img src="./img/restaurant.jpg" />
                     <p>We provide a wide range of delicious food and drinks</p>
                 </div>
             </li>
             <li class="second-section-items">
                 <h2>Deluxe Rooms</h2>
-                <div> <img src="../static/img/room.jpg" />
+                <div> <img src=".img/room.jpg" />
                     <p>Our rooms are sleek and showcase understated comfort and design.</p>
                 </div>
             </li>
             <li class="second-section-items">
-                <h2>Amazing Marraige hall</h2>
-                <div> <img src="../static/img/marraige.jpg" />
+                <h2>Marraige hall</h2>
+                <div> <img src="./img/marraige.jpg" />
                     <p>We provide top notch quality halls for your special day</p>
                 </div>
             </li>
@@ -58,13 +74,15 @@
         <h2 class="heading">Visit Dooars</h2>
         <div>
             <ul class="third-section-ul-items">
-                <li class="third-section-items"><img src="../static/img/Chilapata.jpg" /></li>
+                <li class="third-section-items" id="third-section-img-1"></li>
                 <li class="third-section-items third-section-text">
                     <h2>Chilapata Forest</h2>
                     <p>Chilapata Forest is a dense forest close to Jaldapara Wildlife Sanctuary in Dooars, West Bengal.
-                        It is nearly 22 km from Alipurduar and just a few minutes away from Hasimara town. This forest
-                        is used by the Elephants as a corridor to migrate between Jaldapara and the Buxa Tiger Reserve
-                        and ultimately to Bhutan. Nature here is rich with wildlife and various types of nora and fauna.
+                        It
+                        is nearly 22 km from Alipurduar and just a few minutes away from Hasimara town. This forest is
+                        used
+                        by the Elephants as a corridor to migrate between Jaldapara and the Buxa Tiger Reserve and
+                        ultimately to Bhutan. Nature here is rich with wildlife and various types of nora and fauna.
                         Angling, Birding, Safari are the few options. </p>
                 </li>
             </ul>
@@ -72,30 +90,35 @@
                 <li class="third-section-items third-section-text">
                     <h2>Cooch Behar Palace</h2>
                     <p>Cooch Behar Palace, also called the Victor Jubilee Palace, is a landmark in Cooch Behar city,
-                        West Bengal. It was modeled after Buckingham Palace in London and was built in 1887, during the
-                        reign of Maharaja Nripendra Narayan of Koch dynasty. </p>
+                        West
+                        Bengal. It was modeled after Buckingham Palace in London and was built in 1887, during the reign
+                        of
+                        Maharaja Nripendra Narayan of Koch dynasty. </p>
                 </li>
-                <li class="third-section-items"> <img src="../static/img/Cooch-Behar-Palace.jpg" /></li>
+                <li class="third-section-items" id="third-section-img-2"></li>
             </ul>
             <ul class="third-section-ul-items">
-                <li class="third-section-items"> <img src="../static/img/Jaldapara.jpg" /></li>
+                <li class="third-section-items" id="third-section-img-3"></li>
                 <li class="third-section-items third-section-text">
                     <h2>Jaldapara Wildlife Sanctuary</h2>
                     <p>Jaldapara Wildlife Sanctuary is habitats of the rare one-horned rhinoceros, the mighty bison,
                         leopard, spotted deer, sambar, hog deer, reptiles, huge wild tuskers, wild boars, and the rarest
                         variety of birds, including peacocks. Elephant riding through the Jaldapara forest in search of
-                        wild animals, particularly the one-horned rhinos, is specially popular. </p>
+                        wild
+                        animals, particularly the one-horned rhinos, is specially popular. </p>
                 </li>
             </ul>
             <ul class="third-section-ul-items">
                 <li class="third-section-items third-section-text">
                     <h2>Jayanti Village</h2>
                     <p>Jayanti is a small forest village within Buxa Tiger Reserve in Alipurduar district of West
-                        Bengal, India. It is located along the Jayanti River, forming a natural border with the Bhutan
-                        hills. It is popular with hikers for its beautiful views of the surrounding landscape and wild
-                        fountains. </p>
+                        Bengal,
+                        India. It is located along the Jayanti River, forming a natural border with the Bhutan hills. It
+                        is
+                        popular with hikers for its beautiful views of the surrounding landscape and wild fountains.
+                    </p>
                 </li>
-                <li class="third-section-items"> <img src="../static/img/Jayanti.jpg" /></li>
+                <li class="third-section-items" id="third-section-img-4"></li>
             </ul>
         </div>
     </section>
@@ -175,5 +198,7 @@
         </div>
         <div class="footer-3">Copyright © 2022 panchadeepbhawan.com | All rights reserved | Designed by Mr-Vegit</div>
     </footer>
+    <script src="./Js/navbar.js"></script>
 </body>
+
 </html>

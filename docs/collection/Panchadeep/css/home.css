@@ -13,7 +13,7 @@
     /* height: 80%; */
     height: 600px;
     position:sticky;
-    background-image: url('../static/img/front-page-1.jpg');
+    background-image: url('../img/front-page-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,11 +125,30 @@
     border-radius: 20px;
     
 }
-.third-section-items img{
-    height: 300px;
-    width: 320px;
-    border-radius: 20px;
-}       
+#third-section-img-1{
+    background-image: url('../img/Chilapata.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}      
+#third-section-img-2{
+    background-image: url('../img/Cooch-Behar-Palace.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}      
+#third-section-img-3{
+    background-image: url('../img/Jaldapara.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}      
+#third-section-img-4{
+    background-image: url('../img/Jayanti.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}      
 .third-section-text{
     text-align: center;
     background-color: rgb(234, 233, 233);
@@ -175,6 +194,8 @@
 }
 .fourth-section-items h1{
     font-size: 30px;
-
 }
+
+
+
 
