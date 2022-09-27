@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap');
 /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
 /* font-family: 'Yeon Sung', cursive; */
 * {
@@ -50,7 +51,7 @@ html{
 .logo p{
     margin-left: 5px;
     font-size: 1.3rem;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     color: white;
     
 }
