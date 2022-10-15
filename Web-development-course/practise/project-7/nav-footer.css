@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* font-family: 'Audiowide', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+/* font-family: 'Baumans', cursive; */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("./img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navbar{
+    display: flex;
+	list-style: none;
+    padding: 10px;
+    background-color: black;
+}
+.item{
+    margin: 16px 18px;
+}
+.item a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Baumans', cursive;
+}
+.item a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+

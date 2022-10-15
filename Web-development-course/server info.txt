@@ -1,0 +1,17 @@
+Cmd trick
+use  ssh root@ip-address for logging in your server through cmd or powershell
+
+linux commmands
+
+ls - shows all the files and folders present in the current folder
+pwd - IT shows the present working directory or the folder in which you are currently working on
+cd - it takes you to the required directory or folder
+ eg -  cd / - for taking you to the root or home directory 
+	 cd name - takes you to the name folder which is present in the current directory
+	 cd /name -  takes you to the name folder present in the root directory
+	 cd ../ - takes you to the outer folder of the current directory 
+
+NOTE: Your website files are stored in cd/var/www/
+Use vim file.extension to insert and edit your website files in the terminal
+once you enter the file using vim use ' i ' to edit the website files
+Then to exit use esc key and type ' :wq ' 
