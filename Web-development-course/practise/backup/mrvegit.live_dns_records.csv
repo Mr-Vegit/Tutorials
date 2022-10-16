@@ -1,0 +1,15 @@
+Type,Host,Answer,TTL,Priority
+A,mrvegit.live,185.199.108.153,300,
+A,mrvegit.live,185.199.109.153,300,
+A,mrvegit.live,185.199.110.153,300,
+A,mrvegit.live,185.199.111.153,300,
+AAAA,mrvegit.live,2606:50c0:8000::153,300,
+AAAA,mrvegit.live,2606:50c0:8001::153,300,
+AAAA,mrvegit.live,2606:50c0:8002::153,300,
+AAAA,mrvegit.live,2606:50c0:8003::153,300,
+MX,mrvegit.live,mx1.titan.email,3600,10
+MX,mrvegit.live,mx2.titan.email,3600,20
+TXT,mrvegit.live,google-site-verification=tX7yUjttL7Ru-ny1Xpj1Nsu34f9OFNEAdou29FxhPrM,3600,
+TXT,mrvegit.live,"v=spf1 include:spf.titan.email include:_spf.google.com ~all",3600,
+TXT,titan1._domainkey.mrvegit.live,"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCGanF4+VnDBo0a846i2QOKTTXeNAR5YS08SMEDFGnejj2BQhcr0epMep1qu+5hOdcKQbQ77fKS+FwARB1QVdtHlqOn8UFCBMF6Koxh5N5rHA3465ji7+3TwS3359oEMbkngpsXzD445ZKYwsdQjkp1Z4TM0+qiCVRAlC/sszBxbQIDAQAB",300,
+CNAME,www.mrvegit.live,mr-vegit.github.io,600,
