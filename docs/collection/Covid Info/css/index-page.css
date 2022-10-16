@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* font-family: 'Audiowide', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+/* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+/* font-family: 'Yeon Sung', cursive; */
+.container{
+    width: 70%;
+    margin: 30px auto;
+    padding: 46px;
+    height: 57rem;
+    border-radius: 20px;
+    background-color: white;
+}
+.container h1,h2{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.container h2{
+    margin: 40px 0px 0px 0px;
+}
+.container h1{
+	margin: 0px;
+	font-size: 45px;
+	text-align: center;
+}
+.container p,li,h3,summary{
+    font-family: 'Yeon Sung', cursive;
+    /* font-size: 22px; */
+    
+}
+h3{
+    padding: 14px 0px;
+    font-size: 25px;
+}
+#dos-donts li{
+    font-size: 14px; 
+}
+details{
+    margin: 14px 0px ;
+}
+summary{
+    font-weight: 600;
+    font-size: 20px;
+}
