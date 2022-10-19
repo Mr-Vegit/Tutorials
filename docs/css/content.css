@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+/* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+/* font-family: 'Yeon Sung', cursive; */
 * {
     text-decoration: none;
     margin: 0;
@@ -55,40 +59,114 @@
 
 
 /* second section - home */
-
-#recent {
-    height: 30rem;
-}
-
-#recent>p {
-    margin-top: 20px;
-    color: rgb(27, 27, 108);
-    font-size: 30px;
-    font-family: 'Mochiy Pop One', sans-serif;
-}
-
-.recentul {
-    margin-top: 30px;
+#slider{
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 450px;
+    /* border: 3px solid black; */
     display: flex;
-    list-style: none;
-    font-size: 30px;
     justify-content: center;
-    font-family: 'Edu TAS Beginner', cursive;
+    align-items: center;
+    /* background-color: rgb(44, 44, 255); */
 }
-
-.recentul li {
-    text-align: center;
+.slider-container{
+    width: 1600px;
     margin: auto;
 }
+.slider-sub-container{
+    width: 85%;
+    margin: auto;
+}
+.slider-wrapper h1 {
+font-family: 'ZCOOL QingKe HuangYou', cursive;
 
-.recentul li img {
-    margin: 10px 50px;
-    height: 270px;
-    width: 300px;
-    /* height: 170px;
-    width: 200px; */
+    font-weight: 600;
+	margin: 20px 0px;
+	font-size: 50px;
+}
+.slider-manager{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+	width: 100%;
+}
+.slider-manager i{
+    color: white;
+    font-size: 3rem;
+}
+.slider-manager h3 {
+	font-size: 30px;
+}
+.slider-manager i:hover{
+    color: grey;
+}
+.previous, .next{
+    padding: 2px;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    border: 3px solid white;
+    background-color: black;
+    box-shadow: 0 0 5px #bbb;
+}
+.previous:hover, .next:hover{
+    border: 3px solid grey;
 }
 
+.slide-img{
+    width: 99%;
+    height: 250px;
+    border-radius: 7px;
+    border: 2px solid white;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgb( 0, 0, 0, 0.9) inset;
+}
+.slide-img a{
+    text-decoration: none;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.8s;
+    font-size: 2.5rem;
+    color: white;
+}
+.slide-img:hover a{
+opacity: 1;
+transform: scale(1);
+}
+@media(max-width:1600px){
+    .container{
+        width: 100%;
+    }    
+    
+}
+/* IMAGES ARE ADDED HERE */
+.img-1{
+    background-image: url("../img/gym-thumbnail.png");
+}
+.img-2{
+    background-image: url("../img/meals-thumbnail.png");
+}
+.img-3{
+    background-image: url("../img/hotel-thumbnail.png");
+}
+.img-4{
+    background-image: url("../img/covid-info.jpg");
+}
+.img-5{
+    background-image: url("../img/corona-map.jpg");
+}
 
 /* first section - collection */
 

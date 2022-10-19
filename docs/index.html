@@ -8,7 +8,8 @@
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page</title>
-    <script src="./css/nav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="./css/nav-about.css">
     <link rel="stylesheet" href="./css/content.css">
     <link rel="stylesheet" href="./css/mediaquery.css">
@@ -69,88 +70,112 @@
             </div>
 
         </div>
-        <div id="recent">
-            <p>RECENTS.....</p>
-            <ul class="recentul">
-                <li id="item-1">
-                    <a href="./collection/gym/1.html"><img src="./img/gym-thumbnail.png" alt="gym-thumbnail"></a>
+        <section id="slider">
+            <div class="slider-container">
+                <div class="slider-sub-container">
+                    <div class="slider-wrapper">
+                                <h1>Latest works</h1>
+                        <!-- IMPORTANT -->
+                        <div class="slider-manager">
+                            <button class="previous">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            </button>
+                            <div class="my-slider">
+                                <div class="slide">
+                                    <div class="slide-img img-1">
+                                        <a href="./collection/gym/1.html">learn more</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>Gym sign up page</h3>
+                                    </div>
+                                </div>
 
-                </li>
-                <li id="item-2">
-                    <a href="./collection/onlinemeals/meals.html"><img src="./img/meals-thumbnail.png"
-                            alt="meails-thumbnail"></a>
-                </li>
-                <li id="item-3" class=" hide">
-                    <a href="./collection/Geo-project/index2.html"><img src="./img/flora&fauna-thumbnail.png" alt="meails-thumbnail"></a>
-                </li>
-                <li id="item-4">
-                    <a href="./collection/Panchadeep/Index.html"><img src="./img/hotel-thumbnail.png" alt="meails-thumbnail"></a>
-                </li>
-                <li id="item-5">
-                    <a href="./collection/Covid-Info/index.html"><img src="./img/flora&fauna-thumbnail.png" alt="meails-thumbnail"></a>
-                </li>
-                <li id="item-6">
-                    <a href="./collection/Covid-map/index.html"><img src="./img/flora&fauna-thumbnail.png" alt="meails-thumbnail"></a>
-                </li>
-            </ul>
-            <ul class="recentul" style="margin-top: 0px;">
-                <li>
-                    <p>Gym sign up page</p>
-                </li>
-                <li>
-                    <p>Online meals store</p>
-                </li>
-                <li class=" hide">
-                    <p>Geography Project
-                    </p>
-                    <p>
-                        (Not completed)
-                    </p>
-                </li>
-                <li>
-                    <p>Panchadeep Hotel</p>
-                </li>
-                <li>
-                    <p>Covid Info</p>
-                </li>
-                <li>
-                    <p>Covid Map</p>
-                </li>
-            </ul>
-        </div>
-        <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+                                <div class="slide">
+                                    <div class="slide-img img-2">
+                                        <a href="./collection/onlinemeals/meals.html">learn more</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>Online meals store</h3>
+                                    </div>
+                                </div>
 
-        <!-- <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
-            <a itemprop='url' href=https://www.fiverr.com/mr_vegit rel="nofollow" target="_blank"
-                style='display: inline-block;'>
-                <div class='fiverr-seller-content'
-                    id='fiverr-seller-widget-content-ad7a01fa-3255-4980-9905-ebabd442ab9c' itemprop='contentURL'
-                    style='display: none;'></div>
-                <div id='fiverr-widget-seller-data' style='display: none;'>
-                    <div itemprop='name'>mr_vegit</div>
-                    <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
-                    <div itemprop='jobtitle'>Seller</div>
-                    <div itemprop='description'>I have 2 years of experience in developing websites .I am always eager
-                        to help people in creating their online website . For additional information about me and my
-                        work feel free to contact me</div>
+                                <div class="slide">
+                                    <div class="slide-img img-3">
+                                        <a href="./collection/Panchadeep/Index.html">learn more</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>Panchadeep Hotel</h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-img img-4">
+                                        <a href="./collection/Covid-Info/index.html">learn more</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>Covid Info</h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-img img-5">
+                                        <a href="./collection/Covid-map/index.html">learn more</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>Covid Map</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="next">
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
                 </div>
-            </a>
-        </div>
-
-        <script id='fiverr-seller-widget-script-ad7a01fa-3255-4980-9905-ebabd442ab9c'
-            src='https://widgets.fiverr.com/api/v1/seller/mr_vegit?widget_id=ad7a01fa-3255-4980-9905-ebabd442ab9c'
-            data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script> -->
-        <!-- <div class="con_3">
-            <p>contact us</p>
-
-        </div> -->
-
+            </div>
+        </section>
         <div>
             <p class="aboutme">
                 COPYRIGHT RESERVED BY @mrvegit.live
             </p>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="./css/nav.js"></script>
+    <script src="./css/slider.js"></script>
 </body>
 
 </html>
+<!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+
+<!-- <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+    <a itemprop='url' href=https://www.fiverr.com/mr_vegit rel="nofollow" target="_blank"
+    style='display: inline-block;'>
+    <div class='fiverr-seller-content'
+    id='fiverr-seller-widget-content-ad7a01fa-3255-4980-9905-ebabd442ab9c' itemprop='contentURL'
+            style='display: none;'></div>
+        <div id='fiverr-widget-seller-data' style='display: none;'>
+            <div itemprop='name'>mr_vegit</div>
+            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+            <div itemprop='jobtitle'>Seller</div>
+            <div itemprop='description'>I have 2 years of experience in developing websites .I am always eager
+                to help people in creating their online website . For additional information about me and my
+                work feel free to contact me</div>
+        </div>
+    </a>
+</div>
+
+<script id='fiverr-seller-widget-script-ad7a01fa-3255-4980-9905-ebabd442ab9c'
+    src='https://widgets.fiverr.com/api/v1/seller/mr_vegit?widget_id=ad7a01fa-3255-4980-9905-ebabd442ab9c'
+    data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script> -->
+<!-- <div class="con_3">
+    <p>contact us</p>
+
+</div> -->
