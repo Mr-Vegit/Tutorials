@@ -165,6 +165,9 @@ transform: scale(1);
     background-image: url("../img/covid-info.jpg");
 }
 .img-5{
+    background-image: url("../img/Dance-Academy.png");
+}
+.img-6{
     background-image: url("../img/corona-map.jpg");
 }
 
