@@ -9,7 +9,7 @@ const slider = tns({
     nextButton :".next",
     mouseDrag : true,
     responsive: {
-        1600:{
+        1030:{
             items:4,
             gutter:20
         },
@@ -22,7 +22,8 @@ const slider = tns({
             gutter:20    
         },
         480:{
-            items:1
+            items:3,
+            gutter:20    
         }
     }
 })

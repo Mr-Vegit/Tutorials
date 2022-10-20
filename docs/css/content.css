@@ -1,291 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap");
 /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
 /* font-family: 'Yeon Sung', cursive; */
 * {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-
 
 /* first section - home  */
 
 #con_1 {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    background-image: url(../img/bg-3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 30rem;
-    color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-image: url(../img/bg-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+  color: white;
 }
 
 #con_1_para {
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
+  font-family: "Caveat", cursive;
+  font-size: 30px;
 }
 
 #con_1::before {
-    content: "";
-    background: url(../img/bg-1.jpg);
-    filter: blur(9.2px);
-    filter: brightness(0.5);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: "";
+  background: url(../img/bg-1.jpg);
+  filter: blur(9.2px);
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #home {
-    width: 28rem;
-    font-size: 25px;
-    display: block;
-    margin: auto;
-    text-align: center;
+  width: 28rem;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
-#home>p:first-child {
-    font-size: 60px;
-    margin-bottom: 30px;
+#home > p:first-child {
+  font-size: 60px;
+  margin-bottom: 30px;
 }
-
 
 /* second section - home */
-#slider{
-    font-family: 'Roboto Condensed', sans-serif;
-    height: 450px;
-    /* border: 3px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(44, 44, 255); */
+#slider {
+  font-family: "Roboto Condensed", sans-serif;
+  height: 450px;
+  /* border: 3px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(44, 44, 255); */
 }
-.slider-container{
-    width: 1600px;
-    margin: auto;
+.slider-container {
+  width: 1600px;
+  margin: auto;
 }
-.slider-sub-container{
-    width: 85%;
-    margin: auto;
+.slider-sub-container {
+  width: 85%;
+  margin: auto;
 }
 .slider-wrapper h1 {
-font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
 
-    font-weight: 600;
-	margin: 20px 0px;
-	font-size: 50px;
+  font-weight: 600;
+  margin: 20px 0px;
+  font-size: 50px;
 }
-.slider-manager{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-	width: 100%;
+.slider-manager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
 }
-.slider-manager i{
-    color: white;
-    font-size: 3rem;
+.slider-manager i {
+  color: white;
+  font-size: 3rem;
 }
 .slider-manager h3 {
-	font-size: 30px;
+  font-size: 30px;
 }
-.slider-manager i:hover{
-    color: grey;
+.slider-manager i:hover {
+  color: grey;
 }
-.previous, .next{
-    padding: 2px;
-    height: 80px;
-    width: 80px;
-    cursor: pointer;
-    border-radius: 50%;
-    outline: none;
-    transition: 0.7s ease-in-out;
-    border: 3px solid white;
-    background-color: black;
-    box-shadow: 0 0 5px #bbb;
+.previous,
+.next {
+  padding: 2px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.7s ease-in-out;
+  border: 3px solid white;
+  background-color: black;
+  box-shadow: 0 0 5px #bbb;
 }
-.previous:hover, .next:hover{
-    border: 3px solid grey;
+.previous:hover,
+.next:hover {
+  border: 3px solid grey;
 }
 
-.slide-img{
-    width: 99%;
-    height: 250px;
-    border-radius: 7px;
-    border: 2px solid white;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+.slide-img {
+  width: 99%;
+  height: 250px;
+  border-radius: 7px;
+  border: 2px solid white;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
-.slide-img:hover{
-    box-shadow: 0 0 0 200px rgb( 0, 0, 0, 0.9) inset;
+.slide-img:hover {
+  box-shadow: 0 0 0 200px rgb(0, 0, 0, 0.9) inset;
 }
-.slide-img a{
-    text-decoration: none;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0.8s;
-    font-size: 2.5rem;
-    color: white;
+.slide-img a {
+  text-decoration: none;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.8s;
+  font-size: 2.5rem;
+  color: white;
 }
-.slide-img:hover a{
-opacity: 1;
-transform: scale(1);
+.slide-img:hover a {
+  opacity: 1;
+  transform: scale(1);
 }
-@media(max-width:1600px){
-    .container{
-        width: 100%;
-    }    
-    
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
 }
 /* IMAGES ARE ADDED HERE */
-.img-1{
-    background-image: url("../img/gym-thumbnail.png");
+.img-1 {
+  background-image: url("../img/gym-thumbnail.png");
 }
-.img-2{
-    background-image: url("../img/meals-thumbnail.png");
+.img-2 {
+  background-image: url("../img/meals-thumbnail.png");
 }
-.img-3{
-    background-image: url("../img/hotel-thumbnail.png");
+.img-3 {
+  background-image: url("../img/hotel-thumbnail.png");
 }
-.img-4{
-    background-image: url("../img/covid-info.jpg");
+.img-4 {
+  background-image: url("../img/covid-info.jpg");
 }
-.img-5{
-    background-image: url("../img/Dance-Academy.png");
+.img-5 {
+  background-image: url("../img/Dance-Academy.png");
 }
-.img-6{
-    background-image: url("../img/corona-map.jpg");
+.img-6 {
+  background-image: url("../img/corona-map.jpg");
 }
 
 /* first section - collection */
 
 .pages {
-    height: 30rem;
+  height: 30rem;
 }
 
 .pages li a:visited {
-    color: black;
+  color: black;
 }
 
 #pages-1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 #pages-1 li {
-    list-style: none;
-    padding: 3px 5px;
-    background-color: rgb(194, 194, 194);
+  list-style: none;
+  padding: 3px 5px;
+  background-color: rgb(194, 194, 194);
 }
-
 
 /* second section - collection */
 
 #pages-2 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #pages-2 li {
-    list-style: none;
-    margin: 50px;
+  list-style: none;
+  margin: 50px;
 }
 
 #pages-2 li img {
-    margin-left: 50px;
-    height: 100px;
+  margin-left: 50px;
+  height: 100px;
 }
-
 
 /* first section - signin */
 
 .sign_head::before {
-    content: "";
-    background-image: url(../img/bg-2.jpg);
-    background-position: center;
-    background-size: cover;
-    filter: blur(9.2px);
-    filter: brightness(0.5);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 340px;
-    width: 100%;
-    z-index: -1;
+  content: "";
+  background-image: url(../img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: blur(9.2px);
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 340px;
+  width: 100%;
+  z-index: -1;
 }
 
 .sign_head {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 250px;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    font-family: 'Lobster', 'cursive';
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Lobster", "cursive";
 }
 
-.sign_head>p {
-    align-self: center;
-    margin: 0;
-    font-size: 60px;
-    /* height: 10px; */
-    padding: 5px;
+.sign_head > p {
+  align-self: center;
+  margin: 0;
+  font-size: 60px;
+  /* height: 10px; */
+  padding: 5px;
 }
 
 .signin-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    /* height: 30rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  /* height: 30rem; */
 }
 
 .letter-image {
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
 }
-
 
 /* .length_of_signin {
     height: 32.26rem;
 } */
 
 .login {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .login li {
-    list-style: none;
-    font-size: 30px;
-    margin: 25px 30px;
+  list-style: none;
+  font-size: 30px;
+  margin: 25px 30px;
 }
 
 input {
-    padding: 3px;
-    font-size: 20px;
-    font-weight: bold;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .create {
-    font-size: 25px;
+  font-size: 25px;
 }

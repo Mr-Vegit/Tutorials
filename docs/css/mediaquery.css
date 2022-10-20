@@ -19,13 +19,18 @@
   #con_1_para {
     font-size: 20px;
   }
+  #topnav {
+    display: block;
+  }
   .previous, .next {
     height: 70px;
     width: 120px;
   }
-  #topnav {
-    display: block;
-  }
+  /* .slide-img {
+    width: 99%;
+    height: 100px;
+  } */
+
   .aboutme {
     position: relative;
   }
