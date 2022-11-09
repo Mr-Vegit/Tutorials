@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 33px;
+    margin: 10px;
+}
+.btn{
+    width: 66px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px 3px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    color: yellow;
+}
+
+.row{
+    margin: 8px 0px;
+}
+.input{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 7px 7px;
+    height: 30px;
+    width: 275px;
+}
