@@ -1,0 +1,21 @@
+.text-center{
+    text-align: center;
+}
+.main-container{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width:400px;
+    margin: 20px auto;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.items-center{
+    justify-content: center;
+    align-items: center;
+}
