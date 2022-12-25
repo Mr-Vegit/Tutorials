@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Orbitron:wght@600&display=swap');
+
+/* Defaults */
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navigation designs */
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    height: 65px;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li {
+    /* For all the li tags */
+    margin: 5px;
+    padding: 10px;
+    /* for .brand */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand img,
+span {
+    font-weight: 900;
+    width: 45px;
+    margin: 4px;
+}
+
+
+/*Section */
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Chivo Mono', monospace;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+}
