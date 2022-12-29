@@ -3,7 +3,7 @@
 /* Defaults */
 
 body {
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 19);
 }
 
 * {
@@ -31,7 +31,7 @@ body {
 
 #navbar ul li {
     /* For all the li tags */
-    margin: 5px;
+    margin: 10px 15px;
     padding: 10px;
     /* for .brand */
     display: flex;
@@ -40,7 +40,7 @@ body {
 }
 
 .brand img,
-span {
+.brand span {
     font-weight: 900;
     width: 45px;
     margin: 4px;
@@ -85,6 +85,44 @@ span {
     cursor: pointer;
 }
 
+.SongInfo {
+    position: absolute;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 23px;
+    left: 10vw;
+}
+
+.gif {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
 #myProgressBar {
     width: 80vw;
+    cursor: pointer;
+}
+
+.SongItemContainer {
+    margin-top: 50px;
+}
+
+.SongItem {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    margin: 12px 0;
+    border-radius: 8px;
+}
+
+.SongItem img {
+    width: 50px;
+    /* margin: 0 20px; */
+}
+
+.TimeStamp {
+    margin: 0 23px;
+    cursor: pointer;
 }
