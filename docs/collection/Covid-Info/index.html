@@ -7,76 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index-page.css">
     <link rel="stylesheet" href="./css/nav-footer.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>CoronaVirus - information</title>
 </head>
 
 <body>
     <nav id='navbar'>
-        <li class='item'><a href="#">Home</a></li>
-        <li class='item'><a href="#">About</a></li>
-        <li class='item'><a href="#">MHFW Website</a></li>
-        <li class='item'><a href="#">Hospitals</a></li>
-        <li class='item'><a href="#">Contact Us</a></li>
+        <div class="logo"><img src="./img/logo.jpg" alt="Mr-Vegit" />
+            <p>Mr-Vegit</p>
+        </div>
+        <ul>
+            <li class='item'><a href="#">Home</a></li>
+            <li class='item'><a href="#">MHFW Website</a></li>
+            <li class='item'><a href="#">Hospitals</a></li>
+            <li class='item'><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="logo three-lines" onclick="openNav()">&equiv;</div>
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <ul>
+            <li> <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times; </a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">MHFW Website</a></li>
+            <li><a href="#">Hospitals</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+    </div>
     <div class="container">
         <h1>Covid-19- Stay Home Stay Safe</h1>
         <div class="box">
             <h2>#IndiaFightsCorona COVID-19</h2>
-            <p>Government of India is taking all necessary steps to ensure that we are prepared well to face the
-                challenge and threat posed by the growing pandemic of COVID-19 the Corona Virus. The most important
-                factor in preventing the spread of the Virus locally is to empower the citizens with the right
-                information and taking precautions as per the advisories being issued by Ministry of Health & Family
-                Welfare.
+            <p>Government of India is taking all necessary steps to ensure that we are prepared well to face the challenge and threat posed by the growing pandemic of COVID-19 the Corona Virus. The most important factor in preventing the spread of the Virus
+                locally is to empower the citizens with the right information and taking precautions as per the advisories being issued by Ministry of Health & Family Welfare.
             </p>
         </div>
         <div class="box">
             <h2>#Stay Home - How to protect yourself</h2>
             <h3>Do's</h3>
             <p>
-            <ul id="dos-donts">
-                <li>
-                    Cover your nose and mouth with handkerchief while sneezing and coughing.
-                </li>
-                <li>
-                    Wash hands with soap and water or use alcohol based hand rub.
-                </li>
-                <li>
-                    Sneeze in the inner side of your elbow and not to cough into the palms of your hands.
-                </li>
-                <li>
-                    While visiting doctor wear a mask/cloth to cover your mouth and nose.
-                </li>
-                <li>
-                    Stay more than one arm's length distance from persons at public place.
-                </li>
-                <li>
-                    Drink plenty of water/liquids and eat nutritious food.
-                </li>
+                <ul id="dos-donts">
+                    <li>
+                        Cover your nose and mouth with handkerchief while sneezing and coughing.
+                    </li>
+                    <li>
+                        Wash hands with soap and water or use alcohol based hand rub.
+                    </li>
+                    <li>
+                        Sneeze in the inner side of your elbow and not to cough into the palms of your hands.
+                    </li>
+                    <li>
+                        While visiting doctor wear a mask/cloth to cover your mouth and nose.
+                    </li>
+                    <li>
+                        Stay more than one arm's length distance from persons at public place.
+                    </li>
+                    <li>
+                        Drink plenty of water/liquids and eat nutritious food.
+                    </li>
 
-            </ul>
+                </ul>
             </p>
             <h3>Don'ts</h3>
             <p>
-            <ul id="dos-donts">
-                <li>
-                    Don't Spit at public places .
-                </li>
-                <li>
-                    Do not Touch your eyes, nose or mouth.
-                </li>
-                <li>
-                    Avoid shaking hands while greeting.
-                </li>
-                <li>
-                    Don't take medicines without consulting doctor .
-                </li>
-                <li>
-                    Don't Dispose used napkin or tissue paper in open areas.
-                </li>
-                <li>
-                    Avoid Touching surfaces usually used by public (Railing, door, gate).
-                </li>
-            </ul>
+                <ul id="dos-donts">
+                    <li>
+                        Don't Spit at public places .
+                    </li>
+                    <li>
+                        Do not Touch your eyes, nose or mouth.
+                    </li>
+                    <li>
+                        Avoid shaking hands while greeting.
+                    </li>
+                    <li>
+                        Don't take medicines without consulting doctor .
+                    </li>
+                    <li>
+                        Don't Dispose used napkin or tissue paper in open areas.
+                    </li>
+                    <li>
+                        Avoid Touching surfaces usually used by public (Railing, door, gate).
+                    </li>
+                </ul>
             </p>
 
         </div>
@@ -85,53 +98,109 @@
             <details>
                 <summary>Q: How can I prevent COVID-19 ?</summary>
                 <p>
-                    A: The best way to prevent COVID-19 is to get vaccinated with an FDA-approved or FDA-authorized
-                    COVID-19 vaccine and stay up to date on your COVID-19 vaccines.In addition, the CDC recommends
-                    everyday preventive actions to help prevent the spread of COVID-19.
+                    A: The best way to prevent COVID-19 is to get vaccinated with an FDA-approved or FDA-authorized COVID-19 vaccine and stay up to date on your COVID-19 vaccines.In addition, the CDC recommends everyday preventive actions to help prevent the spread of COVID-19.
                 </p>
             </details>
             <details>
                 <summary>Q: Is hand sanitizer effective against COVID-19 ?</summary>
                 <p>
-                    A: One of the best ways to prevent the spread of infections and decrease the risk of getting sick is
-                    by washing your hands with plain soap and water, advises the CDC. Washing hands often with soap and
-                    water for at least 20 seconds is essential, especially after going to the bathroom; before eating;
-                    and after coughing, sneezing, or blowing one's nose. If soap and water are not available, CDC
-                    recommends consumers use an alcohol-based hand sanitizer that contains at least 60% alcohol.
+                    A: One of the best ways to prevent the spread of infections and decrease the risk of getting sick is by washing your hands with plain soap and water, advises the CDC. Washing hands often with soap and water for at least 20 seconds is essential, especially
+                    after going to the bathroom; before eating; and after coughing, sneezing, or blowing one's nose. If soap and water are not available, CDC recommends consumers use an alcohol-based hand sanitizer that contains at least 60% alcohol.
                 </p>
             </details>
             <details>
                 <summary>Q: Is it safe for me to donate blood during the COVID-19 pandemic?</summary>
                 <p>
-                    A: It is imperative that eligible individuals continue to donate blood and blood components,
-                    including source plasma, during the pandemic. If you are healthy and interested in donating blood,
-                    the FDA encourages you to contact a local donation center to make an appointment. One way to make a
-                    difference during a public health emergency is to donate blood if you are able.
+                    A: It is imperative that eligible individuals continue to donate blood and blood components, including source plasma, during the pandemic. If you are healthy and interested in donating blood, the FDA encourages you to contact a local donation center to
+                    make an appointment. One way to make a difference during a public health emergency is to donate blood if you are able.
                 </p>
             </details>
             <details>
                 <summary>Q: Are there drug shortages due to COVID-19?</summary>
                 <p>
-                    A: The FDA has been closely monitoring the supply chain with the expectation that the COVID-19
-                    outbreak would likely impact the medical product supply chain, including potential disruptions to
-                    supply or shortages of critical medical products in the U.S.
-                    We have been reaching out to manufacturers as part of our approach to identifying potential
-                    disruptions or shortages. We will use all available tools to react swiftly and mitigate the impact
-                    to U.S. patients and health care professionals when a potential disruption or shortage is
-                    identified.
+                    A: The FDA has been closely monitoring the supply chain with the expectation that the COVID-19 outbreak would likely impact the medical product supply chain, including potential disruptions to supply or shortages of critical medical products in the U.S.
+                    We have been reaching out to manufacturers as part of our approach to identifying potential disruptions or shortages. We will use all available tools to react swiftly and mitigate the impact to U.S. patients and health care professionals
+                    when a potential disruption or shortage is identified.
                 </p>
             </details>
             <details>
                 <summary>Q: Should I get my pet tested for COVID-19?</summary>
                 <p>
-                    A: Routine testing of pets for COVID-19 is not recommended at this time. There is currently no
-                    evidence that pets are a source of COVID-19 infection people in the U.S. Based on the limited
-                    information available to date, the risk of pets spreading the virus to people is considered to be
-                    low. If your pet is sick, consult your veterinarian.
+                    A: Routine testing of pets for COVID-19 is not recommended at this time. There is currently no evidence that pets are a source of COVID-19 infection people in the U.S. Based on the limited information available to date, the risk of pets spreading the
+                    virus to people is considered to be low. If your pet is sick, consult your veterinarian.
                 </p>
             </details>
         </div>
     </div>
+    <div id="footer">
+        <div class="footer-1">
+            <span>
+                CoronaVirus - information
+            </span>
+        </div>
+        <div class="footer-2">
+            <div>
+                <h1>
+                    Learn more about Covid
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.mygov.in/covid-19">Indian Government</a>
+                    </li>
+                    <li>
+                        <a href="https://www.unicef.org/india/coronavirus/covid-19">UNICEF</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ecdc.europa.eu/en/covid-19">European Union</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/COVID-19">Wikipedia</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Lets help the needy
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.pmcares.gov.in/en/">PM CARES</a>
+                    </li>
+                    <li>
+                        <a href="https://pmnrf.gov.in/en/">PM National Relief Funds</a>
+                    </li>
+                    <li>
+                        <a href="https://jalpaiguri.gov.in/donations-for-covid-19/">Donate for Jalpaiguri</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Lets Save our mother Earth
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.beastphilanthropy.org/about/">Beast Philanthropy</a>
+                    </li>
+                    <li>
+                        <a href="https://teamseas.org/">Team Seas</a>
+                    </li>
+                    <li>
+                        <a href="https://teamtrees.org/">Team Trees</a>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-3">
+            <span>
+                Copyright © 2022 mrvegit.live | All rights reserved | Designed by Mr-Vegit
+            </span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
