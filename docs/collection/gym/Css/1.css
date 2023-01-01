@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {    
+body {
     color: white;
     background-color: black;
 }
@@ -22,6 +22,7 @@ body {
 .container h1 {
     text-align: center;
 }
+
 .container-1 {
     margin: 0px;
     padding: 0px;
@@ -31,69 +32,147 @@ body {
     background-size: cover;
 }
 
-.header {
+#navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    height: 5.5rem;
 }
 
-.left {
-    /* border: 2px solid red; */
-    margin: 20px;
-    left: 30px;
-    top: 30px;
-}
-
-.left img {
-    width: 80px;
-    filter: invert(100%);
-}
-
-.mid {
-    display: flex;
-    justify-content: center;
-    /* border: 2px solid rgb(232, 255, 28); */
-    margin: 0px auto;
-}
-
-.right {
-    display: flex;
+#navbar::before {
+    content: "";
     background-color: black;
-    font-size: 15px;
-    border-radius: 20px;
-    color: white;
-    padding: 10px;
-    margin-right: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* Navigation Bar: Logo and Image */
+
+.logo {
+    margin: 10px 34px;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-.right a img {
-    filter: invert(100%);
-    width: 55px;
-}
-
-.navbar {
-    display: inline-block;
-    padding: 0px;
-}
-
-.navbar li {
-    display: inline-block;
-    padding: 0px 40px;
-}
-
-.navbar li a {
     color: white;
-    font-size: 35px;
-    text-decoration: none;
-    font-family: 'Ephesis', cursive;
-    /* padding: 34px 23px;  */
 }
 
-.navbar li a:hover,
-.navbar li a:active {
-    text-decoration: underline;
-    color: rgb(194, 194, 194);
+.logo img {
+    height: 59px;
+    width: 59px;
+    margin: 3px 6px;
+    border-radius: 100%;
+}
+
+.logo p {
+    margin-left: 5px;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    justify-content: center;
+    margin-right: 160px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.three-lines {
+    font-size: 50px;
+    padding: 0px 10px;
+    height: 60px;
+    margin: 0px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.three-lines:hover {
+    filter: invert(0);
+    background-color: white;
+}
+
+
+/* SIDE NAV BAR */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav ul {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    font-size: 55px;
+    margin-right: 15px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 .btn {
@@ -113,7 +192,7 @@ body {
     background-color: grey;
 }
 
-.container h1{
+.container h1 {
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;

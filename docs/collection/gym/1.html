@@ -16,30 +16,27 @@
 <body>
     <div class="container-1">
 
-        <header class="header">
-            <div class="left">
-                <!-- left box for logo -->
-                <a href="ex1.html">
-                    <img src="./img/logo-1.png" alt="logo">
-                </a>
+        <nav id="navbar">
+            <div class="logo"><img src="./img/logo-1.png" alt="Mr-Vegit.live" />
+                <p>Mr-vegit</p>
             </div>
-            <div class="mid">
-                <!-- mid box for navigation -->
-                <ul class="navbar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Fitness Calculater</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-
-            </div>
-            <div class="right">
-                <!-- right box for buttons -->
-                <a href="#">
-                    <img src="./img/THREE LINES.png" alt="3">
-                </a>
-            </div>
-        </header>
+            <ul>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#AboutUs">About Us</a></li>
+                <li class="item"><a href="#Fitness">Fitness Calculater</a></li>
+                <li class="item"><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="logo three-lines" onclick="openNav()">&equiv;</div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <ul>
+                <li> <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a></li>
+                <li> <a href="#">Home </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculater</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+        </div>
         <div class="container">
             <h1>Join Our gym and get 30% off</h1>
             <form action="noaction.php">
@@ -62,8 +59,15 @@
     <div class="right">
         <p>COPYRIGHTS RESERVED BY @mrvegit.live</p>
     </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
-<!-- <button class="btn">Call Us</button>
-    <button class="btn">Email Us</button> -->
