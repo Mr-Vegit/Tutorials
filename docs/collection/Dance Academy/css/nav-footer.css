@@ -34,6 +34,7 @@
 }
 
 .three-lines {
+    overflow-y: hidden;
     font-size: 50px;
     padding: 0px 10px;
     height: 60px;
@@ -165,6 +166,7 @@
 .footer-2 li,
 .footer-2 a {
     text-decoration: none;
+    overflow-y: hidden;
     list-style: none;
     padding: 2px;
     color: rgb(82, 82, 82);
