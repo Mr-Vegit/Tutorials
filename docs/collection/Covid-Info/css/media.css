@@ -3,6 +3,12 @@
         overflow-x: hidden;
     }
     /* NAV-BAR */
+    .three-lines {
+        margin: 0 10px;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
     .sidenav {
         padding-top: 15px;
     }
@@ -44,5 +50,35 @@
     .footer-3 {
         height: 20px;
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    * {
+        overflow-x: hidden;
+    }
+    .three-lines {
+        margin: 0 10px;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    .footer-1 {
+        font-size: 20px;
+        padding: 7px 0;
+        height: 44px;
+        width: 75%;
     }
 }

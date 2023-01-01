@@ -9,6 +9,8 @@
 * {
     margin: 0px;
     padding: 0px;
+    text-align: center;
+    overflow-x: hidden;
 }
 
 body {
@@ -21,9 +23,12 @@ body {
 #navbar {
     display: flex;
     list-style: none;
+    height: 60px;
     padding: 10px;
     background-color: rgb(1, 1, 10);
+    align-items: center;
     justify-content: space-between;
+    overflow-y: hidden;
 }
 
 #navbar ul {
@@ -31,7 +36,8 @@ body {
 }
 
 .item {
-    margin: 16px 18px;
+    margin: 16px 10px;
+    padding: 21px;
 }
 
 .item a {
@@ -39,7 +45,7 @@ body {
     padding: 10px;
     color: white;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Baumans', cursive;
 }
 
@@ -79,7 +85,7 @@ body {
     font-size: 50px;
     padding: 0px 10px;
     height: 60px;
-    margin: 0px 50px;
+    margin: 0px 20px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -109,7 +115,6 @@ body {
 }
 
 .sidenav a {
-    padding: 8px 6px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -147,6 +152,7 @@ body {
     font-family: 'Audiowide', cursive;
     text-align: center;
     border-bottom: 1px solid white;
+    overflow-y: hidden;
 }
 
 .footer-2 {
@@ -156,6 +162,7 @@ body {
 
 .footer-2 div {
     margin: 10px 40px;
+    overflow-y: hidden;
 }
 
 .footer-2 li,
@@ -179,7 +186,7 @@ a:hover {
 
 .footer-3 {
     /* overflow-x: hidden; */
-    width: 99%;
+    width: 100%;
     border-top: 1px solid white;
     margin: 5px;
     padding: 7px;
