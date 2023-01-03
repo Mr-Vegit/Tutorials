@@ -42,6 +42,7 @@ masterPlay.addEventListener('click', () => {
         audioElement.play();
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
+        masterSongName.innerText = Songs[SongIndex].SongName
         var gift = document.getElementById(`gift${SongIndex}`);
         var changes = document.getElementById(`${SongIndex}`);
         changes.classList.remove('fa-circle-play');
