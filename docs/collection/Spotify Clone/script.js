@@ -155,12 +155,20 @@ document.getElementById('previous').addEventListener('click', () => {
     gift.style.opacity = 1;
 })
 
-function openNav() {
+function openmasterplayer() {
     document.getElementById("bottom").style.display = 'none';
     document.getElementById("bottomclose").style.display = 'inline';
 }
 
-function closeNav() {
+function closemasterplayer() {
     document.getElementById("bottomclose").style.display = 'none';
     document.getElementById("bottom").style.display = 'flex';
+}
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }

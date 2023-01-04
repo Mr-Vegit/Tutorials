@@ -1,0 +1,144 @@
+@media (min-width:641px)and (max-width: 910px) {
+    * {
+        overflow-x: hidden;
+    }
+    .three-lines {
+        margin: 0 10px;
+        overflow-y: hidden;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #bottom {
+        height: 90px;
+    }
+    .SongInfo {
+        width: 100%;
+        position: relative;
+        font-size: 16px;
+    }
+    #bottom {
+        height: 100px;
+    }
+    .SongInfo {
+        width: 100%;
+        position: relative;
+        font-size: 20px;
+    }
+    #myProgressBar {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 640px) and (min-width: 471px) {
+    /* NAV-BAR */
+    .three-lines {
+        margin: 0 10px;
+        overflow-y: hidden;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #bottom {
+        height: 90px;
+    }
+    .SongInfo {
+        width: 100%;
+        position: relative;
+        font-size: 18px;
+    }
+    #myProgressBar {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    * {
+        overflow-x: hidden;
+    }
+    /* NAV-BAR */
+    #navbar {
+        padding: 0px;
+    }
+    #logo {
+        margin: 0 0 0 6px;
+    }
+    #logo p {
+        margin: 0px;
+        font-size: 17px;
+    }
+    .three-lines {
+        overflow-y: hidden;
+        margin: 0 5px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    .container {
+        width: 77%;
+        padding: 25px;
+    }
+    .SongList h1 {
+        font-size: 24px;
+    }
+    .SongItemContainer {
+        margin-top: 25px;
+    }
+    .SongName {
+        font-size: 11px;
+        width: 30%;
+    }
+    .TimeStamp i {
+        position: inherit;
+        top: 3px;
+        right: 3px;
+    }
+    .closedbtn {
+        right: 4px;
+        top: 3px;
+    }
+    #bottom {
+        height: 90px;
+    }
+    .SongInfo {
+        width: 100%;
+        position: relative;
+        font-size: 16px;
+    }
+    #myProgressBar {
+        width: 60vw;
+    }
+}
