@@ -101,6 +101,9 @@
         height: 55%;
         margin: 6px;
     }
+    .my_input {
+        width: 50%;
+    }
 }
 
 @media (max-width: 640px) and (min-width: 471px) {
@@ -203,6 +206,9 @@
     .spImage {
         height: 44%;
         margin: 6px;
+    }
+    .my_input {
+        width: 65%;
     }
 }
 
@@ -313,5 +319,8 @@
     .spImage {
         height: 32%;
         margin: 6px;
+    }
+    .my_input {
+        width: 80%;
     }
 }

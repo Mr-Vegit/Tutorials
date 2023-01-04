@@ -6,36 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./css/nav-footer.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/media.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
 </head>
 
 <body>
     <nav id="navbar">
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="logo" />VDA
+            </a>
+        </div>
         <ul>
-            <div id="logo">
-                <a href="./index.html">
-                    <img src="./img/logo.png" alt="logo" />VDA</div>
-                </a>
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">services</a></li>
+            <li class="item"><a href="#">Class Info</a></li>
+            <li class="item"><a href="./contact.html">Contact Us</a></li>
+
+        </ul>
+        <div class="three-lines" onclick="openNav()">&equiv;</div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <ul>
+            <li> <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a></li>
             <li><a href="./index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">services</a></li>
             <li><a href="#">Class Info</a></li>
             <li><a href="./contact.html">Contact Us</a></li>
         </ul>
-    </nav>
+    </div>
     <div class="container">
         <h1>This is contact </h1>
-        <form action="/contact" method="post" id="my_Form"> 
-            <input class="my_input" type="text" name="client" placeholder="Enter your name"/>
-            <input class="my_input" type="phone" name="phone" placeholder="Enter your phone number"/>
-            <input class="my_input" type="email" name="email" placeholder="Enter your email"/>
-            <input class="my_input" type="text" name="address" placeholder="Enter your address"/>
-            <input class="my_input" type="text" name="concern" placeholder="Enter your concern"/>
+        <form action="/contact" method="post" id="my_Form">
+            <input class="my_input" type="text" name="client" placeholder="Enter your name" />
+            <input class="my_input" type="phone" name="phone" placeholder="Enter your phone number" />
+            <input class="my_input" type="email" name="email" placeholder="Enter your email" />
+            <input class="my_input" type="text" name="address" placeholder="Enter your address" />
+            <input class="my_input" type="text" name="concern" placeholder="Enter your concern" />
             <button class="btn">Submit</button>
         </form>
     </div>
-    <footer id="footer">Copyright © 2020 VegitDanceAcademy.org | All Rights Reserv</footer>
+    <div id="footer">
+        <div class="footer-1">
+            <span>
+               Vegit Dance Academy
+            </span>
+        </div>
+        <div class="footer-2">
+            <div>
+                <h1>
+                    Learn more about Covid
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.mygov.in/covid-19">Indian Government</a>
+                    </li>
+                    <li>
+                        <a href="https://www.unicef.org/india/coronavirus/covid-19">UNICEF</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ecdc.europa.eu/en/covid-19">European Union</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/COVID-19">Wikipedia</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Lets help the needy
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.pmcares.gov.in/en/">PM CARES</a>
+                    </li>
+                    <li>
+                        <a href="https://pmnrf.gov.in/en/">PMNRF</a>
+                    </li>
+                    <li>
+                        <a href="https://jalpaiguri.gov.in/donations-for-covid-19/">Donations</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Lets Save our mother Earth
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.beastphilanthropy.org/about/">Beast Philanthropy</a>
+                    </li>
+                    <li>
+                        <a href="https://teamseas.org/">Team Seas</a>
+                    </li>
+                    <li>
+                        <a href="https://teamtrees.org/">Team Trees</a>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-3">
+            <span>
+                Copyright © 2022 mrvegit.live | All rights reserved | Designed by Mr-Vegit
+            </span>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
