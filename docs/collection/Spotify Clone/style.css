@@ -65,9 +65,9 @@ body {
     background-size: cover;
 }
 
-.bottom {
+#bottom {
     position: sticky;
-    height: 130px;
+    height: 70px;
     background-color: black;
     color: white;
     bottom: 0;
@@ -77,12 +77,40 @@ body {
     flex-direction: column;
 }
 
+.closebtn {
+    position: absolute;
+    right: 13px;
+    top: 6px;
+    font-size: 22px;
+    padding: 0px 6px;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#bottomclose {
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: fixed;
+    bottom: 35px;
+    right: 16px;
+    padding: 0px 6px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    ;
+}
+
 .icons {
-    margin-top: 15px;
+    margin-top: 6px;
 }
 
 .icons i {
     cursor: pointer;
+    font-size: 27px;
+    /* padding: 0 10px; */
+    margin: 0 6px;
 }
 
 .SongInfo {
@@ -90,6 +118,7 @@ body {
     font-family: 'Chivo Mono', monospace;
     font-size: 23px;
     left: 10vw;
+    margin-top: 12px;
 }
 
 .gif {

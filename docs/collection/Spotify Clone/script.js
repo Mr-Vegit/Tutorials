@@ -154,3 +154,13 @@ document.getElementById('previous').addEventListener('click', () => {
     var gift = document.getElementById(`gift${SongIndex}`);
     gift.style.opacity = 1;
 })
+
+function openNav() {
+    document.getElementById("bottom").style.display = 'none';
+    document.getElementById("bottomclose").style.display = 'inline';
+}
+
+function closeNav() {
+    document.getElementById("bottomclose").style.display = 'none';
+    document.getElementById("bottom").style.display = 'flex';
+}
