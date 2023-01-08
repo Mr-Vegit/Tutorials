@@ -1,68 +1,221 @@
-@media only screen and (max-width: 450px) {
-  * {
-    overflow-x: hidden;
-  }
-  /* .container {
-        max-width: 2-rem;
-    } */
-  #navbar {
-    display: none;
-    visibility: hidden;
-  }
-  #topnav {
-    display: block;
-  }
-  #home > p:first-child {
-    font-size: 40px;
-    margin: 0px;
-  }
-  #con_1_para {
-    font-size: 20px;
-  }
-  #topnav {
-    display: block;
-  }
-  .previous, .next {
-    height: 70px;
-    width: 120px;
-  }
-  /* .slide-img {
-    width: 99%;
-    height: 100px;
-  } */
+@media only screen and (max-width: 450px) {}
 
-  .aboutme {
-    position: relative;
-  }
-  .sign_head {
-    text-align: center;
-    padding: 0px;
-  }
-  .sign_head p {
-    font-size: 50px;
-  }
-  .login {
-    display: flex;
-    flex-direction: column;
-    height: 33rem;
-    justify-content: center;
-    align-self: center;
-    margin: 0px;
-  }
-  .login li {
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 200px;
-    font-size: 15;
-    align-self: center;
-    align-items: center;
-    /* margin-top: 5px; */
-    display: flex;
-  }
-  .spaced {
-    height: 30px;
-    width: 230px;
-    border-radius: 10px;
-  }
+@media (min-width:641px)and (max-width: 910px) {
+    * {
+        overflow-x: hidden;
+    }
+    .three-lines {
+        margin: 0 10px;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #footer {
+        height: 260px;
+    }
+    .footer-1 {
+        font-size: 17px;
+        padding: 7px 0;
+        height: 44px;
+        width: 75%;
+    }
+    .footer-2 {
+        height: 150px;
+        overflow-y: hidden;
+    }
+    .footer-2 div {
+        height: 110px;
+        margin: 10px 15px;
+    }
+    .footer-2 h1 {
+        font-size: 13px;
+    }
+    .footer-2 a {
+        font-size: 13px;
+        padding: 0px;
+    }
+    .footer-2 li {
+        padding: 3px;
+    }
+    .footer-3 {
+        overflow-y: hidden;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) and (min-width: 471px) {
+    /* NAV-BAR */
+    .three-lines {
+        margin: 0 10px;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #footer {
+        height: 260px;
+    }
+    .footer-1 {
+        font-size: 17px;
+        padding: 7px 0;
+        height: 44px;
+        width: 75%;
+    }
+    .footer-2 {
+        height: 150px;
+        overflow-y: hidden;
+    }
+    .footer-2 div {
+        height: 110px;
+        margin: 10px 15px;
+    }
+    .footer-2 h1 {
+        font-size: 13px;
+    }
+    .footer-2 a {
+        font-size: 13px;
+        padding: 0px;
+    }
+    .footer-2 li {
+        padding: 3px;
+    }
+    .footer-3 {
+        overflow-y: hidden;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    * {
+        overflow-x: hidden;
+    }
+    /* NAV-BAR */
+    .logo {
+        margin: 10px 0 10px 10px;
+    }
+    .logo p {
+        margin: 0px;
+        font-size: 17px;
+    }
+    .three-lines {
+        margin: 0 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #footer {
+        height: 260px;
+    }
+    .footer-1 {
+        font-size: 17px;
+        padding: 7px 0;
+        height: 44px;
+        width: 75%;
+    }
+    .footer-2 {
+        height: 150px;
+        overflow-y: hidden;
+    }
+    .footer-2 div {
+        height: 110px;
+        margin: 10px 15px;
+    }
+    .footer-2 h1 {
+        font-size: 13px;
+    }
+    .footer-2 a {
+        font-size: 9px;
+        padding: 2px;
+    }
+    .footer-2 li {
+        padding: 0px;
+    }
+    .footer-3 {
+        overflow-y: hidden;
+        height: 50px;
+        font-size: 13px;
+    }
+    #home>p:first-child {
+        font-size: 40px;
+        margin: 0px;
+    }
+    #con_1_para {
+        font-size: 20px;
+    }
+    #topnav {
+        display: block;
+    }
+    .previous,
+    .next {
+        height: 70px;
+        width: 120px;
+    }
+    .aboutme {
+        position: relative;
+    }
+    .sign_head {
+        text-align: center;
+        padding: 0px;
+    }
+    .sign_head p {
+        font-size: 50px;
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+        height: 33rem;
+        justify-content: center;
+        align-self: center;
+        margin: 0px;
+    }
+    .login li {
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 200px;
+        font-size: 15;
+        align-self: center;
+        align-items: center;
+        /* margin-top: 5px; */
+        display: flex;
+    }
+    .spaced {
+        height: 30px;
+        width: 230px;
+        border-radius: 10px;
+    }
 }
