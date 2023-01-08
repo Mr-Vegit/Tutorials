@@ -25,6 +25,7 @@
 
 #logo a img {
     height: 45px;
+    border-radius: 100%;
 }
 
 .three-lines {
