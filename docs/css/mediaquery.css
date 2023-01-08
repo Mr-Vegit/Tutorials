@@ -152,14 +152,14 @@
     }
     .footer-2 div {
         height: 110px;
-        margin: 10px 9px;
+        margin: 10px 5px;
     }
     .footer-2 h1 {
-        font-size: 13px;
+        font-size: 10px;
     }
     .footer-2 a {
-        font-size: 9px;
-        padding: 2px;
+        font-size: 8px;
+        padding: 1px;
     }
     .footer-2 li {
         padding: 0px;
