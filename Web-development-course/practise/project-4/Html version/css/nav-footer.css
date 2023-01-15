@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+
+
+/* Navigation bar */
+
+#logo {
+    margin: 0px 14px;
+    margin-right: 40px;
+}
+
+#logo a {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+#logo a img {
+    height: 45px;
+    filter: invert(1);
+}
+
+#logo:hover {
+    color: black;
+    filter: brightness(0);
+}
+
+.three-lines {
+    overflow-y: hidden;
+    font-size: 50px;
+    padding: 0px 10px;
+    height: 60px;
+    margin: 0px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.three-lines:hover {
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #611212;
+    padding: 10px 14px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 13px 20px;
+    font-weight: 500;
+    color: white;
+}
+
+#navbar li a:hover {
+    color: black;
+}
+
+
+/* SIDE NAV BAR */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav ul {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    font-size: 55px;
+    margin-right: 15px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Footer */
+
+
+/* FOOTER */
+
+#footer {
+    height: 270px;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-1 {
+    width: 67%;
+    font-size: 30px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    border-bottom: 1px solid white;
+    overflow-y: hidden;
+}
+
+.footer-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-2 div {
+    margin: 10px 40px;
+    overflow-y: hidden;
+}
+
+.footer-2 li,
+.footer-2 a {
+    text-decoration: none;
+    overflow-y: hidden;
+    list-style: none;
+    padding: 2px;
+    color: rgb(82, 82, 82);
+}
+
+a:hover {
+    color: rgb(223, 220, 220);
+    font-size: 17px;
+}
+
+.footer-2 h1 {
+    font-size: 19px;
+    font-weight: 100;
+    font-family: 'Audiowide', cursive;
+}
+
+.footer-3 {
+    /* overflow-x: hidden; */
+    width: 100%;
+    border-top: 1px solid white;
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+
+.footer-3 span:hover {
+    color: rgb(202, 202, 202);
+}

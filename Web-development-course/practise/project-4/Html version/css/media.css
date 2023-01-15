@@ -1,0 +1,326 @@
+@media (min-width:641px)and (max-width: 910px) {
+    * {
+        overflow-x: hidden;
+    }
+    .three-lines {
+        margin: 0 10px;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #footer {
+        height: 260px;
+    }
+    .footer-1 {
+        font-size: 17px;
+        padding: 7px 0;
+        height: 44px;
+        width: 75%;
+    }
+    .footer-2 {
+        height: 150px;
+        overflow-y: hidden;
+    }
+    .footer-2 div {
+        height: 110px;
+        margin: 10px 15px;
+    }
+    .footer-2 h1 {
+        font-size: 13px;
+    }
+    .footer-2 a {
+        font-size: 13px;
+        padding: 0px;
+    }
+    .footer-2 li {
+        padding: 3px;
+    }
+    .footer-3 {
+        overflow-y: hidden;
+        height: 50px;
+        font-size: 15px;
+    }
+    /* Main Content */
+    #introsection {
+        height: 300px;
+    }
+    .big {
+        font-size: 50px;
+    }
+    .small {
+        font-size: 35px;
+    }
+    .mission-container {
+        width: 95%;
+    }
+    .card {
+        width: 30%;
+        margin: 23px 4px;
+        height: 160px;
+    }
+    .card h3 {
+        margin: 0px 5px;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .card-content {
+        padding: 2px;
+    }
+    #second_img {
+        height: 100px;
+    }
+    .card-content p {
+        font-size: 14px;
+    }
+    .card-img {
+        overflow-y: hidden;
+        height: 100px;
+        width: 215px;
+        margin: 5px 2px;
+    }
+    /* Section 3 */
+    #sponsersection {
+        height: 280px;
+    }
+    #sponsers {
+        margin: 0px;
+    }
+    .spImage {
+        height: 55%;
+        margin: 6px;
+    }
+    .my_input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 640px) and (min-width: 471px) {
+    /* NAV-BAR */
+    .three-lines {
+        margin: 0 10px;
+    }
+    .logo {
+        margin: 10px 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #footer {
+        height: 260px;
+    }
+    .footer-1 {
+        font-size: 17px;
+        padding: 7px 0;
+        height: 44px;
+        width: 75%;
+    }
+    .footer-2 {
+        height: 150px;
+        overflow-y: hidden;
+    }
+    .footer-2 div {
+        height: 110px;
+        margin: 10px 15px;
+    }
+    .footer-2 h1 {
+        font-size: 13px;
+    }
+    .footer-2 a {
+        font-size: 13px;
+        padding: 0px;
+    }
+    .footer-2 li {
+        padding: 3px;
+    }
+    .footer-3 {
+        overflow-y: hidden;
+        height: 50px;
+        font-size: 15px;
+    }
+    /* Main Content */
+    #introsection {
+        height: 300px;
+    }
+    .big {
+        font-size: 29px;
+    }
+    .small {
+        font-size: 23px;
+    }
+    .mission-container {
+        width: 95%;
+    }
+    .card {
+        width: 30%;
+        margin: 23px 4px;
+        height: 160px;
+    }
+    .card h3 {
+        margin: 0px 5px;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .card-content {
+        padding: 2px;
+    }
+    #second_img {
+        height: 40px;
+    }
+    .card-content p {
+        font-size: 12px;
+    }
+    .card-img {
+        overflow-y: hidden;
+        height: 55px;
+        width: 215px;
+        margin: 5px 2px;
+    }
+    /* Section 3 */
+    #sponsersection {
+        height: 280px;
+    }
+    #sponsers {
+        margin: 0px;
+    }
+    .spImage {
+        height: 44%;
+        margin: 6px;
+    }
+    .my_input {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    * {
+        overflow-x: hidden;
+    }
+    /* NAV-BAR */
+    .logo {
+        margin: 10px 0 10px 10px;
+    }
+    .logo p {
+        margin: 0px;
+        font-size: 17px;
+    }
+    .three-lines {
+        margin: 0 10px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav li {
+        padding: 6px;
+    }
+    .item {
+        display: none;
+    }
+    #footer {
+        height: 260px;
+    }
+    .footer-1 {
+        font-size: 17px;
+        padding: 7px 0;
+        height: 44px;
+        width: 75%;
+    }
+    .footer-2 {
+        height: 150px;
+        overflow-y: hidden;
+    }
+    .footer-2 div {
+        height: 110px;
+        margin: 10px 15px;
+    }
+    .footer-2 h1 {
+        font-size: 13px;
+    }
+    .footer-2 a {
+        font-size: 9px;
+        padding: 2px;
+    }
+    .footer-2 li {
+        padding: 0px;
+    }
+    .footer-3 {
+        overflow-y: hidden;
+        height: 50px;
+        font-size: 13px;
+    }
+    /* Main Content */
+    #introsection {
+        height: 300px;
+    }
+    .big {
+        font-size: 29px;
+    }
+    .small {
+        font-size: 23px;
+    }
+    .mission-container {
+        width: 95%;
+    }
+    .card {
+        width: 30%;
+        margin: 23px 4px;
+        height: 160px;
+    }
+    .card h3 {
+        margin: 0px 5px;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .card-content {
+        padding: 2px;
+    }
+    #second_img {
+        height: 40px;
+    }
+    .card-content p {
+        font-size: 12px;
+    }
+    .card-img {
+        overflow-y: hidden;
+        height: 55px;
+        width: 215px;
+        margin: 5px 2px;
+    }
+    /* Section 3 */
+    #sponsersection {
+        height: 280px;
+    }
+    #sponsers {
+        margin: 0px;
+    }
+    .spImage {
+        height: 32%;
+        margin: 6px;
+    }
+    .my_input {
+        width: 80%;
+    }
+}
