@@ -1,11 +1,6 @@
 // Initiates variables
 const userCardTemplate = document.querySelector('[data-user-template]');
 const userCardContainer = document.querySelector('[data-user-cards-container]');
-const searchInput= document.querySelector('[data-search]');
-const searchTemplate = document.querySelector('[data-search-template]');
-const searchContainer = document.querySelector('[search-user-container]');
-import { blogs } from './data.js';
-let users = [];
 
 let blog = [
     { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/1.jpg", filePath: "blogs/1.html", },//1
@@ -35,51 +30,4 @@ blog.forEach(user => {//use mar or foreach
     writtenBy.textContent = user.author;
     blogLink.href = user.filePath;//doubt
     userCardContainer.append(card); 
-});
-
-// Used for showing results while searching
-users = blogs.map(user=>{
-    const dataCard = searchTemplate.content.cloneNode(true).children[0];
-    const blogTitle = dataCard.querySelector("[search-title]");
-    blogTitle.textContent = user.title;
-    blogTitle.href = user.filePath;//doubt
-    searchContainer.append(dataCard); 
-    return { name:user.title,element:dataCard};
-});
-
-// Search bar work is done here
-searchInput.addEventListener("input",(e)=> {
-    // This shows all the blogs in our website in the search result
-    const submit =document.querySelector("[search-submit]");
-    submit.value ="X";
-    submit.style.transform = "rotate(0deg)";
-    submit.style.fontSize = "35px";
-    const x = document.querySelectorAll("[search-title]");
-    x.forEach(list=>{
-        list.style.display="block";
-    })
-    
-    // This checks if there is any title of a blog associated with the search
-    var i;
-    const value = e.target.value.toLowerCase() 
-    users.forEach(user=> {
-        const isVisible = user.name.toLowerCase().includes(value);
-        user.element.classList.toggle("hide",!isVisible);
-        if (!isVisible == false) {
-            i++;
-        }
-        else if (!isVisible==true) {
-            i = 0;
-        }
-    });
-
-    // This shows no result found when no answer is found
-    if(i==0){
-        var a = document.getElementById("result");
-        a.style.display = "block";
-    }
-    else{
-        var a = document.getElementById("result");
-        a.style.display = "none";
-    }
 });
