@@ -35,7 +35,7 @@
     z-index: -1;
 } 
 
-#first-section>h1{
+#first-section>h1:nth-child(1){
     font-size: 40px;
 }
 .first-section-items{
@@ -62,8 +62,8 @@
 .hide{
     display: none;
 }
-#result{
+#resulted{
     display: none;
-    margin: 100px 0px;
+    padding: 100px 0px;
     font-size: 50px;
 }
