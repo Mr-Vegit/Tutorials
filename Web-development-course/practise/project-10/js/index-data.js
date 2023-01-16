@@ -1,3 +1,4 @@
+// Initiates variables
 const userCardTemplate = document.querySelector('[data-user-template]');
 const userCardContainer = document.querySelector('[data-user-cards-container]');
 const searchInput= document.querySelector('[data-search]');
@@ -16,7 +17,11 @@ let blog = [
     // { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/7.jpg", filePath: "blogs/7.html", },//7
     // { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/8.jpg", filePath: "blogs/8.html", },//8
 ]
+
 // WARNING : Do NOT TOUCH 
+
+
+// Writes all the featured articles in our website
 blog.forEach(user => {//use mar or foreach
     const card = userCardTemplate.content.cloneNode(true).children[0];
     const blogTitle = card.querySelector("[second-section-title]");
@@ -42,10 +47,10 @@ users = blogs.map(user=>{
     return { name:user.title,element:dataCard};
 });
 
+// Search bar work is done here
 searchInput.addEventListener("input",(e)=> {
-    const value = e.target.value.toLowerCase() 
-    var i;
-      const submit =document.querySelector("[search-submit]");
+    // This shows all the blogs in our website in the search result
+    const submit =document.querySelector("[search-submit]");
     submit.value ="X";
     submit.style.transform = "rotate(0deg)";
     submit.style.fontSize = "35px";
@@ -53,7 +58,10 @@ searchInput.addEventListener("input",(e)=> {
     x.forEach(list=>{
         list.style.display="block";
     })
-    // x.style.display = "block";
+    
+    // This checks if there is any title of a blog associated with the search
+    var i;
+    const value = e.target.value.toLowerCase() 
     users.forEach(user=> {
         const isVisible = user.name.toLowerCase().includes(value);
         user.element.classList.toggle("hide",!isVisible);
@@ -62,9 +70,10 @@ searchInput.addEventListener("input",(e)=> {
         }
         else if (!isVisible==true) {
             i = 0;
-            // x.style.display = "none";
         }
     });
+
+    // This shows no result found when no answer is found
     if(i==0){
         var a = document.getElementById("result");
         a.style.display = "block";
@@ -74,15 +83,3 @@ searchInput.addEventListener("input",(e)=> {
         a.style.display = "none";
     }
 });
-
-
-// indexItems.forEach((element, i) => {  //This function displays texts like title author name etc in the website
-//     element.getElementsByTagName("img")[0].src = blogs[i].imgPath;
-//     element.getElementsByTagName("a")[0].href = blogs[i].filePath; // This function helps the anchor tags bry providing them with links
-//     element.getElementsByClassName("second-section-title")[0].innerText = blogs[i].title;
-//     element.getElementsByClassName("author")[0].innerText = blogs[i].author;
-//     element.getElementsByClassName("publishedTime")[0].innerText = blogs[i].publishedTime;
-// })
-// indexlinks.forEach((element, i) => {// This function helps the anchor tags bry providing them with links
-//     element.getElementsByTagName("a")[0].href = blogs[i].filePath;
-// })
