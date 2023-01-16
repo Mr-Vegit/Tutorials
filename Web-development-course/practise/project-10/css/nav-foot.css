@@ -69,7 +69,7 @@ html {
     z-index: 2;
 }
 #search-title-name{
-    display: block;
+    display: none;
     text-align: center;
     background: white;
     border: 1px solid black;
@@ -114,6 +114,7 @@ html {
     -o-transform: rotate(305deg);
     transform: rotate(305deg);
     font-size: 30px;
+    cursor: pointer;
 }
 #result{
     display: none;

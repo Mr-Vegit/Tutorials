@@ -43,14 +43,17 @@ users = blogs.map(user=>{
 });
 
 searchInput.addEventListener("input",(e)=> {
-    var x = document.getElementById("search-title-name");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
     const value = e.target.value.toLowerCase() 
     var i;
+      const submit =document.querySelector("[search-submit]");
+    submit.value ="X";
+    submit.style.transform = "rotate(0deg)";
+    submit.style.fontSize = "35px";
+    const x = document.querySelectorAll("[search-title]");
+    x.forEach(list=>{
+        list.style.display="block";
+    })
+    // x.style.display = "block";
     users.forEach(user=> {
         const isVisible = user.name.toLowerCase().includes(value);
         user.element.classList.toggle("hide",!isVisible);
@@ -59,6 +62,7 @@ searchInput.addEventListener("input",(e)=> {
         }
         else if (!isVisible==true) {
             i = 0;
+            // x.style.display = "none";
         }
     });
     if(i==0){
