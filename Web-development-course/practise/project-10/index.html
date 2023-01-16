@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index-data.js" type="module" defer></script>
     <link rel="stylesheet" href="./css/nav-foot.css">
     <link rel="stylesheet" href="./css/index-content.css">
     <title>Blog website</title>
@@ -18,17 +19,29 @@
             </div>
             <ul>
                 <li class='item'><a href="./index.html">HOME</a></li>
-                <li class='item'><a href="#">About</a></li>
+                <li class='item'><a href="./blogs.html">blogs</a></li>
                 <li class='item'><a href="./contact.html">Contact</a></li>
             </ul>
-            <div class="search">
-                <form>
-                    <input id="search-bar" type="text" placeholder="Search for blogs">
-                    <div id="search-btn">
-                        <input type="submit" value="&#9906;">
-                    </div>
-                </form>
-            </div>
+            <ul class="search-ul" user-cards-container>
+                <div class="search">
+                    <form>
+                        <input id="search-bar" data-search type="text"
+                            placeholder="Search for blogs">
+                        <div id="search-btn">
+                            <input type="submit" value="&#9906;">
+                        </div>
+                    </form>
+                </div>
+                <h1 id="result">NO RESULT FOUND</h1>
+                <ul search-user-container>
+                </ul>
+                <template data-search-template>
+                    <li>
+                        <a id="search-title-name" search-title>
+                        </a>
+                    </li>
+                </template>
+            </ul>
         </div>
     </nav>
     <div class="border"></div>
@@ -36,9 +49,14 @@
         <div class="first-section-txt">
             <div>
                 <h1>The heaven for bloggers</h1>
-                <p>iBlog is a website which lets you submit an article which upon approval will be up on our website and you
-                    can get a good amount of reach from here! My Halloween decorations are staying in the box this year. To
-                    be honest, they did not make it out of the box last year either. My Halloween spirit has officially been bludgeoned to death by teenagers who no longer care and a persistent October fear of the Northern California wildfires. And speaking of fear, is not there more than enough of that going around? Maybe all of us pretend that Halloween is not even happening this year?
+                <p>iBlog is a website which lets you submit an article which upon approval will be up on our website and
+                    you
+                    can get a good amount of reach from here! My Halloween decorations are staying in the box this year.
+                    To
+                    be honest, they did not make it out of the box last year either. My Halloween spirit has officially
+                    been bludgeoned to death by teenagers who no longer care and a persistent October fear of the
+                    Northern California wildfires. And speaking of fear, is not there more than enough of that going
+                    around? Maybe all of us pretend that Halloween is not even happening this year?
                 </p>
             </div>
         </div>
@@ -48,8 +66,23 @@
     </section>
     <div class="border"></div>
     <section id="second-section">
-        <h1>Featured Articles</h1>
-    <div class="user-cards" data-user-cards-container></div>
+        <h1>our Featured Articles</h1>
+        <div data-user-cards-container>
+            <template data-user-template>
+                <div class="second-section-items">
+                    <a second-section-link>
+                        <img second-section-img alt="img">
+                    </a>
+                    <div class="second-section-txt">
+                        <a second-section-link>
+                            <h1 second-section-title class="second-section-title"></h1>
+                        </a>
+                        <p author class="author"></p>
+                        <p publishedTime class="publishedTime"></p>
+                    </div>
+                </div>
+            </template>
+        </div>
     </section>
     <div id="footer">
         <div class="footer-1">
@@ -108,7 +141,7 @@
                         <a href="https://teamtrees.org/">Team Trees</a>
                     </li>
                     <li>
-                        
+
                     </li>
                 </ul>
             </div>
@@ -119,22 +152,7 @@
             </span>
         </div>
     </div>
-    
-    <template data-user-template>
-        <div class="second-section-items">
-            <a>
-                <img  alt="img">
-            </a>
-            <div class="second-section-txt">
-                <a>
-                    <h1 class="second-section-title"></h1>
-                </a>
-                <p class="author"></p>
-                <p class="publishedTime"></p>
-            </div>
-        </div>
-    </template>
-    <script src="./js/data.js"></script>
+
 </body>
 
 </html>

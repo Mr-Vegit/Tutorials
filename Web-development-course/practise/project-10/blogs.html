@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/blogs-data.js" type="module" defer></script>
     <link rel="stylesheet" href="./css/nav-foot.css">
-    <link rel="stylesheet" href="./css/contact-content.css">
-    <title>Blog website</title>
+    <link rel="stylesheet" href="./css/blogs-content.css">
+    <title>All Our Blogs </title>
 </head>
-
 <body>
     <nav id='navbar'>
         <div>
@@ -18,12 +17,12 @@
             </div>
             <ul>
                 <li class='item'><a href="./index.html">HOME</a></li>
-                <li class='item'><a href="./blogs.html">blogs</a></li>
+                <li class='item'><a href="./blogs.html">Blogs</a></li>
                 <li class='item'><a href="./contact.html">Contact</a></li>
             </ul>
             <div class="search">
                 <form>
-                    <input id="search-bar" type="text" placeholder="Search for blogs">
+                    <input id="search-bar" data-search type="text" placeholder="Search for blogs">
                     <div id="search-btn">
                         <input type="submit" value="&#9906;">
                     </div>
@@ -32,17 +31,26 @@
         </div>
     </nav>
     <div class="border"></div>
-    <section class="content">
-        <h1>Feel Free to contact us</h1>
-        <form action="#">
-            <input type="text" placeholder="Enter your name">
-            <input type="text" placeholder="Enter your phone number">
-            <input type="email" placeholder="Enter your email Id">
-            <textarea name="description" id="form-description" placeholder="How can we help you?" cols="30" rows="10"></textarea>
-            <input type="submit" id="form-btn" value="Submit">
-        </form>
+    <section id="first-section">
+        <h1>All of our Articles</h1>
+        <h1 id="result">NO RESULT FOUND</h1>
+    <div class="user-cards" data-user-cards-container>
+        <template data-user-template>
+            <div class="first-section-items">
+                <a first-section-link>
+                    <img first-section-img alt="img">
+                </a>
+                <div class="first-section-txt">
+                    <a first-section-link>
+                        <h1 first-section-title class="first-section-title"></h1>
+                    </a>
+                    <p author class="author"></p>
+                    <p publishedTime class="publishedTime"></p>
+                </div>
+            </div>
+        </template>
+    </div>
     </section>
-    <div class="border"></div>
     <div id="footer">
         <div class="footer-1">
             <a href="#navbar">
@@ -100,7 +108,7 @@
                         <a href="https://teamtrees.org/">Team Trees</a>
                     </li>
                     <li>
-
+                        
                     </li>
                 </ul>
             </div>
@@ -112,5 +120,4 @@
         </div>
     </div>
 </body>
-
 </html>
