@@ -37,7 +37,7 @@
     z-index: -1;
 }
 .first-section-txt{
-    width: 60%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@
 }
 .first-section-txt>div{
     height: 100%;
-    width: 80%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -56,8 +56,9 @@
     font-size: 40px;
 }
 .first-section-txt p{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    line-height: 5vh;
+    /* font-weight: 500; */
 }
 .first-section-img{
     width: 30%;
