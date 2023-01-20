@@ -11,7 +11,11 @@ html {
 .hide {
     display: none;
 }
-
+.border{
+    border-bottom: 1px solid grey;
+    width: 80%;
+    margin: auto;
+}
 /* #navbar{
     background-color: rgb(240, 240, 240);
     
@@ -38,7 +42,7 @@ html {
 .item a {
     color: black;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     text-decoration: none;
 }
 

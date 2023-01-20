@@ -3,14 +3,14 @@ const userCardTemplate = document.querySelector('[data-user-template]');
 const userCardContainer = document.querySelector('[data-user-cards-container]');
 
 let blog = [
-    { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/1.jpg", filePath: "blogs/1.html", },//1
-    { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/2.png", filePath: "blogs/2.html", },//2
-    { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/3.png", filePath: "blogs/3.html", },//3
-    { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/4.png", filePath: "blogs/4.html", },//4
-    { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/5.jpg", filePath: "blogs/5.html", },//5
-    { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/6.jpg", filePath: "blogs/6.html", },//6
-    // { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/7.jpg", filePath: "blogs/7.html", },//7
-    // { title: "Basics of C programming", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/8.jpg", filePath: "blogs/8.html", },//8
+    { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/1.jpg", filePath: "blogs/1.html", },//1
+    { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/2.png", filePath: "blogs/2.html", },//2
+    { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/3.png", filePath: "blogs/3.html", },//3
+    { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/4.png", filePath: "blogs/4.html", },//4
+    { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/5.jpg", filePath: "blogs/5.html", },//5
+    { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/6.jpg", filePath: "blogs/6.html", },//6
+    // { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/7.jpg", filePath: "blogs/7.html", },//7
+    // { title: "Basics of C Language", author: "by Kingshuk", publishedTime: "15 Jaunary 2023", imgPath: "img/8.jpg", filePath: "blogs/8.html", },//8
 ]
 
 // WARNING : Do NOT TOUCH 
@@ -21,13 +21,15 @@ blog.forEach(user => {//use mar or foreach
     const card = userCardTemplate.content.cloneNode(true).children[0];
     const blogTitle = card.querySelector("[second-section-title]");
     const publishedOn = card.querySelector("[publishedTime]");
-    const blogLink = card.querySelectorAll('[second-section-link]');
+    const blogLink = card.querySelectorAll('a[second-section-link]');
     const blogImg = card.querySelector('[second-section-img]');
     const writtenBy = card.querySelector('[author]');
     blogTitle.textContent = user.title;
     publishedOn.textContent = user.publishedTime;
     blogImg.src = user.imgPath;
     writtenBy.textContent = user.author;
-    blogLink.href = user.filePath;//doubt
+    blogLink.forEach(list=>{
+        list.href = user.filePath;
+    })
     userCardContainer.append(card); 
 });

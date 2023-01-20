@@ -3,18 +3,13 @@
     padding: 0px;
     /* overflow-x: hidden; */
 }
-.border{
-    border-bottom: 1px solid grey;
-    width: 80%;
-    margin: 0px auto;
-    margin-bottom: 30px;
-}
+
 .content {
     position: relative;
     height: 80vh;
     width: 80%;
     border-radius: 15px;
-    margin: 15px auto;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

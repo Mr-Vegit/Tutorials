@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/nav-data.js" type="module" defer></script>
+    <script src="../js/blog-text.js" type="module:fs" defer></script>
+    <link rel="stylesheet" href="../css/nav-foot.css">
+    <!-- <link rel="stylesheet" href="../css/blogs-txt-content.css"> -->
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blogpost.css">
+    <title>Basics of C language</title>
+</head>
+<body>
+    <nav id='navbar'>
+        <div>
+            <div>
+                <img src="../img/logo.png" alt="logo">
+            </div>
+            <ul>
+                <li class='item'><a href="../index.html">HOME</a></li>
+                <li class='item'><a href="../blogs.html">blogs</a></li>
+                <li class='item'><a href="../contact.html">Contact</a></li>
+            </ul>
+            <ul class="search-ul" user-cards-container>
+                <div class="search">
+                    <form>
+                        <input id="search-bar" data-search type="text"
+                            placeholder="Search for blogs">
+                        <div id="search-btn">
+                            <input search-submit type="submit" value="&#9906;">
+                        </div>
+                    </form>
+                </div>
+                <h1 id="result">NO RESULT FOUND</h1>
+                <ul search-user-container>
+                </ul>
+                <template data-search-template>
+                    <li>
+                        <a id="search-title-name" search-title>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="post-img">
+        <img src="../img/first-container-home.jpg" alt="">
+    </div>
+    <div class="m-auto blog-post-content max-width-2 m-auto my-2">
+        <h1 class="font1">The heaven for bloggers</h1>
+        <div class="blogpost-meta">
+            <div class="author-info">
+                <div>
+                    <b>
+                  Author - Bill Gates (CEO Microtek)
+                </b>
+                </div>
+                <div>04 January. 6 min read</div>
+            </div>
+            <div class="social">
+                <svg width="29" height="29" class="hk"><path d="M22.05 7.54a4.47 4.47 0 0 0-3.3-1.46 4.53 4.53 0 0 0-4.53 4.53c0 .35.04.7.08 1.05A12.9 12.9 0 0 1 5 6.89a5.1 5.1 0 0 0-.65 2.26c.03 1.6.83 2.99 2.02 3.79a4.3 4.3 0 0 1-2.02-.57v.08a4.55 4.55 0 0 0 3.63 4.44c-.4.08-.8.13-1.21.16l-.81-.08a4.54 4.54 0 0 0 4.2 3.15 9.56 9.56 0 0 1-5.66 1.94l-1.05-.08c2 1.27 4.38 2.02 6.94 2.02 8.3 0 12.86-6.9 12.84-12.85.02-.24 0-.43 0-.65a8.68 8.68 0 0 0 2.26-2.34c-.82.38-1.7.62-2.6.72a4.37 4.37 0 0 0 1.95-2.51c-.84.53-1.81.9-2.83 1.13z"></path></svg>
+
+                <svg style="background: black;
+                border-radius: 21px;" width="29" height="29" viewBox="0 0 29 29" fill="none" class="hk"><path d="M5 6.36C5 5.61 5.63 5 6.4 5h16.2c.77 0 1.4.61 1.4 1.36v16.28c0 .75-.63 1.36-1.4 1.36H6.4c-.77 0-1.4-.6-1.4-1.36V6.36z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.76 20.9v-8.57H7.89v8.58h2.87zm-1.44-9.75c1 0 1.63-.65 1.63-1.48-.02-.84-.62-1.48-1.6-1.48-.99 0-1.63.64-1.63 1.48 0 .83.62 1.48 1.59 1.48h.01zM12.35 20.9h2.87v-4.79c0-.25.02-.5.1-.7.2-.5.67-1.04 1.46-1.04 1.04 0 1.46.8 1.46 1.95v4.59h2.87v-4.92c0-2.64-1.42-3.87-3.3-3.87-1.55 0-2.23.86-2.61 1.45h.02v-1.24h-2.87c.04.8 0 8.58 0 8.58z" fill="#fff"></path></svg>
+
+                <svg width="29" height="29" class="hk"><path d="M23.2 5H5.8a.8.8 0 0 0-.8.8V23.2c0 .44.35.8.8.8h9.3v-7.13h-2.38V13.9h2.38v-2.38c0-2.45 1.55-3.66 3.74-3.66 1.05 0 1.95.08 2.2.11v2.57h-1.5c-1.2 0-1.48.57-1.48 1.4v1.96h2.97l-.6 2.97h-2.37l.05 7.12h5.1a.8.8 0 0 0 .79-.8V5.8a.8.8 0 0 0-.8-.79"></path></svg>
+
+            </div>
+        </div>
+        <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel
+            or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance
+            a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time. The process
+            of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish. One reason
+            for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes
+            parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+        <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel
+            or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance
+            a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time. The process
+            of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish. One reason
+            for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes
+            parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+        <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel
+            or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance
+            a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time. The process
+            of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish. One reason
+            for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes
+            parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+        <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel
+            or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance
+            a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time. The process
+            of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish. One reason
+            for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes
+            parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>People who read this also read</h2>
+        <div class="row">
+
+
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="../img/2.png" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="./2.html">
+                        <h3>Learn more about Machine Learning techniques in India by joining this channel</h3>
+                    </a>
+
+                    <div>Author Name</div>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="../img/3.png" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="./3.html">
+                        <h3>Learn more about Machine Learning techniques in India by joining this channel</h3>
+                    </a>
+
+                    <div>Author Name</div>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="../img/4.png" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="./4.html">
+                        <h3>Learn more about Machine Learning techniques in India by joining this channel</h3>
+                    </a>
+
+                    <div>Author Name</div>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="border"></div>
+    <div id="footer">
+        <div class="footer-1">
+            <a href="#navbar">
+                iBlogs
+            </a>
+        </div>
+        <div class="footer-2">
+            <div>
+                <h1>
+                    Learn more about Covid
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.mygov.in/covid-19">Indian Government</a>
+                    </li>
+                    <li>
+                        <a href="https://www.unicef.org/india/coronavirus/covid-19">UNICEF</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ecdc.europa.eu/en/covid-19">European Union</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/COVID-19">Wikipedia</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Lets help the needy
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.pmcares.gov.in/en/">PM CARES</a>
+                    </li>
+                    <li>
+                        <a href="https://pmnrf.gov.in/en/">PMNRF</a>
+                    </li>
+                    <li>
+                        <a href="https://jalpaiguri.gov.in/donations-for-covid-19/">Donations</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Lets Save our mother Earth
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.beastphilanthropy.org/about/">Beast Philanthropy</a>
+                    </li>
+                    <li>
+                        <a href="https://teamseas.org/">Team Seas</a>
+                    </li>
+                    <li>
+                        <a href="https://teamtrees.org/">Team Trees</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-3">
+            <span>
+                Copyright © 2022 mrvegit.live | All rights reserved | Designed by Mr-Vegit
+            </span>
+        </div>
+    </div>
+</body>
+</html>
+<!-- <section class="content">
+    <div class="blog-content-img">
+    </div>
+    <div class="blog-content-txt">
+    </div>
+</section> -->
+<!-- <h3>What is a program made up of?</h3>
+    <p>
+        Ans: A program is made up of Keyword , identifier, constant, string letter and symbols
+    </p>
+<h3>What is a variable?</h3>
+    <p>
+        Ans: A variable is a name given to a memory location
+    </p>
+<h3>What are the rules for defining a variable in c language?</h3>
+    <p>
+        Ans: <ul>
+            <li>
+                It can contain alphabets, underscore(_) and digits
+            </li>
+            <li>
+                A variable name can start with an alphabet and underscore only
+            </li>
+            <li> 
+                It cannot start with a digit
+            </li>
+            <li>
+                no whitespace and reserved keywords are allowed
+            </li>
+        </ul>
+    </p> -->
