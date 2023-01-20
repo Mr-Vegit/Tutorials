@@ -1,0 +1,1033 @@
+reference to 3, 4 & 5
+
+What is a program made up of?
+Ans: A program is made up of Keyword , identifier, constant, string letter and symbols
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                          VARIABLE
+
+Reference to 6
+
+What is a variable?
+Ans: A name given to a memory location
+
+What are the rules for defining a variable in c language?
+1) It can contain alphabets, underscore(_) and digits
+2) A variable name can start with an alphabet and underscore only
+3) It cannot start with a digit
+4) no whitespace and reserved keywords are allowed
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                           OPERATOR
+
+Reference to 7
+
+What is an operator?
+Ans: An operator is a symbol used to perform operations in given programming language
+
+Arithmatic operators:  (+) operator is used to add 2 variables
+                       (-) operator is used for subtraction
+                       (*) operator is used to multiply two variables
+                       (/) operator is used for division
+                       (%) operator is used to see remainder of division of two variables
+
+Relational operators: These operators are used in control(If) statements
+                      (==) operator is used to check  if both the variables are equal
+                      (!=) operator means that variables are different  
+                      ( >) operator means that the first variable is greater than the second
+                      ( <) operator means that the first variable is less than the second
+                      (>=) operator means either the first number will be greater or equal to the second
+                      (<=) operator means either the first number will be lesser or equal to the second
+
+Logical  operators:   (&&) operator checks if both the variables are true. If either one or both variables 
+                           are false, then the computer will return false as the answer
+                      (||) operator checks even if one of statement is true then computer will return true as answer
+                      ( !) operator is used to change answer of the computer.For example if the answer to a statement
+                           using the (&&) operator comes true then ( !) will make theanswer false. Eg- !(A&&B) is false
+
+Bitwise  operators:    (&) operator changes the variable into binary digits and if both the variables are (1) it will show the
+                           result as (1) and if both are (0) then it will show the result as (0) and if one of the variable is (0) 
+                           then it will show the result as (0) 
+                     ( | ) Same happens on this operator also but it only requires any one of the variable to be (1)
+                      (^)  operator only needs one of the operator to be (1) to make the result (1) in all other contitions it 
+                           will make the result (0) 
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                               FORMAT SPECIFIER
+ 
+reference to 9
+
+What is a format specifier?
+Ans. Format specifier is used to tell the compiler which type of data is used inVariable when the program was written.
+eg:- int a=2 ;
+     float b=3.333 ; 
+
+How to put space in a number/ sentence using format specifier? 
+Ans. We can use ("sentence/number a.bf",variable).Here "a" means how much space to put before/after the digits/ words 
+     and "b" means how much zeroes to put after the number.In "a" the number should be bigger than the total number of 
+     alphabets/digits for it to work.   
+
+What are the various Format specifiers present in C language?
+Ans. The various Format specifier present in C languare are:-
+        1) %c - It is used to represent characters
+        2) %d - It is used to represent integers
+        3) %f  - It is  used to represent Floating/ decimal numbers
+        4) %l - It is used to represent long numbers
+        5) %lf - It is used to represent double numbers
+        6) %Lf- It is used to represent long double numbers
+        7) %s - It is used to represent strings(letters)
+
+                                                                                  CONSTANT
+
+What is a constant?
+Ans, A constant is a fixed value or variable which cannot be changed.
+
+What are the two ways to define a constant ?
+Ans. The two ways are:-
+      1) const keyword ---  It is only used in the program while entering the int variable . for eg " const int a=37; "  
+      2) #define preprocessor --- It is used before writting the entire program. for eg #define PI  3.14 then the entire program
+ 
+                                                                             ESCAPE SEQUENCES
+
+What is escape sequence?
+Ans. An escape sequence is composed of two  or more characters starting with a backslash. It is used to perform various
+     activities and this command for example "\n" (represents a new line) is taken as a single entity.Search it in google for 
+     better understanding
+
+what are the various escape sequences?
+Ans. the various escape sequences are :-
+       1)   (\a)  It represents an Alarm or beep
+       2)   (\b)  It represents a backspace
+       3)   (\f)  It represents a form feed
+       4)   (\n)  It represents a new line
+       5)   (\r)  It represents a carraige return
+       6)   (\t)  It represents a tab(horizontal)
+       7)   (\v)  It represents a vertical tab  
+       8)   (\\)  It represents a backslash
+       9)   (\')  It represents a single quote
+      10)   (\")  It represents a double qoute
+      11)   (\?)  It represents a question mark
+      12)   (\nnn)It represents a octal number
+      13)   (\xhh)It represents a hexadecimal number
+      14)   (\0)  It represents null
+
+                                                                                    COMMENTS
+
+What is comments?
+Ans. It is used to describe to what program I have return and its meaning and anything note worthy.
+We use comments after typing (//) for a single line or (/*) for starting and (*/) in the ending of a statement. 
+comments never effect a program code. It is only for the programmer's convenience.
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                           CONTROL Statements 
+
+Reference to 10 & 11
+
+What are control statements (If else statements)?
+Ans.It is used to perform functions which are based on certain conditions .
+                                                                          
+                                                                             (If else statements)
+
+What are the various types of  If else statements?  
+Ans.1) If  statement  - when we use some conditions using (if) statement if the condition is true then it will show you the 
+                        special output you have written if the condition is false then it will not show you anything
+    2)else if statement-It is used right after (if)statement (if wanted) and it can be used countless times and it is used in the
+                        same way as if statement
+    3) else statement - It is used at the end of the syntax when you dont have any other conditions to write. It never 
+                        requires a condition it takes any other option as its condition and you just need to write the output .
+
+                                                                                (Switch case statements)
+
+What are the various commands used in switch case statements?
+Ans. 1)Switch- In switch we enter the variable only
+     2) case - Case are options that we write and we match it with the variable that we used and it will write 
+               the output written in this case 
+     3)break - It is used to stop us from checking other case options if  my current case option is correct and 
+               it will directly take us to the next command .Without break the computer will write each and 
+               every output written in each case and also the default
+     4)Default-It is the last option if none of the case met the criteria then the default output would be shown.
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                                    LOOPS
+
+Reference to 12 13 14 & 15
+
+What is loops function?
+Ans.Loops are used to run a particular function again and again.
+
+Why do we use loops?
+Ans we use loops because it makes a program compressed and also it is less tiring to write some functions again 
+and again
+
+What are the various advantages of loops?
+Ans.1)It takes less time
+    2) code reussability
+    3)Traversing-
+
+What are the various types of loops?
+Ans  1) Do while loop 
+     2)While loop
+     3) For loop 
+NOTE: do while loop executes atleast once
+
+                                                                             (For Loop statement)
+
+Reference to 15
+
+What is the syntax of For For loop statement?
+Ans: there is 3 main things that are diferent in this statement:-
+    1) 1st Expresion - It is used to give the value of the variable but using this expression is not 
+                       compulsory we can just use a semi colon(;) and head to the next expression.
+    2) 2nd Expression- It is used to give conditions 
+    3) 3rd expression- It is used to update the number like to increase or decrease it every time it will be executed
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                        BREAK & CONTINUE  STATEMENT
+
+Reference to 16
+
+What is the work of break statement?
+Ans Break statement is used to take the computer out of any loop statement.
+
+What is Continue statement used for?
+Ans The computer on meeting this statement's condition will reject rest of 
+    the program written below and it will start the program again.
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                             GOTO STATEMENT
+
+Reference to 17
+
+What is goto statement?
+Ans GOTO statement also known as jump statement is used to transfer the computer to 
+    a predefined label (predetermined part of a code).This code is generally avoided as 
+    much as possible because it gets confusing very easily. This statement is generally
+    used to break many loops at the same time.
+
+What is the syntax of GOTO statement?
+Ans GOTO label = takes the computer to a particular part of the program.
+    label= it br=ings the computer to its location
+    GOTO end = sames applies here also but  it is used in the ending of the program
+    end= sames applies here also
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                        (Type casting)
+
+Reference to 18
+
+What is type casting?
+Ans; Typecasting is used to convert a number system like Integer into another number systtem like float . Syntax = (new number system)number
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                          FUNCTION
+
+Reference to 19
+
+What is a Function?
+Ans A function also known as subroutine and procedure is used to divide a big program into smaller pieces . 
+It also helps us to use a logic of a program muliple times.                
+
+What is the basic syntax of a function?
+Ans return_type function_name(data_type parameter 1, data_type parameter2,.....){
+//code to be executed 
+}     
+
+What are the advantages of using functions?
+Ans we can avoid rewriting same logic by writing it in a function
+    We can divide work among programmmers using functions
+    We can easily debug a program using functions
+
+define the following
+ Declaration - A function needs to be declared before we can use it
+ Definition  - We need to tell the computer what is the work of a particular function.
+ Call        - We need to call the function in order to use it.
+
+What are the various types of functions?
+Ans The two types of functions are:-
+    1)Library functions- Functions included in the #define files are called library functions. for example __ printf("a");
+    2)User defined functions-Functions created to reduce complexity in a program.
+
+What are the four function code types?
+Ans 1)with arguments with return value 
+    2)with arguments without return value
+    3) without arguments with return value
+    4) without arguments without return vlue
+NOTE: arguments mean the integer given in the program but it doesnot include scanf numbers which are given by the user
+NOTE: Return value only means any kind of integer
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                             RECURSIVE FUNCTION
+
+Reference to 21
+
+What is a Recursive Function ?
+Ans; Recursive Function or Recursion is a function which calls itself to work on smaller parts of that problem
+     Any function which calls itself is called recursive function. This makes the job of the programmer easier as it
+     divides the problems into smaller problems. A termination is always imposed on such functions otherwise they
+     will create infinite copies of itself. Any problem that can be solved recursively , can also be solved iteratively 
+
+Example: Suppose we make a food item lets say Dosa we will write the main function for preparing dosa then inside of 
+	 the dosa function we write the same function that will prepare the parts required to make dosa like the sambar 
+	 chutney and the masala inside the dosa
+
+Why should we use recursion ?
+Ans; Any problem that can be solved using recursion can also be solved using iteratively so it basically depends
+     on the situation and preference. Some situations are like tower of hanoi, fibonacci series, factorial finding, etc
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                                  ARRAYS
+
+Reference to 23
+
+What is a array?
+Ans; An array is just a table which stores data like any variable . In array we can easily store any value in any
+     variable 
+What are the various types of arrays
+Ans; Arrays are of three types. They are:-
+       1) 1D table - It stores any value in a single row
+       2) 2D table - It stores any value in rows and columns	
+       3) 3D table- It stores a value in a 3d shape which includes rows columns and hights
+ 
+What are the advantages of Arrays?
+Ans;1)Code that use arrays are more organised and hence readable
+    2)If we use normal variable to store values and if there are lets say 50 variable then the whole program would be 
+         unorganised, messy and difficult to read
+    3) It is used to store multiple data items of same type by using only a single name
+    4) Accessing an item in a given array is very fast
+    5) 2d arrays makes it easy in mathematical applications as it used to represent a matrix
+
+What are the properties of array?
+Ans; The various properties of array are :-
+     1)Data in array is stored in contiguous memory locations 
+     2)Each element of an array is of same type and size
+     3) Any element of the array with given index can be accessed very quickly by using its address
+     which can be calculated by using the base address with the index.
+
+SYNTAX FOR DECLARING AND INITIALIZING AN ARRAY
+
+1)Data_type(meaning format specifier)  name(size)
+2)Data_type name(size) ={x,y,z ............}:// size not required in this case
+3)Data_type name(rows)(columns):// for 2-d arrays only
+4)we can also initialize the array one by one by accessing it using its index
+ EX: name [1]= noob
+
+What are the disadvantages of using arrays?
+Ans; 1) poor time complexity of insertion and deletion operation
+     2) wastage of memory since arrays are fixed in size
+     3) If there is enough space present in the memory but not in contiguous
+            form, you will not be able to initialize your array.
+     4) It is not possible to increase the size of the array once you have declared it
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                                        POINTER
+
+Reference to 26
+
+What is a pointer?
+Ans; It is a kind of variable which is used to store the address of other variables or arrays
+     It can be seen as a dublicate of some variable.It is declared using the (*) asterisk symbol
+
+What are the use of (*) and (&) symbol?
+Ans; The address of (&) operator returns the address of a variable and (*) is the dereference
+     operator which is used to get the value at a given address.
+
+What is a NULL pointer?
+Ans; A pointer which is not assigned any value is called a null pointer.In computer language,
+     a null pointer is a poiner which does not point to any variable or function.
+     We can use it to initialize a pointer variable when that pointer variable is not assigned any valid memory address yet.
+
+What are the various uses of pointer?
+Ans; The varoius uses of pointers are as follows:-
+     1)Dynamic memory allocation
+     2)Arrays, functions and Structures
+     3)Return multiple values from a function
+     4)pointer reduces the code and improves the performance
+
+NOTE: If you change a value in a pointer then the value will get changed even the original variable 
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                            ARRAY AND POINTER ARITHMATICS
+
+Reference to 27
+
+What are the various operators used in the pointer?
+Ans; The various operators are as follows:-
+     1) ++
+     2) --
+     3) +
+     4) - 
+
+What is base address?
+Ans; The first byte address of any variable is known as base address.
+
+It means suppose you have int type variable then it’s size in my architecture is 4 byte 
+(It may vary in yours) then 4 consecutive blocks will be created in RAM. 
+So when we will point it with any pointer variable at that time the address of 1 block of 4 
+will come in that pointer variable. It means base address is the first block address of any data type variable.
+ 
+
+Pointers Arithmetic :
+
+We can’t add, multiply or divide two addresses. (Subtraction is possible)
+E.g:
+
+int a, b, *p, *q;
+
+&a*&b;                   // Not Possible
+
+&a+&b;                   // Not Possible
+
+p*q;                         // Not Possible
+
+We can’t multiply & divide an address with integer value.
+E.g :
+
+&a*5;                      // Not Possible
+
+p/5;                         // Not Possible
+
+We can add or subtract integer to/from an address.
+E.g :
+
+int a,b;          // Let’s Suppose &a is 1000
+
+int *p, *q;
+
+p=&a;
+
+q=&b;
+
+p+1;              // It is possible [1000+1 = 1004]
+
+Now you may think why we got 1004 as an output after adding 1 in 1000. So as we know a is an integer. 
+So it’ll take 4 bytes of memory & we know pointer always takes base address, but it access other bytes also by itself only.
+
+So, when we will add 1000+1 then from 1000 to 1003 all address are allocated to int a. 
+So the next block of memory is after 1003 i.e. 1004. So that’s how Pointers arithmetic is done.
+
+To Find arithmetic (+,-) of any pointer :
+
+Pointer + n = pointer + size of (type of pointer)*n
+
+Arrays and Pointers :
+Array always consumes memory location in contiguous fashion/manner.
+
+
+Suppose address of A[0] is 1000 then the address of next variable in Array will be 1004 (if int type) 
+because we know pointer always takes the base address and when it is incremented or decremented then 
+it contain the address of next block but not of very next byte. 
+
+
+ 
+Pointer when incremented always point to next block of its own type.
+When we add or increment in pointer than literal addition doesn’t take place instead of that it start pointing next block.
+
+E.g. :
+
+int age[50];
+
+int *p;
+
+p= age;
+
+It means, Either we write &age or &age[0] or age. They all means that the first element of array or index 0 is being used or pointed by pointer.
+
+So to access the other Array variables we can simply do increment or decrements in pointer variable an can access other Array variables too.
+
+         Like age[1] = p+1;
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                       CALL BY VALUE & CALL BY REFERENCE
+
+Reference to 31
+
+What is Actual parameters /  global parameters?
+Ans; The parameters (like variables , arrays etc) that are not used in any function 
+     are called Actual parameters / arguments.These parameters are used in various function. 
+
+What is formal parameters / local parameters?
+Ans; Parameters (like variables , arrays etc) that are used in a particular function and do not effect the parameters used in other functions
+     are called formal parameters.We generally pass values from the main function into these formal parameters for
+     being executed in user-made function.
+
+What are the two ways to call a function?
+1)Call  by  Value  - In this method we send the value of the actual parameters to the user-made function.
+		     This method does not change the value of actual parameters while executing user-made functions 
+
+EXAMPLE OF CALL BY VALUE:
+
+void swap(int x, int y)
+{
+int temp;
+temp=x;
+x=y;
+y=temp;
+}
+void main()
+{ 
+int r=10, v=20; 
+swap(r, v);  // passing value to function
+printf("\nValue of r: %d",r);
+printf("\nValue of v: %d",v);
+} 
+
+2)Call by reference- In this method, the address of actual parameters gets copied and assigned to the corresponding formal parameters 
+		     of user-made function. Values of actual parameters can be changed in the user-made function while using this method.
+
+EXAMPLE OF CALL BY REFERENCE:
+
+void swap(int *x, int *y)
+{
+int temp;
+ temp=*x;
+*x=*y;
+*y=temp;
+}
+void main()
+{ 
+int r=10, v=20; 
+swap(&r, &v);  // passing value to function
+printf("\nValue of r: %d",r);
+printf("\nValue of v: %d",v);
+}
+
+NOTE: If a local variable and a global variable have the same name
+      then The first priority will be given to the local variable 
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                                  PASSING ARRAYS
+
+Reference to 32
+
+Why do we need to pass arrays?
+Ans Sometimes We need to use many values and it might take alot of time to do so.
+so we pass array which contain those values. It saves alot of time and reduces the code.
+ 
+Write two ways to pass arrays?
+Ans The two ways are as follows:-
+    1)By declaring array as the parameter for the function.
+    2)By declaring a pointer in the function which would hold the base address of the array.
+
+NOTE: If you change the value of array in the user made function , it gets reflected in the main function
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                                 STRINGS
+
+Reference to 34 & 35
+
+What is a string?
+Ans;An array of characters terminated by (\0)NULL character is called a String.
+String is not a supported data-type in c-language but is very useful concept 
+to write words(like- name,video games,tokyo, etc)
+
+Write two syntax for creating a string.
+Ans; 1) Char name[] = "word";
+     2) Char name[] = {'w','o','r','d','\0'};
+
+What are the various operators used in string?
+Ans; 1)gets(array name) used to get input in the array
+     2)puts(array name) it is just like printf
+
+What is ASCII?
+Ans;ASCII is a format used to represent characters.It is used to represents characters in 7 bits
+In ASCII table values capital A To Z comes before small a to z.value of (both small and capital)a,b,c,d....etc are consecutive
+
+What are the various functions used in <string.h> library?
+Ans; 1)strcat()-This function is used to add two words.For example we have two words big and bang, 
+		this function will show the result as bigbang or bangbig depending on the sequence of code  
+     2)strlen()-This functionis used to show the total length of the word excluding the null charater.
+     3)strrev()-This function is used to show the string in a reversed manner.
+		For example if we have a string like legend then this function will show the output as dnegel
+     4)strcpy()-This function is used to copy one value of string into another another string
+     5)strcmp()-This function compares two words in their ASCII value and if they are same then it will show (0) as answer.
+		If the words are different then this function compares the first letter of the word and 
+		If First letter of first word  comes first in the ASCII table then it will show a positive number as answer. 
+		If first letter of second word comes first in the ASCII table then it will show a negative integer as answer.
+
+NOTE: String is not a datatype in c language.
+NOTE: While writing the limit of the array we must atleast make it one more the 
+      sum of characters of the word eg- char arr[6]="games"
+NOTE: To use various functions for strings we need use (#include <string.h>)
+_______________________________________________________________________________________________________________________________________________________________________
+
+									STRUCTURE & UNIONS
+
+Reference to 37 & 39
+                                                                                              
+What is a Structure ?
+Ans; IT is a user defined data type.It is used to combine different types of data (like integers,float,etc) together.
+It is used to create a comlplex data type which has a diversity of data types.It is similar to array but in array
+we can store only one data type whereas in structure we can store many data types.Union is almost same as structure
+
+What is the difference between structure and unions?
+Ans;Structure allocates its each variable different memory locations and its size is the sum of all the data type variables 
+which means we can use more than one vbariable of a structure at a time.Whereas Union alocates its variables a shared 
+locations and its size is of the data type variable which has the highest size  
+
+SYNTAX OF STRUCTURE                                             SYNTAX OF UNION
+
+struct (name)                                                   union (name)
+{                                                               {
+data_type (var1_name);                                          data_type (var1_name);
+data_type (var2_name);                                          data_type (var2_name);
+data_type (var3_name);....                                      data_type (var3_name);....
+};                                                              };             
+
+How is a structure and Union accessed?
+Ans; An array is accessed using the subscript variable in the same way ,
+     A structure is accessed using the dot(.) operator. Dot(.) operator is also 
+     called Structure member operator.To access the structure we use this operator 
+     between the structure_name and structure_variable.eg- data_type.var1
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                                 TYPEDEF
+
+Reference to 38
+
+What is typedef function?
+Ans; It is used to change the name of a datatype.If we change the name of a datatype 
+     then we can use both the previous name and the new name.
+
+SYNTAX OF TYPEDEF FUNCTION
+typedef (previous name) (new name / nick name);
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                            STATIC VARIABLES
+
+reference to 42
+
+What is 'scope' of a Variable?
+Ans Scope is the area where a variable is active and hence can be accessed.
+
+What is local variable?
+Ans Vaiables which are accessible only inside a function or a block where
+    they are declared are called local variable.
+ 
+What is global Variable?
+Ans  Variables which are accessible to the entire program are called global variables.
+
+What is Static variable?
+Ans Static variables store their previous value and they do not get reset to their default value every time we innitialize them.
+    They remain in the memory while the program is getting executed.IF they are not innitialized then the dewfault innitialized value is 0.
+    They can only be innitialized using contant numbers and cannot be innitialized using any kind of user made function.
+
+NOTE: If a global variable and a local variable have the same name then the local variable will be always prefered by the computer. 
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                       DYNAMIC MEMORY ALLOCATION
+
+Reference to 45 & 47
+
+What is dynamic memory allocation?
+Ans Dynamic memory allocation is a way to customize the size of a variable or array or any data structure during the runtime / execution of program.
+
+What is the difference between Static memory allocation and dynamic memory allocation?
+Ans              static memory allocation                                     |                        dynamic memory allocation
+                                                                              |
+   1) Allocation is done before the program's execution                       |   1) Allocation is done during the program's execution 
+   2) There is no memory reusability and the memory allocated cannot be freed |   2) There is memory reusability and allocated memory can be freed when not required
+   3)  It is less efficient                                                   |   3)  It is more efficient 
+
+What are the various segments where memory is assigned to a program in a typical arrchitecture?
+Ans 1) Code - It is also called text segment.
+    2) Static/ global variables-  i) Data segment - Initialized storage
+				 ii) BSS segment  - uninnitialized storage
+    3) stack - It stores and process all the funcions including all user made functions and library functions(like printf, main).
+	       It works on the principle of LIFO (Last In First Out) which means main program comes first in the execution
+	       so it leaves lastand any other function comes later so it leaves first.
+    4) Heap -  This place is where all the magic of dynamic memory allocation works.  
+
+What is stack overflow?
+Ans Compiler allocates some space for the stack part of the memory, But when this space gets exhausted
+    for some reason then this situation is  called stack overflow . eg - recursion with wrong or no base condidion.
+
+Why we use dynamic memory allocation?
+Ans There are alot of limitations of stack(static memory allocation), so we use dynamic memory allocation in heap which 
+    can be used flexibly by the programmer as per as his needs. 
+
+What are the various functions of dynamic memory allocation?
+Ans 1) malloc  - Malloc stands for memory allocation. It reserves a block of memory with the given size in bytes.
+		 The return value is a void pointer to the allocated space
+		 The void pointer needs to be converted to the required data type of the variables.
+		 If the space is insufficient, allocation of memory fails and it returns a null pointer. 
+                 All the values at allocated memory are initialized to garbage values.
+
+       SYNTAX  : ptr= (ptr-type*) malloc(size_in_bytes)
+ 	   eg  - int* ptr;
+	         ptr = (int*) malloc (3* sizeof(int))
+
+    2) calloc  - calloc stands for contiguous allocation.It is the same as malloc, except  all the values
+		 at allocated memory are initializes to zero
+
+       SYNTAX  : ptr = (ptr-type*)calloc (number of blocks, size_in_bytes)
+	   eg  - ptr = (int*) malloc (3, sizeof(int))
+ 
+    3) realloc - IT stands for Reallocation. If the dynamically allocated memory is insufficient,we can change 
+		 the size of previously allocated memory using realloc() function.
+
+	SYNTAX : ptr = (ptr-type*) realloc(old_ptr, new_size_in_bytes)
+
+    4)   free  - It is used to release the allocated memory. If the dynamically allocated memory is 
+	         not required anymore, we can free it using free() function.This will 
+		 free the memory being used by the program in the heap.
+
+        SYNTAX : free(ptr)
+
+NOTE: Stack and heap goes in opposite directions which means if stack goes upwards then heap will go downwards.
+NOTE: We need to use #include <stdlib.h>      
+_______________________________________________________________________________________________________________________________________________________________________
+    
+									      STORAGE CLASSES
+
+reference to 49
+
+What is storage class?
+Ans; A storage class defines the scope , lifetime and default initial value of a variable in C language. 
+
+What are the various types of storage classes?
+Ans; 1) Automatic variables - A variable defined without any storage class specification is by default an automatic variable.
+	   
+	   i) Scope         - Local to the function body they are defined in.
+	  ii) Default value - garbage value (a random value) 			 
+         iii) Lifetime      - till the end of the function block they are defined in.
+   
+     2) External Variables  - These are the global variables.
+           
+           i) scope         - Available to the entire program
+	  ii) Default value - zero (0)
+	 iii) Lifetime      - available till the end of the program.
+	  iv) Use of'extern'- We use extern keyword to include various variables and other functions from other programs. eg- 'extern int veg'  
+
+NOTE : It is recommended to use it as less as possible since it keeps a certain chunk of memory for the entire duration of the program.
+	 
+     3) Static variables    - A static variable remains under existance for use within the function for the entire duration of the program.
+
+	   i) Scope         - Local to the function they are defined in					
+	  ii) Default value - zero (0)
+	 iii) Lifetime      - They are available throughout the lifetime of the program
+
+NOTE : It is recommended to use it as less as possible since it keeps a certain chunk of memory for the entire duration of the program. 
+
+     4) Register variables  - Register variable requests the compiler to store the vaiable in the CPU register instead of storing it in the RAM to have
+			      a faster access.Generally it is used for the variables which is used most frequently .
+
+	   i) Scope         - Local to the function they are declared in.
+	  ii) Default value - Garbage value (random value).
+	 iii) Lifetime      - They are available till the end of the function block where it was declared.
+
+NOTE : Register variables only requests the compiler to store it in the CPU register , It never guarantees it . In case , compiler cannot provide register storage 
+       then it makes the register variable into automatic variable which is the default variable.
+_______________________________________________________________________________________________________________________________________________________________________
+
+										     VOID POINTER
+
+reference to 52
+
+What is a void pointer?
+Ans; a pointer that has no data type associated with it is called void pointer.A void pointer can be easily typecasted to any pointer type.
+     In simple terms, It is a general purpose pointer variable.
+
+What is the use of Void pointer?
+Ans; In dynamic memory allocation, malloc() and calloc () return return void pointer as their output. This allows these dynamic memory functions to be used to 
+     allocate memory of any data type. This is because these pointers can be typecasted to any other data type
+
+NOTE : It is not possible to dereference Void Pointers.   
+NOTE : Pointer arithmatic is not allowed in C standards with void pointers. Hence, it is not recommended to use pointer arithmatic with void pointers
+_______________________________________________________________________________________________________________________________________________________________________
+
+										     NULL POINTER 
+
+reference to 53
+
+What is a null pointer?
+Ans; Null pointer is a pointer which has a value reserved for indicating that the pointer does not refer to any valid object.
+We cannot dereference Null opointer it is used when we don't want a pointer to point to any valid object. Null pointer is a  
+specific pointer mentioned in c standards and has specific purposes. NUll pointers give a functionality to C programmers to 
+check if a pointer is legitimate.
+
+What are the various uses of NUll pointer?
+Ans; i) To initialize a pointer variable in cases where a pointer variable has not been assigned any valid address
+    ii) TO check for legitimate address location before accessing any pointer variable.
+   iii) Using Null pointer we can perform better error handling while using C language.
+    iv) Examples of such error handling can be : Dereference pointer variable only if it is not null.
+     v) To pass a null pointer to a function argument when we dont want to pass any valid memory location.
+    
+   Example of V:              func(char str[22],char *ptr) // use of str variable is to print the strings present in it and use of ptr is to copy the contents of str 
+                     { 
+		        if (ptr == null)
+		        {
+			   dont copy the contents of str in ptr just print str 
+                        }
+		        else if (ptr != null)
+                        {
+			   copy the contents of str in ptr and print str also
+                        }
+                    }
+
+What is the difference between null pointer and uninitialized pointer?
+Ans; An Uninitialized pointer contains an undefined value (garbage value) whereas a null pointer contains a defined value
+
+What is the defference between Void pointer and null pointer ?
+Ans; Void pointer is a data type whereas Null pointeer is a data value.
+  
+NOTE: Null pmacro is defined as ((void*)0) in header files of most of the C compiler implementations
+NOTE: A Null pointer stores a defined value, which is the one decided by the environment to not be a valid memory address for any object. 
+NOTE: IF the pointer is null and you try to dereference it , your program will get crashed and you might need to restart the compiler
+_______________________________________________________________________________________________________________________________________________________________________
+    
+                                                                            DANGLING POINTER
+
+Reference to 54
+
+What is a dangling pointer?
+Ans; A pointer pointing to a free memory location or the location whose contents were deleted is called  Dangling pointer
+
+When does a dangling pointer gets created/
+Ans; Dangling pointers arise during object destruction when an object that has an incoming reference is deleted or deallocated without modifying 
+the value of the pointer, so that the pointer still points to the memory location of the deallocated memory.
+
+What are the various causes of Dangling pointer?
+Ans; i) Deallocating of memory - When memory is deallocated, the pointer keeps pointing to the freed space
+
+	Example : Char "Hi King!!"
+                  int a;
+                  int *ptr = (int*)malloc(sizeof(int));
+                  free(ptr);//ptr now became a dangling pointer
+                  ptr = NULL;// ptr no longer a dangling pointer
+
+    ii) Returning local variables in function calls - 
+   iii) Variable going out of scope
+
+Is dangling pointer a good thing to have ? if not how can we remove a dangling pointer?
+Ans; Dangling pointers can introduce nasty bugsa in our programs and these bugs frequently become security holes at time.
+                    
+                             We can avoid issues caused by a dangling pointers by initializing pointer to null. 
+After deallocating memory,pointer will no longer be dangling. Assigning null value means dangling pointer is a null pointer now.
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                              WILD POINTER 
+Reference to 55
+
+What is a wild pointer?
+Ans; i) Uninitialized pointers are known as wild pointers. 
+    ii) These pointers point to some arbitrary location in memory and may cause a program to crash or behave badly. 
+   iii) Dereferencing wild pointers can cause nasty bugs . 
+    iv) It is suggested to always initialize unused pointers to NULL.
+_______________________________________________________________________________________________________________________________________________________________________
+                                                                              
+                                                                             C PRE- PROCESSOR
+
+Reference to 58 59 & 60 
+
+What are the four phases for a c Language to become an executable?
+Ans; i) Pre- Processing - In pre processing, compiler removes comments, expands macros and #include files
+    ii) Compilation
+   iii) Assembly
+    iv) linking
+
+What is a C preprocessor?
+Ans; 1) C preprocessor comes under action before the actual compilation process
+     2) C preprocessor is not a part of the c compiler
+     3) It is a substitution tool
+     4) All preprocessor commands begin with a hash symbol (#)
+     5)  Preprocessor is a kind of automated editor that modifies a copy of the original source code
+
+Write the various preprocessor commands?
+Ans; 1) #define  -   i) The #define directive is used to "define" preprocessor "variables"
+                    ii) The #define preprocessor directive can be used to globally replace a word with a number 
+                   iii) It acts as if an editor did a global search-and-replaces edit of the file
+
+     2) #include - 1) The #include directive causes the preprocessor to fetch the contents of some other file to be included in the present file
+                   2) files may #include some other file(s) which may in turn do the same.
+                   3) Most commonly the #included files have a ".h" extention, indicating that they are header files 
+
+     3) #undef  -  It undefines a preprocessor variable or a macro
+     4) #ifdef  -  It returns the output as true if a preprocessor variable or a macro is defined
+     5) #ifndef -  It returns the output as true if a preprocessor variable or a macro is not defined
+     6) #if     -  It returns true if the condition provided is met 
+     7) #else   -  It returns true if the condition provided is met
+     8) #elif   -  It returns true if the condition provided is met
+     9) #pragma -  It is used to issue some advanced commands to the compiler
+    10) #error  -  It is used to print the error message on stderr.
+
+What are the two common #include formats?
+Ans; i) In C programming There are two common formats for #includes:
+         1) #include <headerfile.h>  //the angle brackets say to look in the standard system directories
+         2) #include "myfile.h"      // This quotation marks say to look in the current directory
+
+    ii) Disk drive full path is allowed , but discouraged since it is not portable.
+         1) #include <C:\Program Files (x86)\Common Files\somefile.h> // too specific
+         2) #include <sys/file.h>    //relative and portable path to the standard locations
+
+How can we use #define for debugging ?
+Ans; #define directive can be used for debugging. We can have statements which will only 
+     be used when debugging.W can protech those statements using " #ifdef "
+
+What is a macro?
+Ans; Macros operate much like function but are generally faster because they are expanded in place.
+
+Example:
+                          #define SQUARE (x) x*x] // this is a macro
+                          main()
+                          {
+                             int a;
+                             printf("area of square = %d",SQUARE(a)) // how compiler will see this sum = " printf("area of square = %d",a*a) " 
+                             return 0;
+                          }
+
+Write some of the predefined macros in C language ?
+Ans; 1) __DATE__  - The current date as a character literal in " MM DD YYYY " format
+     2) __TIME__  - The current time as a character literal in " HH:MM:SS" format
+     3) __FILE__  - The current filename as a string literal 
+     4) __LINE__  - The current line number as a decimal constant
+     5) __STDC__  - Defined as 1(one) When the compiler complies with  the ANSI Standard    
+
+NOTE: Compiler converts textual form of a C program into an executable.
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                               FILE I/O
+
+Reference to 62 64 & 67
+
+What are the various uses of files?
+Ans; 1) Files are used to store data and information 
+     2) FIles are used to read & access data anytime from the hard disk
+     3) Files makes it easy for a programmer to access and store content without losing it on program termination 
+
+Differentiate between Volatile and Non-Volatile memory?
+Ans                           VOLATILE MEMORY                                      |                              NON-VOLATILE MEMORY
+     1) Volatile memory is computer storage that only maintains its                |       1) Non-volatile memory is computer memory that can retain the stored 
+        data while the device is powered                                           |          information even when not powered
+                                                                                   |        
+     2) RAM will hold data, programs and information as long as it                 |       2) This type of memory is also reffered to as permanent memory since 
+        has a constant power supply but immediately the power is                   |          data stored within it can be retrieved even when there is no contant
+        interrupted all that content is cleared                                    |          power supply
+                                                                                   |
+     3) The Volatile memory will only hold data temporarily                        |       3) It is used for the long term storage of data
+
+Why do we need files ?
+Ans; 1) When a C program is terminated, the data stored in RAM is lost 
+     2) Storing in a file will preserve our data even after the program terminates
+     3) RAM is not able to handle quite large amount of data due to its small size as compared to the hard disk
+     4) It is easy to transfer data as files
+
+What are the two types of files?
+Ans; 1) text file   - The data stored in it is in plain text
+     2) Binary file - The data stored in it much more secured and is stored in the form of 0 , 1 
+
+What are the various file operation in C language?
+Ans; 1) Creating a new file
+     2) opening a file 
+     3) closing a file
+     4) reading from and writing to a file
+
+What are the various modes to open a file in C language ?
+Ans; 1) r  - Opens an existing text file for reading 
+
+     2) w  - Opens a file for reading. If it doesn't exist then a new file is created. Writing starts from the begining of the file  
+
+     3) a  - opens a text file for writing in appending mode. If it does not exist then a new file 
+             is created. The program will start appending content to the existing file content
+
+     4) r+ - This mode will open a text file for both reading and writing 
+
+     5) w+ - Opens a text file for both reading and writing. It first truncates the file to zero 
+             length if it exists and if does not exist then creates a new file.
+
+     6) a+ - Opens a text file for both reading and writing. It creates the file if it doesn't exists. 
+             The reading will start from the beginning but writing can only append to file 
+
+What are the various functions for using files in C language?
+Ans; 1) fopen         - stdio.h contains a function called fopen() for opening files in C language. 
+
+        Syntax       => ptr = fopen("fileopen","mode");
+
+        examples     => ptr = fopen ("E:\\Code\\harry.txt","w");
+                        ptr = fopen ("E:\\Programming\\bhai.bin","rb");
+
+
+     2) fclose        - stdio.h contains a function called fclose() for closing files in C language. 
+
+        syntax       => fclose(fptr)          // ptr refers to the pointer containing the address of the file.
+
+
+     3) fscanf        - we use fscanf function to read a file. It is a file version of scanf function. 
+                        Fscanf function expects a file pointer in addition to other arguments which scanf expects. 
+                        We will have to open the file in read mode in order to use this function.
+
+        Syntax       => fscanf(ptr,"%s",string)       //here ptr refers to the pointer containing the file and string 
+                                                        refers to the array which will contain the text from the file
+
+
+     4) fprintf       - We use fprintf function to write in a file. This is a file version of printf function. 
+                        fprintf function expects a file pointer in addition to other arguments which printf expects. 
+                        We will have to open the file in write mode in order to use this function.
+
+        Syntax       => fprintf(ptr,"%s",string)       //here ptr refers to the pointer containing the file and 
+                                                         string refers to the array which will transfer some text to the file
+  
+
+     5) fputc / fputs - It is the simplest function to write characters / strings to a file. It returns the written character written on success. 
+                        On failure it returns EOF(end of file). EOF is a constant defined in the header file stdio.h. 
+
+        Syntax       => int fputc(character , FILE pointer); 
+                        int fputs(const char *s, file pointer);
+     
+
+     6) fgetc / fgets - It is the simplest function to read characters from a file. It returns the read characters on success.
+                        On failure it returns EOF(end of file). EOF is a constant defined in the header file stdio.h.
+
+        Syntax       => int fgetc(FILE * fp );
+                        int fgets(const char*s, int (x+1),FILE * fp); // here x refers to the number of characters you want to read plus one.               
+
+NOTE: when working with files, we have to declare a pointer of type FILE and make it a null pointer. 
+This declaration helps us to work with files through C language.
+
+NOTE: Any file which is opened in C program needs to be closed using fclose() function
+
+______________________________________________________________________________________________________________________________________________________________________
+
+                                                                          COMMAND LINE ARGUMENTS
+
+Reference to 68
+
+What are command arguments?
+Ans; It is an important concept in C language. Sometimes we need to pass arguments from the command line to the program a set of inputs.
+Command line arguments are used to supply parameters to the program when it is invoked. It is mostly used when you need to control your 
+program from the console. These arguments are passed to the main() function. Eg - Ffmpeg.exe is a command line utility written in C language. 
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                           FUNCTION POINTER
+
+Reference to 72
+
+What is function pointer?
+Ans; We can have pointers point to functions as well. Function pointers are useful to implement callback Functions.
+Compiler takes one or more source files and converts them to machine code. Unlike normal pointers we do not allocate or de
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                           CALLBACK FUNCTIONS
+
+REference to 73
+
+What is a callback function?
+Ans; Function pointer are used to pass a function to a function. This passed function is then be called again 
+(hence the name callback function). This provides programmer to write less code to do more stuff.
+_______________________________________________________________________________________________________________________________________________________________________
+
+                                                                               MEMORY LEAK 
+
+Reference to 75
+
+What is memory leak?
+Ans; When we dynamically assign memory in the heap and don't free it when not requre , the memory keeps on increasing 
+(which is known as memory leak)until it overflows and causes the program to get crashed  
+
+What causes memory leak in C langauage? 
+Ans; Memory leak occurs we don't use dynamic memory properly. When we keep on allocating memory in the heap without freeing, 
+The overall memory usage keeps on increasing. This situation is the cause of memory leak . It happens if the programmer 
+creates a memory block in the memory and forgets to delete it. To avoid these memory leak situations, memory allocated on heap 
+should always be freed when not needed.    
+_______________________________________________________________________________________________________________________________________________________________________

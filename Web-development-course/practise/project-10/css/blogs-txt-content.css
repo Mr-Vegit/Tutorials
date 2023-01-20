@@ -1,0 +1,8 @@
+.blog-content-img{
+    height: 65vh;
+    width: 100%;
+    background-image: url(../img/first-container-home.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

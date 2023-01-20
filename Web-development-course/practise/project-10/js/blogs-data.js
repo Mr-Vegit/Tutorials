@@ -34,11 +34,11 @@ searchInput.addEventListener("input",(e)=> {
         }
     });
     if(i==0){
-        var a = document.getElementById("result");
+        var a = document.getElementById("resulted");
         a.style.display = "block";
     }
     else{
-        var a = document.getElementById("result");
+        var a = document.getElementById("resulted");
         a.style.display = "none";
     }
 });

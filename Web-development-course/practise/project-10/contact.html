@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/nav-data.js" type="module" defer></script>
     <link rel="stylesheet" href="./css/nav-foot.css">
     <link rel="stylesheet" href="./css/contact-content.css">
     <title>Blog website</title>
@@ -21,14 +22,26 @@
                 <li class='item'><a href="./blogs.html">blogs</a></li>
                 <li class='item'><a href="./contact.html">Contact</a></li>
             </ul>
-            <div class="search">
-                <form>
-                    <input id="search-bar" type="text" placeholder="Search for blogs">
-                    <div id="search-btn">
-                        <input type="submit" value="&#9906;">
-                    </div>
-                </form>
-            </div>
+            <ul class="search-ul" user-cards-container>
+                <div class="search">
+                    <form>
+                        <input id="search-bar" data-search type="text"
+                            placeholder="Search for blogs">
+                        <div id="search-btn">
+                            <input search-submit type="submit" value="&#9906;">
+                        </div>
+                    </form>
+                </div>
+                <h1 id="result">NO RESULT FOUND</h1>
+                <ul search-user-container>
+                </ul>
+                <template data-search-template>
+                    <li>
+                        <a id="search-title-name" search-title>
+                        </a>
+                    </li>
+                </template>
+            </ul>
         </div>
     </nav>
     <div class="border"></div>
@@ -42,7 +55,6 @@
             <input type="submit" id="form-btn" value="Submit">
         </form>
     </section>
-    <div class="border"></div>
     <div id="footer">
         <div class="footer-1">
             <a href="#navbar">
