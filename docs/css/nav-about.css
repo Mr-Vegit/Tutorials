@@ -130,7 +130,7 @@
 /* FOOTER */
 
 #footer {
-    height: 250px;
+    height: 220px;
     background-color: rgb(2, 2, 2);
     color: white;
     display: flex;
@@ -140,13 +140,19 @@
 
 .footer-1 {
     width: 67%;
+    height: 3.5rem;
     font-size: 30px;
     font-family: 'Audiowide', cursive;
     text-align: center;
     border-bottom: 1px solid white;
     overflow-y: hidden;
 }
-
+.footer-1 span{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footer-2 {
     display: flex;
     justify-content: space-around;

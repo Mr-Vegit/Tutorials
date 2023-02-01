@@ -27,37 +27,28 @@
 <body>
     <div class="container">
         <nav id="navbar">
+            <div id="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.jpg" alt="logo" />
+                </a>
+            </div>
             <ul>
-                <li id="logo">
-                    <a href="index.html">
-                        <img src="./img/logo.jpg" alt="logo">
-                    </a>
-                </li>
-                <li><a href="index.html">Vegit</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="sign-in.html">Sign In</a></li>
-                <li class="three-lines">
-                    <p>&equiv;</p>
-                </li>
-            </ul>
-        </nav>
-        <div id="topnav">
-            <div class="active">
-                <a href="index.html">
-                    <img src="./img/logo.jpg" alt="logo">
+                <li class="item"><a href="./index.html">Home</a></li>
+                <li class="item"><a href="./collection.html">Collection</a></li>
+                <li class="item"><a href="#">Contact Us</a></li>
+                <li class="item"><a href="./sign-in.html">Sign In</a></li>
 
-                </a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <p>&equiv;</p>
-                </a>
-            </div>
-            <div id="myLinks">
-                <a href="index.html">Vegit</a>
-                <a href="collection.html">Collection</a>
-                <a href="#">Contact us</a>
-                <a href="sign-in.html">Sign In</a>
-            </div>
+            </ul>
+            <div class="three-lines" onclick="openNav()">&equiv;</div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <ul>
+                <li> <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./collection.html">Collection</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="./sign-in.html">Sign In</a></li>
+            </ul>
         </div>
         <div class="sign_head">
             <p> Sign In </p>
@@ -102,10 +93,65 @@
             </form>
         </div>
     </div>
-    <p class="aboutme">
-        COPYRIGHT RESERVED BY @mrvegit.live
-    </p>
+    <div id="footer">
+        <div class="footer-1">
+            <span>
+               Mr Vegit
+            </span>
+        </div>
+        <div class="footer-2">
+            <div>
+                <h1>
+                    Information
+                </h1>
+                <ul>
+                    <li>
+                        <a href="./collection/Covid-Info/index.html">Covid Info</a>
+                    </li>
+                    <li>
+                        <a href="./collection/Covid-map/index.html">Covid Map</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Tools
+                </h1>
+                <ul>
+                    <li>
+                        <a href="./collection/Spotify Clone/index.html">Spotify</a>
+                    </li>
+                    <li>
+                        <a href="./collection/calculator/index.html">Calculator</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>
+                    Contact Us
+                </h1>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Email : kinshuksaha1234@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Phone-no : 9382135610
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-3">
+            <span>
+                Copyright © 2022 mrvegit.live | All rights reserved | Designed by Mr-Vegit
+            </span>
+        </div>
     </div>
+    </div>
+    <script src="./css/nav.js"></script>
 </body>
 
 </html>
