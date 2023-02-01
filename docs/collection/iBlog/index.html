@@ -9,6 +9,7 @@
     <script src="./js/index-data.js" defer></script>
     <link rel="stylesheet" href="./css/nav-foot.css">
     <link rel="stylesheet" href="./css/index-content.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>Blog website</title>
 </head>
 
@@ -18,16 +19,16 @@
             <div>
                 <img src="./img/logo.png" alt="logo">
             </div>
-            <ul>
-                <li class='item'><a href="./index.html">HOME</a></li>
-                <li class='item'><a href="./blogs.html">blogs</a></li>
-                <li class='item'><a href="./contact.html">Contact</a></li>
+            <ul class="mobile">
+                <li class='mobile item'><a href="./index.html">HOME</a></li>
+                <li class='mobile item'><a href="./blogs.html">blogs</a></li>
+                <li class='mobile item'><a href="./contact.html">Contact</a></li>
             </ul>
-            <ul class="search-ul" user-cards-container>
-                <div class="search">
+            <ul class="mobile search-ul" user-cards-container>
+                <div class="mobile search">
                     <form>
                         <input id="search-bar" data-search type="text"
-                            placeholder="Search for blogs">
+                        placeholder="Search for blogs">
                         <div id="search-btn">
                             <input search-submit type="submit" value="&#9906;">
                         </div>
@@ -43,8 +44,37 @@
                     </li>
                 </template>
             </ul>
+            <div class="three-lines" onclick="openNav()">&equiv;</div>
         </div>
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <ul>
+            <li> <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a></li>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./blogs.html">blogs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <ul class="search-ul" user-cards-container>
+                <div class="search">
+                    <form>
+                        <input id="search-bar" data-search type="text"
+                        placeholder="Search for blogs">
+                        <div id="search-btn">
+                            <input search-submit type="submit" value="&#9906;">
+                        </div>
+                    </form>
+                </div>
+                <h1 id="result">NO RESULT FOUND</h1>
+                <ul search-user-container>
+                </ul>
+                <template data-search-template>
+                    <li>
+                        <a id="search-title-name" search-title>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </ul>
+    </div>
     <div class="border"></div>
     <section id="first-section">
         <div class="first-section-txt">
@@ -67,7 +97,7 @@
     </section>
     <div class="border"></div>
     <section id="second-section">
-        <h1>our Featured Articles</h1>
+        <h1>Our Featured Articles</h1>
         <div data-user-cards-container>
             <template data-user-template>
                 <div class="second-section-items">
@@ -153,7 +183,15 @@
             </span>
         </div>
     </div>
+    <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
 </body>
 
 </html>

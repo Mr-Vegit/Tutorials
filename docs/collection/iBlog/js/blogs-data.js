@@ -15,7 +15,10 @@ users = blogs.map(user => {//use mar or foreach
     publishedOn.textContent = user.publishedTime;
     blogImg.src = user.imgPath;
     writtenBy.textContent = user.author;
-    blogLink.href = user.filePath;//doubt
+    blogLink.forEach(list=>{
+        list.href = user.filePath;//doubt
+    })
+    
     userCardContainer.append(card); 
     return { name:user.title,element:card};
 });

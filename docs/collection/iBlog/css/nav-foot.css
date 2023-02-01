@@ -66,7 +66,6 @@ html {
     position: absolute;
     top: 42px;
     left: 0px;
-
 }
 .search-ul li{
     list-style: none;
@@ -132,7 +131,21 @@ html {
     top: 42px;
     left: 0px;
 }
+.three-lines {
+    overflow-y: hidden;
+    display: none;
+    font-size: 50px;
+    padding: 0px 10px;
+    height: 60px;
+    margin: 0px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
 
+.three-lines:hover {
+    color:  rgb(255, 136, 0);
+}
 /* Footer */
 #footer {
     height: 270px;
@@ -202,4 +215,56 @@ html {
 }
 .hide{
     display: none;
+}
+
+
+/* SIDE NAVBAR */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.sidenav li{
+    margin: 10px 0;
+}
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    font-size: 55px;
+    margin-right: 15px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
