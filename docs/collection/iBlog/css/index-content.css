@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     /* overflow-x: hidden; */
+    /* border: 2px solid black; */
 }
 
 
@@ -24,13 +25,13 @@
     top: 0;
     height: 100%;
     width: 100%;
+    z-index: -1;
     background-image: url('../img/first-container-home.jpg');
     background-position:top;
     background-repeat: no-repeat;
     opacity: 0.3;
     background-size: cover;
     border-radius: 15px;
-    z-index: -1;
 }
 .first-section-txt{
     width: 70%;
@@ -42,7 +43,7 @@
 }
 .first-section-txt>div{
     height: 100%;
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
