@@ -1,5 +1,5 @@
 const express = require("express");
-const fs = require("fs");
+// const fs = require("fs");
 const path = require('path');
 const app = express();
 const port = 80;
@@ -17,6 +17,10 @@ app.set('views',path.join(__dirname,'templates')); //set the views directory
 app.get('/',( req, res)=>{
     const params = {}
     res.status(200).render('index.pug',params)
+})
+app.get('/contact',( req, res)=>{
+    const params = {}
+    res.status(200).render('base.pug',params)
 })
 // app.get('/contact',( req, res)=>{
 //     const params = {}
