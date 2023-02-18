@@ -1,0 +1,36 @@
+extends template.pug
+
+block scripts
+block style 
+  style
+    include ../static/css/index.css
+    include ../static/css/media.css
+    //- include ../static/media-query/home-media.css
+block content
+  p#pagename.hide #{episodeId} 
+  p#type.hide #{type} 
+  section#recents-anime
+    div#recent-head
+      a(href="/") Latest episodes 
+      div.typesubordub
+        a(href="/recent-release/1?type=1") Sub
+        a(href="/recent-release/1?type=2") Dub
+        a(href="/recent-release/1?type=3") Chinese Dub
+    div#recents-anime-container
+      template.recents-anime-template
+        div.recents-anime-cards
+          a.recents-anime-link(href="#")
+            img.recents-anime-img
+            p.recent-sub-or-dub
+          p.recents-anime-title
+          p.recents-anime-episode
+  section#pages 
+    a#first-page(href="#") First page
+    div.pages-div
+      a.pages-a 
+      a.pages-a 
+      a.pages-a 
+      a.pages-a  
+      a.pages-a   
+    a#last-page(href="#") Last page
+  script(src='../static/js/index.js' type='module')   

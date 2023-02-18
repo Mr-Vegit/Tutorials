@@ -1,0 +1,99 @@
+html
+  head
+    meta(name="robots" content="NOINDEX,NOFOLLOW")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css")
+    //- Check its version from https://cdnjs.com/libraries/font-awesome
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/csfont-awesome.min.css")
+    title DekiAnime
+    block scripts
+    block style 
+    style
+      include ../static/css/nav-footer.css
+      include ../static/css/media.css
+    //-   include ../static/css/nav-footer-media.css
+  body
+    nav#navbar
+      div.logo
+        a(href="/")
+          img(src="../static/img/logo.png")
+      ul
+        li.item
+          a(href="/") Home
+        li.item
+          a(href="/Popular-Anime") Popular Anime
+        //- li.item
+        //-   a(href="/anime-list") Anime List
+        li.item
+          a(href="/movies") Movies
+        li.Search.item 
+          input#Search-Input(type="text", name="",placeholder="Search Animes")
+          a#Search-link(href="#") 
+            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512")
+              path(d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z")
+      div.logo.three-lines(onclick="openNav()") &equiv;
+    div#mySidenav.sidenav
+      ul 
+        li 
+          a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") &times;  
+        li 
+          a(href="/") Home  
+        li 
+          a(href="/Popular-Anime") Popular Anime 
+        //- li 
+        //-   a(href="/anime-list") Anime List
+        li 
+          a(href="/movies") Movies
+        li.Search 
+          input#Search-Side(type="text", name="",placeholder="Search Animes")
+          a#Search-Side-link(href="#") 
+            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512")
+              path(d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z")
+        li 
+          form(action="/logout?_method=delete" method="POST") 
+              button(type="submit") Log Out  
+        
+    block content
+    script(src='../static/js/navbar.js') 
+    //- footer#footer
+    //-     div.footer-1
+    //-         p Hotel PanchaDeep Bhavan 
+    //-         ul 
+    //-           li 
+    //-             i.fa-brands.fa-facebook-f
+    //-           li 
+    //-             i.fa-brands.fa-twitter
+    //-           li 
+    //-             i.fa-sharp.fa-solid.fa-envelope
+    //-           li
+    //-             i.fa-brands.fa-whatsapp
+    //-           li 
+    //-             i.fa-brands.fa-instagram
+    //-     div.footer-2
+    //-         div 
+    //-             h1 Facilities
+    //-             ul.footer-2-ul 
+    //-               li Ac Restaurent
+    //-               li Conference Hall 180 Capacity
+    //-               li Banquet Hall 500+ Capacity
+    //-               li Free Wifi
+    //-               li Geyser On Room
+    //-               li Elevator
+    //-               li Car Parking
+    //-         div
+    //-             h1 Services
+    //-             ul.footer-2-ul 
+    //-               li Doctor On Call
+    //-               li 24 Hrs Room Service
+    //-               li Pick Up And Drop
+    //-               li Vehicle For Local Sightseeing
+    //-               li 24 Hrs Power Back Up
+    //-         div 
+    //-             h1 Address
+    //-             ul.footer-2-ul 
+    //-               li Address : Deshbandhu Para, Opp. Fire Station Thana Road
+    //-               li PO+PS- Falakata-735211, West Bengal
+    //-               li Ph : 8250788335
+    //-               li Whatsapp : 838886489
+    //-               li Panchadeep.Bhawan@Gmail.Com
+    //-     div.footer-3 Copyright © 2022 panchadeepbhawan.com | All rights reserved | Designed by Mr-Vegit
