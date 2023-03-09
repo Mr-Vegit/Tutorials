@@ -20,7 +20,6 @@ const animeRecents = await response.json();
 function limitWord(str, no_words) {
     return str.split(" ").splice(0,no_words).join(" ");
 }
-console.log(animeRecents);
 users = animeRecents.map(user => {
     const card = userCardTemplate.content.cloneNode(true).children[0];
     const AnimeTitle = card.querySelector(".recents-anime-title");
@@ -32,7 +31,7 @@ users = animeRecents.map(user => {
     AnimeEpisode.textContent = 'episode'+user.episodeNum;
     AnimeSuborDub.textContent = user.subOrDub;
     AnimeImg.src = `${proxy+user.animeImg}`;
-    AnimeLink.href = '/'+'anime-watch'+'/'+user.animeId+'?'+"id="+user.episodeNum;
+    AnimeLink.href = '/'+'anime-watch'+'/'+user.animeId+'?'+"id="+user.episodeNum+"&num=none";
     userCardContainer.append(card); 
     return { name:user.episodeId,sub:user.subOrDub,elem:AnimeSuborDub,element:card};
 });
@@ -77,11 +76,6 @@ if (pagenum<=2) {
     });
 
 }
-// else if(pagenum == 500){
-//     pages_li.forEach((element) => {
-//         element.style.display="none"
-//      });
-// }
 else{
     pagenum=2
     let object = [

@@ -17,7 +17,7 @@ users = Movies.map(user => {
     const AnimeLink = card.querySelector('.recents-anime-link');
     AnimeTitle.textContent =limitWord(user.animeTitle,7) ;
     AnimeImg.src = `${proxy+user.animeImg}`;
-    AnimeLink.href = '/anime-details/'+user.animeId;
+    AnimeLink.href = '/movie-details/'+user.animeId;
     userCardContainer.append(card); 
     return { name:user.episodeId,element:card};
 });

@@ -20,9 +20,15 @@ h1{
 }
 #my_Form input::placeholder{
     font-size: 16px;
+    color: black;
+}
+#my_Form input:focus{
+    color: black;
+
 }
 #my_Form input{
     width: 40%;
+    color: black;
 	padding: 10px 30px;
 	margin: 10px;
 	font-size: 16px;

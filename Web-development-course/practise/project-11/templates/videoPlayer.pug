@@ -11,9 +11,11 @@ block style
 block content
   div#video-name.hide #{episodeName}
   div#video-num.hide #{episodeId}
+  div#video-id.hide #{AnimeId}
   div.artplayer-app 
   div.prev-next
     a.prev-next-btn#prev Prev 
+    a.prev-next-btn#animeDownloadLink(href="#") Download
     a.prev-next-btn#animeLink Anime
     a.prev-next-btn#next next 
-  script(src='../static/js/videoPlayer.js')   
+  script(src='../static/js/videoPlayer.js' type='module')   

@@ -27,7 +27,6 @@ let info = description.replace(/[^a-zA-Z0-9 ]/g, '\xA0');
 document.getElementById('anime-description').innerText = info;
 let genra=Array.from(document.getElementsByClassName('anime-genre-container'))
 var count = Object.keys(data.genres).length;
-console.log(data);
 genra.forEach((element) => {
     for (let i = 0; i < count; i++) {
         let para = document.createElement("p"); 
@@ -47,12 +46,11 @@ for (let i = 0; i < Episode_number; i++) {
 }
 const Result_Dub = await fetch(proxy+'https://api.consumet.org/anime/animefox/info?id='+animeId+"-dub");
 const InfoResult = await Result_Dub.json();
-console.log(InfoResult);
 if (InfoResult.hasDub) {
         let dub = document.getElementById("type-Dub")
-        dub.href = "/anime-details/"+animeId+"-dub";
+        dub.href = "/movie-details/"+animeId+"-dub";
 }else{
     let sub = document.getElementById("type-Sub")
     let subbed =animeId.replace('-dub', '');
-    sub.href = "/anime-details/"+subbed;
+    sub.href = "/movie-details/"+subbed;
 }

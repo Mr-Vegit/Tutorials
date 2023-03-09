@@ -1,4 +1,5 @@
 @media screen and (max-width: 500px) {
+    /* templates */
     .item {
         display: none;
     }
@@ -24,7 +25,17 @@
     .logo a img {
         height: 6vh;
     }
+    
+        .search input {
+            background-color: #111;
+            border-bottom: 1px solid white;
+            font-size: 2.5vh;
+            /* padding: 1vh; */
+            width: 43vw;
+        }
 
+
+    /* recents / popular */
     #recent-head {
         display: flex;
         width: 100%;
@@ -49,29 +60,31 @@
         height: 30vh;
         width: 41vw;
     }
-
+    
     .recent-sub-or-dub {
         border-radius: 1vh;
     }
-
+    
     #pages a {
         padding: 1vh 3vw;
         margin: 1vh 2vw;
         font-size: 2vh;
     }
-
-    .search input {
-        background-color: #111;
-        border-bottom: 1px solid white;
-        font-size: 2.5vh;
-        /* padding: 1vh; */
-        width: 43vw;
-    }
-
+    
     #popular-heading {
         margin: 3vh 0vw;
     }
-
+    #Search-Catagories {
+        width: 85vw;
+    }
+    .Type-Catagories a {
+        font-size: 2vh;
+    }
+    .search {
+        display: flex;
+        justify-content: center;
+    }
+    /* Video player */
     .artplayer-app {
         height: 29vh;
         width: 90vw;
@@ -80,6 +93,9 @@
         z-index: 1;
     }
 
+    .prev-next {
+        width: 95vw;
+    }
     .prev-next-btn {
         background-color: rgb(63, 9, 113);
         text-decoration: none;
@@ -89,67 +105,95 @@
         border-radius: 0.5vh;
     }
 
+
+    /* Anime Details */
     #AnimeDetails-container {
         width: 100vw;
         margin: 0vh;
     }
-
-    #AnimeDetails-container>.anime-title-div p {
-        margin: 3vh 0;
+    #AnimeDetails-container>.anime-title-div p{
         display: block;
         color: white;
-        font-size: 4vh;
         text-align: center;
-        width: 100vw;
+        font-size: 4vh;
+        margin: 2vh 0;
     }
-
-    .anime-details>.anime-title-div p {
+    .animeListed{
         display: none;
+    }
+    .anime-details>.anime-title-div p {
         color: white;
         font-size: 4vh;
         text-align: center;
         width: 100vw;
     }
-
+    .anime-details {
+        width: 90vw;
+    }
     .anime-img-Also-details {
-        align-items: flex-start;
+        align-items: center;
+        flex-direction: column;
     }
 
     .anime-img-Also-details img {
         height: 30vh;
-        margin-top: 5vh;
     }
-
-    .question-section {
-        display: none;
-    }
-
-    #anime-img-Also>div {
+    .anime-genre-container {
         display: flex;
-        align-items: center;
-        margin: 1.5vh 0;
+        width: 90vw;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-
     #anime-img-Also>div>p {
         color: rgb(108 108 108);
     }
 
     #anime-description {
-        margin: 2vh 0;
+        margin: 2vh 5px;
         font-size: 1.8vh;
     }
-
-    .search {
-        display: flex;
-        justify-content: center;
+    .genre-btn {
+        margin: 0.5vh 1vw;
     }
-
-    #Search-Catagories {
-        width: 85vw;
+    #anime-img-Also{
+        padding-left: 8px;
     }
-    .Type-Catagories a {
+    .recommendation-cards{
+        width: 50vw;
+        height: 40vh;
+    }
+    .recommendation-img{
+        height: 30vh;
+    }
+    .recommendation-cards-txt{
+    	width: 30vh;
+    }
+    #Episodes{
+        width: 100vw;
+    }
+    #Episode-Container{
+        width: 100vw;
+    }
+    .Episode-cards {
+        margin: 1vh;
+    }
+    .Episode-cards-txt {
+        padding: 1vh;
         font-size: 2vh;
     }
+    #Episode-Container img{
+        height: 10vh;
+    }
+    .Episode-cards-txt{
+        width: 16vh;
+    }
+    #recomendations-btn {
+        width: 95vw;
+    }
+    #Episode-Container {
+    justify-content: space-around;
+    }
+    /* Login and register */
     #my_Form input {
         width: 90%;
         padding: 10px 10px;
