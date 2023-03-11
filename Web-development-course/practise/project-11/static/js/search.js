@@ -1,13 +1,13 @@
 const userCardTemplate = document.querySelector('.recents-anime-template');
 const userCardContainer = document.querySelector('#recents-anime-container');
 const params= {method: 'GET'};
-let proxy = 'https://cors.consumet.stream/';
+// let proxy = 'https://cors.consumet.stream/';
 let key = document.getElementById("key").textContent.trim();
 let page = document.getElementById("pagename").textContent.trim();
 let pagename = "page="+page;
 let users=[];
 
-const response = await fetch(proxy+'https://api.consumet.org/meta/anilist/'+key+'?'+pagename,params);
+const response = await fetch('/anilist/search/'+key+'?'+pagename+"&perPage=25",params);
 const search = await response.json();
 if (!response.ok) {
     throw new Error ("bad response",{
@@ -21,6 +21,7 @@ if (count ===0) {
 function limitWord(str, no_words) {
     return str.split(" ").splice(0,no_words).join(" ");
 }
+console.log(search);
 users = search.results.map(user => {
     const card = userCardTemplate.content.cloneNode(true).children[0];
     const AnimeTitle = card.querySelector(".recents-anime-title");

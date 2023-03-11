@@ -1,3 +1,85 @@
+#watch-history-controls h1 {
+    color: rgb(132, 40, 224);
+    font-size: 5vh;
+    margin: 5vh 0;
+}
+
+#watch-history-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#watch-history-controls button {
+    margin: 2vh 2vw;
+    background-color: rgb(6, 0, 22);
+}
+
+#watch-history-controls svg {
+    height: 5vh;
+    display: inline-block;
+}
+
+#watch-history-controls path {
+    fill: rgb(58, 0, 128);
+}
+
+
+#watch-history {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#watch-history div {
+    text-align: center;
+}
+
+.watch-history-cards {
+    position: relative;
+}
+
+.watch-history-delete {
+    position: absolute;
+    top: 0.3vh;
+    right: 1vw;
+    padding: 0.3vh 0.5vw;
+    border-radius: 2vh;
+    z-index: 3;
+    cursor: pointer;
+}
+.bookmark-delete {
+    position: absolute;
+    top: 1.6vh;
+    right: 2vw;
+    padding: 0.3vh 0.5vw;
+    border-radius: 2vh;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.watch-history-delete svg,
+.bookmark-delete svg {
+    width: 1.3vw;
+    display: inline-block;
+}
+
+.watch-history-delete path,
+.bookmark-delete path {
+    fill: rgb(58, 0, 128);
+}
+
+.watch-history-img {
+    height: 15vw;
+    width: 11vw;
+}
+
+.watch-history-title {
+    margin-top: 10px;
+}
+
+
 #popular-heading {
     color: rgb(132, 40, 224);
     font-size: 5vh;
@@ -55,6 +137,7 @@
     width: 15vw;
     margin: 2vh;
     cursor: pointer;
+    position: relative;
 }
 
 .recents-anime-link {

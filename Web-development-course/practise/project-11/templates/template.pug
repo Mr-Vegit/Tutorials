@@ -22,8 +22,8 @@ html
           a(href="/") Home
         li.item
           a(href="/Popular-Anime") Popular Anime
-        //- li.item
-        //-   a(href="/anime-list") Anime List
+        li.item
+          a(href="/bookmark") Bookmark
         li.item
           a(href="/movies") Movies
         li.Search.item 
@@ -40,8 +40,8 @@ html
           a(href="/") Home  
         li 
           a(href="/Popular-Anime") Popular Anime 
-        //- li 
-        //-   a(href="/anime-list") Anime List
+        li 
+          a(href="/bookmark") Bookmark
         li 
           a(href="/movies") Movies
         li.Search 
@@ -55,45 +55,31 @@ html
         
     block content
     script(src='../static/js/navbar.js') 
-    //- footer#footer
-    //-     div.footer-1
-    //-         p Hotel PanchaDeep Bhavan 
-    //-         ul 
-    //-           li 
-    //-             i.fa-brands.fa-facebook-f
-    //-           li 
-    //-             i.fa-brands.fa-twitter
-    //-           li 
-    //-             i.fa-sharp.fa-solid.fa-envelope
-    //-           li
-    //-             i.fa-brands.fa-whatsapp
-    //-           li 
-    //-             i.fa-brands.fa-instagram
-    //-     div.footer-2
-    //-         div 
-    //-             h1 Facilities
-    //-             ul.footer-2-ul 
-    //-               li Ac Restaurent
-    //-               li Conference Hall 180 Capacity
-    //-               li Banquet Hall 500+ Capacity
-    //-               li Free Wifi
-    //-               li Geyser On Room
-    //-               li Elevator
-    //-               li Car Parking
-    //-         div
-    //-             h1 Services
-    //-             ul.footer-2-ul 
-    //-               li Doctor On Call
-    //-               li 24 Hrs Room Service
-    //-               li Pick Up And Drop
-    //-               li Vehicle For Local Sightseeing
-    //-               li 24 Hrs Power Back Up
-    //-         div 
-    //-             h1 Address
-    //-             ul.footer-2-ul 
-    //-               li Address : Deshbandhu Para, Opp. Fire Station Thana Road
-    //-               li PO+PS- Falakata-735211, West Bengal
-    //-               li Ph : 8250788335
-    //-               li Whatsapp : 838886489
-    //-               li Panchadeep.Bhawan@Gmail.Com
-    //-     div.footer-3 Copyright © 2022 panchadeepbhawan.com | All rights reserved | Designed by Mr-Vegit
+    div#footer
+      div.footer-1
+        span
+          | DekiAnime
+      div.footer-2
+        div
+          h1
+            | Important links
+          ul
+            li
+              a(href='/bookmark') Bookmarks
+            li
+              a(href='/Popular-Anime') popular anime
+            li
+              a(href='/movies') Movies
+        div
+          h1
+            | Contact Us
+          ul
+            li
+              a(href='#')
+                | Email : owner@mrvegit.live
+            li
+              a(href='https://discord.gg/wGJbxuvTw5')
+                | Join us at discord
+      div.footer-3
+        a(href="http://mrvegit.live") 
+          | Designed by Mr-Vegit

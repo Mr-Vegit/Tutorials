@@ -1,3 +1,14 @@
+// const params = {
+//     "page":"1","genres":["Action","Adventure"]
+// };
+
+// const response = await fetch("https://cors.consumet.stream/https://api.consumet.org/meta/anilist/advanced-search");
+// const animeRecents = await response.json();
+// console.log(animeRecents);
+// let x= document.getElementById("key").textContent.trim()
+// console.log(x);
+
+
 const userCardTemplate = document.querySelector('.recents-anime-template');
 const userCardContainer = document.querySelector('#recents-anime-container');
 const params= {method: 'GET'};
@@ -11,6 +22,7 @@ const search = await response.json();
 function limitWord(str, no_words) {
     return str.split(" ").splice(0,no_words).join(" ");
 }
+console.log(search);
 users = search.map(user => {
     const card = userCardTemplate.content.cloneNode(true).children[0];
     const AnimeTitle = card.querySelector(".recents-anime-title");

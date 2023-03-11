@@ -163,3 +163,75 @@ button{
 	cursor: pointer;
 	margin: 3vh 0;
 }
+/* FOOTER */
+
+#footer {
+    background-color: rgb(2, 2, 2);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.footer-1 {
+    width: 67%;
+    height: 3.5rem;
+    font-size: 30px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    border-bottom: 1px solid white;
+    overflow-y: hidden;
+}
+.footer-1 span{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-2 div {
+    overflow-y: hidden;
+}
+
+.footer-2 li,
+.footer-2 a {
+    text-decoration: none;
+    overflow-y: hidden;
+    list-style: none;
+    padding: 2px;
+    color: rgb(82, 82, 82);
+}
+
+a:hover {
+    color: rgb(223, 220, 220);
+}
+
+.footer-2 h1 {
+    font-size: 3vh;
+    font-weight: 100;
+    font-family: 'Audiowide', cursive;
+}
+
+.footer-3 {
+    overflow-x: hidden;
+    width: 95%;
+    border-top: 1px solid white;
+    margin: 5px;
+    padding: 1.5vh;
+    font-size: 2.7vh;
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+
+.footer-3 a:hover {
+    color: rgb(202, 202, 202);
+}
+.footer-3 a {
+text-decoration: none;
+}

@@ -8,7 +8,22 @@
     justify-content: space-around;
     align-items: center;
 }
-
+#anime-img-Also{
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+#bookmark-link{
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+    font-size: 2.5vh;
+	padding: 2vh;
+	background-color: darkslateblue;
+	border-radius: 1vh;
+	margin: 2vh 0vh;
+    width: 80%;
+}
 .anime-img-Also-details img {
     height: 50vh;
 }
@@ -110,6 +125,9 @@
 
 .recommendation-img {
     height: 15vw;
+}
+.recommendation-cards-txt-container{
+    margin-top: 10px;
 }
 
 #Episodes {

@@ -1,23 +1,20 @@
 const userCardTemplate = document.querySelector('.recents-anime-template');
 const userCardContainer = document.querySelector('#recents-anime-container');
 const params= {method: 'GET'};
-let proxy = 'https://cors.consumet.stream/';
+// let proxy = 'https://cors.consumet.stream/';
 let page = document.getElementById("pagename").textContent.trim();
 let pagename = "page="+page;
 let users=[];
-const response = await fetch(proxy+'https://gogoanime.consumet.stream/anime-movies?'+pagename,params);
+const response = await fetch('/anilist/anime-movies?'+pagename+"&perPage=25");
 const Movies = await response.json();
-function limitWord(str, no_words) {
-    return str.split(" ").splice(0,no_words).join(" ");
-}
-users = Movies.map(user => {
+users = Movies.results.map(user => {
     const card = userCardTemplate.content.cloneNode(true).children[0];
     const AnimeTitle = card.querySelector(".recents-anime-title");
     const AnimeImg = card.querySelector('.recents-anime-img');
     const AnimeLink = card.querySelector('.recents-anime-link');
-    AnimeTitle.textContent =limitWord(user.animeTitle,7) ;
-    AnimeImg.src = `${proxy+user.animeImg}`;
-    AnimeLink.href = '/movie-details/'+user.animeId;
+    AnimeTitle.textContent =user.title.romaji ;
+    AnimeImg.src = user.image;
+    AnimeLink.href = '/anime-details/'+user.id;
     userCardContainer.append(card); 
     return { name:user.episodeId,element:card};
 });
