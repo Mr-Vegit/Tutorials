@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- link(rel="stylesheet", href="../static/css/nav-footer.css")
+        link(rel="stylesheet", href="../static/css/index.css")
+        title ChatRoom
+    body
+        //- div#nav
+        div#content-container
+            div#contacts-container
+                span#logo 
+                    img(src="../static/img/logo.png")
+                    span LetsChat
+            template#contact-template
+                button.contact.inactive-contact 
+                    span.contact-img
+                    span.contact-Name
+                    span
+            div#conversation-container
+                span#Conversation
+            
+        script(src="../static/js/index.js",type='module') 

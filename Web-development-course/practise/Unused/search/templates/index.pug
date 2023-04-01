@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../static/css/nav-footer.css")
+        link(rel="stylesheet", href="../static/css/index.css")
+        title Document
+    body
+        div#nav
+            div
+                div#logo
+                    a(href="#")
+                        img(src="../static/img/logo.png", alt="logo")
+                div.item locations
+                div.item Unit Sizes
+                div.item More
+                div.item CONTACT US
+                div.item (03) 4518 0914
+        div#section-1
+            div#section-1-txt
+                h4 STORAGE X, 7 DAYS A WEEK ACCESS, NO LOCK-IN CONTRACTS.
+                h2 Storage of the future
+                h3 Secure Self-Storage South East Melbourne
+            div#search-container
+                div#search
+                    form
+                        input(type="search", name="area",placeholder="find storage near you",search-input)
+                        input(type="submit", value="Go")
+                ul#search-result-container
+                template#search-result-template 
+                    li
+                        a.search-title-name(href="#")
+        script(src="../static/js/index.js",type='module') 

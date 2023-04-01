@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    background-color:#e6b42d;
+    padding: 4vh;
+}
+.hide{
+    display: none;
+}
+#nav>div{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.item{
+    font-size: 2.7vh;
+    font-weight: 800;
+}
+.item:hover{
+    transition: 0.3s;
+    color: white;
+}
