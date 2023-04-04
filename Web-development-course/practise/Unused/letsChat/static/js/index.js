@@ -17,6 +17,7 @@ Each_Contact.forEach(user => {
             data.classList.add('inactive-contact');
         });
         e.target.classList.add('active-contact');
-        e.target.classlist.remove('inactive-contact');
+        // e.target.classlist.remove('inactive-contact');
+        document.getElementById('Conversation').textContent = e.target.textContent;
     })
 })
