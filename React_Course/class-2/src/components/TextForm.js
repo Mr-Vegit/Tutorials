@@ -25,6 +25,14 @@ export default function TextForm(props) {
     const handleOnChange = (event)=> {
         setText(event.target.value);
     }
+    const ClearText = ()=> {
+        setText('');
+    }
+    const ReadText = ()=> {
+        let speech = new SpeechSynthesisUtterance();
+        speech.text = text;
+        window.speechSynthesis.speak(speech);
+    }
     return (
         <>
         <div className="container">
@@ -34,6 +42,8 @@ export default function TextForm(props) {
             </div>
             <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to uppercase</button>
             <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to lowercase</button>
+            <button className="btn btn-primary mx-2" onClick={ClearText}>Clear</button>
+            <button className="btn btn-primary mx-2" onClick={ReadText}>Read out Text</button>
         </div>
         <div className="container my-3">
             <h2>Your text summary</h2>
