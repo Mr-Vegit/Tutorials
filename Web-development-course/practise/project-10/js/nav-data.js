@@ -14,12 +14,8 @@ users = blogs.map(user=>{
 });
 
 // Search bar work is done here
-searchInput.addEventListener("input",(e)=> {
+searchInput.addEventListener("search",(e)=> {
     // This shows all the blogs in our website in the search result
-    const submit =document.querySelector("[search-submit]");
-    submit.value ="X";
-    submit.style.transform = "rotate(0deg)";
-    submit.style.fontSize = "35px";
     const x = document.querySelectorAll("[search-title]");
     x.forEach(list=>{
         list.style.display="block";

@@ -20,7 +20,7 @@ users = blogs.map(user => {//use mar or foreach
     return { name:user.title,element:card};
 });
 
-searchInput.addEventListener("input",(e)=> {
+searchInput.addEventListener("search",(e)=> {
     const value = e.target.value.toLowerCase() 
     var i;
     users.forEach(user=> {
